@@ -3,4 +3,8 @@
 # Don't worry about this for now, it'll become clear when we get on to Jekyll.
 ---
 
-# Hello GitHub Pages
+# Data Streams
+
+{% for source in site.data.catalog.sources %}
+    - {{ source[0] }}
+{% endfor %}
