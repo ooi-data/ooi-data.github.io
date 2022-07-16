@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2022-07-15T02:37:32.405021'
+  last_updated: '2022-07-16T02:18:24.988347'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -7556,7 +7556,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-09-PCO2WB103-streamed-pco2w_b_sami_data_record
-    description: Data produced by Stream Engine version 1.20.0 for CE02SHBP-LJ01D-09-PCO2WB103-streamed-pco2w_b_sami_data_record
+    description: Data produced by Stream Engine version 1.20.1 for CE02SHBP-LJ01D-09-PCO2WB103-streamed-pco2w_b_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -7687,7 +7687,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-10-PHSEND103-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.0 for CE02SHBP-LJ01D-10-PHSEND103-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.1 for CE02SHBP-LJ01D-10-PHSEND103-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -15404,7 +15404,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-09-PCO2WB104-streamed-pco2w_b_sami_data_record
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSBP-LJ01C-09-PCO2WB104-streamed-pco2w_b_sami_data_record
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSBP-LJ01C-09-PCO2WB104-streamed-pco2w_b_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -15535,7 +15535,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-10-PHSEND107-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSBP-LJ01C-10-PHSEND107-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSBP-LJ01C-10-PHSEND107-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -16871,7 +16871,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-PC01B-4B-PHSENA106-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-PC01B-4B-PHSENA106-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSPS-PC01B-4B-PHSENA106-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -17049,7 +17049,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-PC01B-4D-PCO2WA105-streamed-pco2w_a_sami_data_record
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-PC01B-4D-PCO2WA105-streamed-pco2w_a_sami_data_record
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSPS-PC01B-4D-PCO2WA105-streamed-pco2w_a_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -17218,7 +17218,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-2A-CTDPFA107-streamed-ctdpf_sbe43_sample
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-SF01B-2A-CTDPFA107-streamed-ctdpf_sbe43_sample
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSPS-SF01B-2A-CTDPFA107-streamed-ctdpf_sbe43_sample
     driver: zarr
     metadata:
       data_products:
@@ -17522,7 +17522,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-3A-FLORTD104-streamed-flort_d_data_record
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-SF01B-3A-FLORTD104-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSPS-SF01B-3A-FLORTD104-streamed-flort_d_data_record
     driver: zarr
     metadata:
       data_products:
@@ -17778,7 +17778,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-3C-PARADA102-streamed-parad_sa_sample
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-SF01B-3C-PARADA102-streamed-parad_sa_sample
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSPS-SF01B-3C-PARADA102-streamed-parad_sa_sample
     driver: zarr
     metadata:
       data_products:
@@ -17837,7 +17837,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-3D-SPKIRA102-streamed-spkir_data_record
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-SF01B-3D-SPKIRA102-streamed-spkir_data_record
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSPS-SF01B-3D-SPKIRA102-streamed-spkir_data_record
     driver: zarr
     metadata:
       data_products:
@@ -18009,7 +18009,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-4B-VELPTD106-streamed-velpt_velocity_data
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-SF01B-4B-VELPTD106-streamed-velpt_velocity_data
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSPS-SF01B-4B-VELPTD106-streamed-velpt_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -18169,7 +18169,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-4F-PCO2WA102-streamed-pco2w_a_sami_data_record
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-SF01B-4F-PCO2WA102-streamed-pco2w_a_sami_data_record
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSPS-SF01B-4F-PCO2WA102-streamed-pco2w_a_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -46487,7 +46487,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-4B-PHSENA102-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-PC01A-4B-PHSENA102-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.1 for RS01SBPS-PC01A-4B-PHSENA102-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -46613,7 +46613,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-4C-FLORDD103-streamed-flort_d_data_record
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-PC01A-4C-FLORDD103-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.1 for RS01SBPS-PC01A-4C-FLORDD103-streamed-flort_d_data_record
     driver: zarr
     metadata:
       data_products:
@@ -46831,7 +46831,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-2A-CTDPFA102-streamed-ctdpf_sbe43_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-SF01A-2A-CTDPFA102-streamed-ctdpf_sbe43_sample
+    description: Data produced by Stream Engine version 1.20.1 for RS01SBPS-SF01A-2A-CTDPFA102-streamed-ctdpf_sbe43_sample
     driver: zarr
     metadata:
       data_products:
@@ -47009,7 +47009,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-2D-PHSENA101-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-SF01A-2D-PHSENA101-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.1 for RS01SBPS-SF01A-2D-PHSENA101-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -47135,7 +47135,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.1 for RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record
     driver: zarr
     metadata:
       data_products:
@@ -47391,7 +47391,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample
+    description: Data produced by Stream Engine version 1.20.1 for RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample
     driver: zarr
     metadata:
       data_products:
@@ -47450,7 +47450,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-3D-SPKIRA101-streamed-spkir_data_record
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-SF01A-3D-SPKIRA101-streamed-spkir_data_record
+    description: Data produced by Stream Engine version 1.20.1 for RS01SBPS-SF01A-3D-SPKIRA101-streamed-spkir_data_record
     driver: zarr
     metadata:
       data_products:
@@ -47648,7 +47648,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-4B-VELPTD102-streamed-velpt_velocity_data
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-SF01A-4B-VELPTD102-streamed-velpt_velocity_data
+    description: Data produced by Stream Engine version 1.20.1 for RS01SBPS-SF01A-4B-VELPTD102-streamed-velpt_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -52385,7 +52385,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-4B-PHSENA302-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXPS-PC03A-4B-PHSENA302-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.1 for RS03AXPS-PC03A-4B-PHSENA302-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -52485,7 +52485,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-4C-FLORDD303-streamed-flort_d_data_record
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXPS-PC03A-4C-FLORDD303-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.1 for RS03AXPS-PC03A-4C-FLORDD303-streamed-flort_d_data_record
     driver: zarr
     metadata:
       data_products:
