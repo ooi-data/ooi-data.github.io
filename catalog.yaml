@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2022-08-02T02:40:44.923414'
+  last_updated: '2022-08-03T02:27:47.065694'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -7109,7 +7109,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-06-CTDBPN106-streamed-ctdbp_no_sample
-    description: Data produced by Stream Engine version 1.20.0 for CE02SHBP-LJ01D-06-CTDBPN106-streamed-ctdbp_no_sample
+    description: Data produced by Stream Engine version 1.20.1 for CE02SHBP-LJ01D-06-CTDBPN106-streamed-ctdbp_no_sample
     driver: zarr
     metadata:
       data_products:
@@ -7172,6 +7172,19 @@ sources:
         precision: 4
         reference_designator: dissolved_oxygen
         standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        units: "\xB5mol kg-1"
+      - comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
+          Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
+          in seawater. This data product is corrected for salinity, temperature, and
+          depth.
+        coordinates: time lat lon depth
+        data_product_identifier: DOXYGEN_L2
+        instrument: CE02SHBP-LJ01D-06-DOSTAD106
+        long_name: DO from Phase - Corrected
+        precision: 4
+        reference_designator: do_stable_sample-corrected_dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        stream: do_stable_sample
         units: "\xB5mol kg-1"
       - ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
           pressure conductivity temperature
@@ -14931,7 +14944,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-06-CTDBPO108-streamed-ctdbp_no_sample
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSBP-LJ01C-06-CTDBPO108-streamed-ctdbp_no_sample
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSBP-LJ01C-06-CTDBPO108-streamed-ctdbp_no_sample
     driver: zarr
     metadata:
       data_products:
@@ -14994,6 +15007,19 @@ sources:
         precision: 4
         reference_designator: dissolved_oxygen
         standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        units: "\xB5mol kg-1"
+      - comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
+          Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
+          in seawater. This data product is corrected for salinity, temperature, and
+          depth.
+        coordinates: time lat lon depth
+        data_product_identifier: DOXYGEN_L2
+        instrument: CE04OSBP-LJ01C-06-DOSTAD108
+        long_name: DO from Phase - Corrected
+        precision: 4
+        reference_designator: do_stable_sample-corrected_dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        stream: do_stable_sample
         units: "\xB5mol kg-1"
       - ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
           pressure conductivity temperature
@@ -16491,7 +16517,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -16527,6 +16553,19 @@ sources:
         precision: 4
         reference_designator: dissolved_oxygen
         standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        units: "\xB5mol kg-1"
+      - comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
+          Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
+          in seawater. This data product is corrected for salinity, temperature, and
+          depth.
+        coordinates: lat depth lon time
+        data_product_identifier: DOXYGEN_L2
+        instrument: CE04OSPS-PC01B-4A-DOSTAD109
+        long_name: DO from Phase - Corrected
+        precision: 4
+        reference_designator: do_stable_sample-corrected_dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        stream: do_stable_sample
         units: "\xB5mol kg-1"
       - ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
           pressure conductivity temperature
@@ -16627,22 +16666,22 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_sbe43_sample
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_sbe43_sample
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_sbe43_sample
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: ext_volt0 practical_salinity seawater_pressure seawater_temperature
+      - ancillary_variables: corrected_dissolved_oxygen
         comment: Dissolved Oxygen (DO) Concentration from the Fast Response (Fastrep)
-          Dissolved Oxygen Instrument is a measure of the concentration of gaseous
-          oxygen mixed in seawater. This Instrument measures dissolved oxygen concentrations
-          on shallow coastal profilers through rapid oxygen gradients. This data product
+          DO Instrument is a measure of the concentration of gaseous oxygen mixed
+          in seawater. This Instrument measures dissolved oxygen concentrations on
+          shallow coastal profilers through rapid oxygen gradients. This data product
           is corrected for salinity, temperature, and depth from a collocated CTD.
         coordinates: lat depth lon time
         data_product_identifier: DOCONCF_L2
-        long_name: DO - Pressure Temp Sal Corrected (CTD)
+        long_name: Dissolved Oxygen - Pressure Temp Sal Corrected (CTD)
         precision: 4
         reference_designator: corrected_dissolved_oxygen
-        units: "\xB5mol kg-1"
+        units: umol kg-1
       - ancillary_variables: pressure practical_salinity temperature
         comment: Seawater Density is defined as mass per unit volume and is calculated
           from the conductivity, temperature and depth of a seawater sample using
@@ -17222,18 +17261,18 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: ext_volt0 practical_salinity seawater_pressure seawater_temperature
+      - ancillary_variables: corrected_dissolved_oxygen
         comment: Dissolved Oxygen (DO) Concentration from the Fast Response (Fastrep)
-          Dissolved Oxygen Instrument is a measure of the concentration of gaseous
-          oxygen mixed in seawater. This Instrument measures dissolved oxygen concentrations
-          on shallow coastal profilers through rapid oxygen gradients. This data product
+          DO Instrument is a measure of the concentration of gaseous oxygen mixed
+          in seawater. This Instrument measures dissolved oxygen concentrations on
+          shallow coastal profilers through rapid oxygen gradients. This data product
           is corrected for salinity, temperature, and depth from a collocated CTD.
         coordinates: lat depth lon time
         data_product_identifier: DOCONCF_L2
-        long_name: DO - Pressure Temp Sal Corrected (CTD)
+        long_name: Dissolved Oxygen - Pressure Temp Sal Corrected (CTD)
         precision: 4
         reference_designator: corrected_dissolved_oxygen
-        units: "\xB5mol kg-1"
+        units: umol kg-1
       - ancillary_variables: pressure practical_salinity temperature
         comment: Seawater Density is defined as mass per unit volume and is calculated
           from the conductivity, temperature and depth of a seawater sample using
@@ -17396,7 +17435,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-2B-PHSENA108-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-SF01B-2B-PHSENA108-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSPS-SF01B-2B-PHSENA108-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -17887,7 +17926,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_dark_sample
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_dark_sample
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_dark_sample
     driver: zarr
     metadata:
       data_products:
@@ -17932,7 +17971,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_sample
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_sample
+    description: Data produced by Stream Engine version 1.20.1 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_sample
     driver: zarr
     metadata:
       data_products:
@@ -46835,18 +46874,18 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: ext_volt0 practical_salinity seawater_pressure seawater_temperature
+      - ancillary_variables: corrected_dissolved_oxygen
         comment: Dissolved Oxygen (DO) Concentration from the Fast Response (Fastrep)
-          Dissolved Oxygen Instrument is a measure of the concentration of gaseous
-          oxygen mixed in seawater. This Instrument measures dissolved oxygen concentrations
-          on shallow coastal profilers through rapid oxygen gradients. This data product
+          DO Instrument is a measure of the concentration of gaseous oxygen mixed
+          in seawater. This Instrument measures dissolved oxygen concentrations on
+          shallow coastal profilers through rapid oxygen gradients. This data product
           is corrected for salinity, temperature, and depth from a collocated CTD.
         coordinates: lat depth lon time
         data_product_identifier: DOCONCF_L2
-        long_name: DO - Pressure Temp Sal Corrected (CTD)
+        long_name: Dissolved Oxygen - Pressure Temp Sal Corrected (CTD)
         precision: 4
         reference_designator: corrected_dissolved_oxygen
-        units: "\xB5mol kg-1"
+        units: umol kg-1
       - ancillary_variables: pressure practical_salinity temperature
         comment: Seawater Density is defined as mass per unit volume and is calculated
           from the conductivity, temperature and depth of a seawater sample using
@@ -47500,7 +47539,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_dark_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_dark_sample
+    description: Data produced by Stream Engine version 1.20.1 for RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_dark_sample
     driver: zarr
     metadata:
       data_products:
@@ -47545,7 +47584,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_sample
+    description: Data produced by Stream Engine version 1.20.1 for RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_sample
     driver: zarr
     metadata:
       data_products:
@@ -47808,7 +47847,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-4F-PCO2WA101-streamed-pco2w_a_sami_data_record
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-SF01A-4F-PCO2WA101-streamed-pco2w_a_sami_data_record
+    description: Data produced by Stream Engine version 1.20.1 for RS01SBPS-SF01A-4F-PCO2WA101-streamed-pco2w_a_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -49498,7 +49537,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ASHS-MJ03B-10-CTDPFB304-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03ASHS-MJ03B-10-CTDPFB304-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.1 for RS03ASHS-MJ03B-10-CTDPFB304-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -52139,7 +52178,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-4A-CTDPFA303-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXPS-PC03A-4A-CTDPFA303-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.1 for RS03AXPS-PC03A-4A-CTDPFA303-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -52175,6 +52214,19 @@ sources:
         precision: 4
         reference_designator: dissolved_oxygen
         standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        units: "\xB5mol kg-1"
+      - comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
+          Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
+          in seawater. This data product is corrected for salinity, temperature, and
+          depth.
+        coordinates: lat depth lon time
+        data_product_identifier: DOXYGEN_L2
+        instrument: RS03AXPS-PC03A-4A-DOSTAD303
+        long_name: DO from Phase - Corrected
+        precision: 4
+        reference_designator: do_stable_sample-corrected_dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        stream: do_stable_sample
         units: "\xB5mol kg-1"
       - ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
           pressure conductivity temperature
@@ -52703,22 +52755,22 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-2A-CTDPFA302-streamed-ctdpf_sbe43_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXPS-SF03A-2A-CTDPFA302-streamed-ctdpf_sbe43_sample
+    description: Data produced by Stream Engine version 1.20.1 for RS03AXPS-SF03A-2A-CTDPFA302-streamed-ctdpf_sbe43_sample
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: ext_volt0 practical_salinity seawater_pressure seawater_temperature
+      - ancillary_variables: corrected_dissolved_oxygen
         comment: Dissolved Oxygen (DO) Concentration from the Fast Response (Fastrep)
-          Dissolved Oxygen Instrument is a measure of the concentration of gaseous
-          oxygen mixed in seawater. This Instrument measures dissolved oxygen concentrations
-          on shallow coastal profilers through rapid oxygen gradients. This data product
+          DO Instrument is a measure of the concentration of gaseous oxygen mixed
+          in seawater. This Instrument measures dissolved oxygen concentrations on
+          shallow coastal profilers through rapid oxygen gradients. This data product
           is corrected for salinity, temperature, and depth from a collocated CTD.
         coordinates: lat depth lon time
         data_product_identifier: DOCONCF_L2
-        long_name: DO - Pressure Temp Sal Corrected (CTD)
+        long_name: Dissolved Oxygen - Pressure Temp Sal Corrected (CTD)
         precision: 4
         reference_designator: corrected_dissolved_oxygen
-        units: "\xB5mol kg-1"
+        units: umol kg-1
       - ancillary_variables: pressure practical_salinity temperature
         comment: Seawater Density is defined as mass per unit volume and is calculated
           from the conductivity, temperature and depth of a seawater sample using
@@ -52881,7 +52933,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-2D-PHSENA301-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXPS-SF03A-2D-PHSENA301-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.1 for RS03AXPS-SF03A-2D-PHSENA301-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -53007,7 +53059,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.1 for RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record
     driver: zarr
     metadata:
       data_products:
@@ -53372,7 +53424,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample
+    description: Data produced by Stream Engine version 1.20.1 for RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample
     driver: zarr
     metadata:
       data_products:
@@ -53417,7 +53469,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_sample
+    description: Data produced by Stream Engine version 1.20.1 for RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_sample
     driver: zarr
     metadata:
       data_products:
@@ -53520,7 +53572,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-4B-VELPTD302-streamed-velpt_velocity_data
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXPS-SF03A-4B-VELPTD302-streamed-velpt_velocity_data
+    description: Data produced by Stream Engine version 1.20.1 for RS03AXPS-SF03A-4B-VELPTD302-streamed-velpt_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -53680,7 +53732,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-4F-PCO2WA301-streamed-pco2w_a_sami_data_record
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXPS-SF03A-4F-PCO2WA301-streamed-pco2w_a_sami_data_record
+    description: Data produced by Stream Engine version 1.20.1 for RS03AXPS-SF03A-4F-PCO2WA301-streamed-pco2w_a_sami_data_record
     driver: zarr
     metadata:
       data_products:
