@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2022-08-03T02:27:47.065694'
+  last_updated: '2022-08-04T02:18:07.894051'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -48486,7 +48486,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-LJ01A-12-CTDPFB101-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS01SLBS-LJ01A-12-CTDPFB101-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.1 for RS01SLBS-LJ01A-12-CTDPFB101-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -50169,7 +50169,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-LJ03A-12-CTDPFB301-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXBS-LJ03A-12-CTDPFB301-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.1 for RS03AXBS-LJ03A-12-CTDPFB301-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -53315,7 +53315,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample
+    description: Data produced by Stream Engine version 1.20.1 for RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample
     driver: zarr
     metadata:
       data_products:
@@ -53374,7 +53374,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record
+    description: Data produced by Stream Engine version 1.20.1 for RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record
     driver: zarr
     metadata:
       data_products:
