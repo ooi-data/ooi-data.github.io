@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2022-08-17T02:41:47.658624'
+  last_updated: '2022-08-18T02:41:52.517641'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -17284,6 +17284,19 @@ sources:
         reference_designator: density
         standard_name: sea_water_density
         units: kg m-3
+      - comment: Dissolved Oxygen (DO) Concentration from the Fast Response (Fastrep)
+          Dissolved Oxygen Instrument is a measure of the concentration of gaseous
+          oxygen mixed in seawater. This Instrument measures dissolved oxygen concentrations
+          on shallow coastal profilers through rapid oxygen gradients. This data product
+          is corrected for salinity, temperature, and depth from a collocated CTD.
+        coordinates: lat depth lon time
+        data_product_identifier: DOCONCF_L2
+        instrument: CE04OSPS-SF01B-2A-DOFSTA107
+        long_name: DO - Pressure Temp Sal Corrected (CTD)
+        precision: 4
+        reference_designator: do_fast_sample-corrected_dissolved_oxygen
+        stream: do_fast_sample
+        units: "\xB5mol kg-1"
       - ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
           pressure conductivity temperature
         comment: Salinity is generally defined as the concentration of dissolved salt
@@ -46897,6 +46910,19 @@ sources:
         reference_designator: density
         standard_name: sea_water_density
         units: kg m-3
+      - comment: Dissolved Oxygen (DO) Concentration from the Fast Response (Fastrep)
+          Dissolved Oxygen Instrument is a measure of the concentration of gaseous
+          oxygen mixed in seawater. This Instrument measures dissolved oxygen concentrations
+          on shallow coastal profilers through rapid oxygen gradients. This data product
+          is corrected for salinity, temperature, and depth from a collocated CTD.
+        coordinates: lat depth lon time
+        data_product_identifier: DOCONCF_L2
+        instrument: RS01SBPS-SF01A-2A-DOFSTA102
+        long_name: DO - Pressure Temp Sal Corrected (CTD)
+        precision: 4
+        reference_designator: do_fast_sample-corrected_dissolved_oxygen
+        stream: do_fast_sample
+        units: "\xB5mol kg-1"
       - ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
           pressure conductivity temperature
         comment: Salinity is generally defined as the concentration of dissolved salt
@@ -52782,6 +52808,19 @@ sources:
         reference_designator: density
         standard_name: sea_water_density
         units: kg m-3
+      - comment: Dissolved Oxygen (DO) Concentration from the Fast Response (Fastrep)
+          Dissolved Oxygen Instrument is a measure of the concentration of gaseous
+          oxygen mixed in seawater. This Instrument measures dissolved oxygen concentrations
+          on shallow coastal profilers through rapid oxygen gradients. This data product
+          is corrected for salinity, temperature, and depth from a collocated CTD.
+        coordinates: lat depth lon time
+        data_product_identifier: DOCONCF_L2
+        instrument: RS03AXPS-SF03A-2A-DOFSTA302
+        long_name: DO - Pressure Temp Sal Corrected (CTD)
+        precision: 4
+        reference_designator: do_fast_sample-corrected_dissolved_oxygen
+        stream: do_fast_sample
+        units: "\xB5mol kg-1"
       - ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
           pressure conductivity temperature
         comment: Salinity is generally defined as the concentration of dissolved salt
