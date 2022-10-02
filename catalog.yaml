@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2022-10-01T02:49:04.267752'
+  last_updated: '2022-10-02T02:44:02.388216'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -994,7 +994,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument_blank
-    description: Data produced by Stream Engine version 1.20.0 for CE01ISSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument_blank
+    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument_blank
     driver: zarr
     metadata:
       data_products:
@@ -1006,7 +1006,7 @@ sources:
         long_name: Thermistor Temperature
         precision: 4
         reference_designator: pco2w_thermistor_temperature
-        units: degree_C
+        units: degrees_Celsius
       - axis: T
         calendar: gregorian
         long_name: time
@@ -5796,32 +5796,45 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-06-DOSTAD106-streamed-do_stable_sample
-    description: Data produced by Stream Engine version 1.20.0 for CE02SHBP-LJ01D-06-DOSTAD106-streamed-do_stable_sample
+    description: Data produced by Stream Engine version 1.20.2 for CE02SHBP-LJ01D-06-DOSTAD106-streamed-do_stable_sample
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: oxygen
-        comment: Dissolved Oxygen (DO) Concentration from the Stable Response Dissolved
-          Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
-          in seawater.
-        coordinates: time lat lon depth
-        data_product_identifier: DOCONCS_L1
-        long_name: DO from Onboard Calculation
-        precision: 4
-        reference_designator: ctd_tc_oxygen
-        units: "\xB5mol L-1"
-      - ancillary_variables: ctd_tc_oxygen practical_salinity seawater_temperature
+      - ancillary_variables: oxygen_from_calphase sea_water_practical_salinity sea_water_temperature
         comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
           Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
           in seawater. This data product is corrected for salinity, temperature, and
           depth.
         coordinates: time lat lon depth
         data_product_identifier: DOXYGEN_L2
+        long_name: DO from Phase - Corrected
+        precision: 4
+        reference_designator: corrected_dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        units: umol kg-1
+      - ancillary_variables: oxygen
+        comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
+          is a measure of the concentration of gaseous oxygen mixed in seawater. This
+          instrument is connected through a CTD. This data product is corrected internally
+          for temperature as measured by the DO thermistor.
+        coordinates: time lat lon depth
+        data_product_identifier: DOCONCS_L1
+        long_name: DO from Onboard Calculation
+        precision: 4
+        reference_designator: ctd_tc_oxygen
+        standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water
+        units: umol L-1
+      - ancillary_variables: ctd_tc_oxygen sea_water_practical_salinity sea_water_temperature
+        comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
+          is a measure of the concentration of gaseous oxygen mixed in seawater. This
+          data product is corrected for salinity, temperature, and pressure.
+        coordinates: time lat lon depth
+        data_product_identifier: DOXYGEN_L2
         long_name: DO from Onboard Calculation - Corrected
         precision: 4
         reference_designator: dissolved_oxygen
         standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
-        units: "\xB5mol kg-1"
+        units: umol kg-1
       - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
           by the weight of the column of seawater above it. It is calculated by subtracting
           one standard atmosphere from the absolute pressure at the sensor to remove
@@ -5834,7 +5847,8 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - comment: Salinity is generally defined as the concentration of dissolved salt
+      - alternate_parameter_name: ctdbp_no_sample-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
           in a parcel of seawater. Practical Salinity is a more specific unitless
           quantity calculated from the conductivity of seawater and adjusted for temperature
           and pressure. It is approximately equivalent to Absolute Salinity (the mass
@@ -5844,20 +5858,21 @@ sources:
         instrument: CE02SHBP-LJ01D-06-CTDBPN106
         long_name: Practical Salinity
         precision: 4
-        reference_designator: practical_salinity
+        reference_designator: sea_water_practical_salinity
         standard_name: sea_water_practical_salinity
         stream: ctdbp_no_sample
         units: '1'
-      - comment: Seawater temperature near the sensor.
+      - alternate_parameter_name: ctdbp_no_sample-seawater_temperature
+        comment: Seawater temperature near the sensor.
         coordinates: time lat lon depth
         data_product_identifier: TEMPWAT_L1
         instrument: CE02SHBP-LJ01D-06-CTDBPN106
         long_name: Seawater Temperature
         precision: 4
-        reference_designator: seawater_temperature
+        reference_designator: sea_water_temperature
         standard_name: sea_water_temperature
         stream: ctdbp_no_sample
-        units: degree_C
+        units: degrees_Celsius
       - axis: T
         calendar: gregorian
         long_name: time
@@ -9189,7 +9204,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD11-06-METBKA000-telemetered-metbk_hourly
-    description: Data produced by Stream Engine version 1.19.2 for CE02SHSM-SBD11-06-METBKA000-telemetered-metbk_hourly
+    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD11-06-METBKA000-telemetered-metbk_hourly
     driver: zarr
     metadata:
       data_products:
@@ -9203,7 +9218,7 @@ sources:
         reference_designator: air_temperature
         standard_name: air_temperature
         stream: metbk_a_dcl_instrument
-        units: degree_C
+        units: degrees_Celsius
       - comment: Mean Point Seawater Velocity refers to the velocity (speed and direction)
           of a single "point" of water (in this case, a volume of several square meters)
           averaged over time-scales associated with surface gravity waves. This instrument
@@ -9376,7 +9391,7 @@ sources:
         long_name: Air Temperature
         precision: 4
         reference_designator: met_tempa2m
-        units: degree_C
+        units: degrees_Celsius
       - ancillary_variables: air_temperature met_relwind_speed sea_surface_temperature
           barometric_pressure precipitation longwave_irradiance shortwave_irradiance
           relative_humidity
@@ -9387,16 +9402,18 @@ sources:
         long_name: Skin Seawater Temperature
         precision: 4
         reference_designator: met_tempskn
-        units: degree_C
+        units: degrees_Celsius
       - ancillary_variables: air_temperature met_relwind_speed sea_surface_temperature
           barometric_pressure precipitation longwave_irradiance shortwave_irradiance
           relative_humidity
-        comment: The modelled windspeed at a reference height of 10m WIND10M_L2.
+        comment: Standardized wind speed at a reference height of 10m adjusted from
+          measurements collected at approximately 5 meters height above the waterline.
         coordinates: time lat lon
         data_product_identifier: WIND10M_L2
         long_name: Wind Velocity at 10 M
         precision: 4
         reference_designator: met_wind10m
+        standard_name: wind_speed
         units: m s-1
       - comment: Mean Point Seawater Velocity refers to the velocity (speed and direction)
           of a single "point" of water (in this case, a volume of several square meters)
@@ -9430,7 +9447,7 @@ sources:
         reference_designator: relative_humidity
         standard_name: relative_humidity
         stream: metbk_a_dcl_instrument
-        units: '%'
+        units: percent
       - comment: Sea Surface Temperature is the temperature of the seawater near the
           ocean surface.
         coordinates: time lat lon
@@ -9441,7 +9458,7 @@ sources:
         reference_designator: sea_surface_temperature
         standard_name: sea_surface_temperature
         stream: metbk_a_dcl_instrument
-        units: degree_C
+        units: degrees_Celsius
       - coordinates: time lat lon
         data_product_identifier: SHRTIRR_L1
         instrument: CE02SHSM-SBD11-06-METBKA000
@@ -10404,7 +10421,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
-    description: Data produced by Stream Engine version 1.20.0 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
+    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
     driver: zarr
     metadata:
       data_products:
@@ -10430,7 +10447,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
-    description: Data produced by Stream Engine version 1.20.0 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
+    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
     driver: zarr
     metadata:
       data_products:
@@ -10448,7 +10465,7 @@ sources:
         long_name: Wave Direction
         precision: 4
         reference_designator: wavss_a_corrected_directional_wave_direction
-        units: deg
+        units: degrees
       - ancillary_variables: time mean_direction
         comment: Mean wave direction corrected for magnetic declination (WAVSTAT-D_L1)
           [deg, [0 360)].
@@ -10457,7 +10474,7 @@ sources:
         long_name: Wave Direction - Mean
         precision: 4
         reference_designator: wavss_a_corrected_mean_wave_direction
-        units: deg
+        units: degrees
       - ancillary_variables: number_bands initial_frequency frequency_spacing number_bands
         comment: Frequency values for directional wave spectral bins (WAVSTAT-FDS_L1)
           [Hz]
@@ -10483,7 +10500,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_motion
-    description: Data produced by Stream Engine version 1.20.0 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_motion
+    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_motion
     driver: zarr
     metadata:
       data_products:
@@ -10535,7 +10552,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
-    description: Data produced by Stream Engine version 1.20.0 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
+    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
     driver: zarr
     metadata:
       data_products:
@@ -12416,7 +12433,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPD-DP01B-02-VEL3DA105-recovered_inst-dpc_acm_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPD-DP01B-02-VEL3DA105-recovered_inst-dpc_acm_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.2 for CE04OSPD-DP01B-02-VEL3DA105-recovered_inst-dpc_acm_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -12508,7 +12525,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPD-DP01B-02-VEL3DA105-recovered_wfp-dpc_acm_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPD-DP01B-02-VEL3DA105-recovered_wfp-dpc_acm_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.2 for CE04OSPD-DP01B-02-VEL3DA105-recovered_wfp-dpc_acm_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -18547,7 +18564,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
+    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
     driver: zarr
     metadata:
       data_products:
@@ -18678,7 +18695,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
+    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
     driver: zarr
     metadata:
       data_products:
@@ -19657,7 +19674,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.0 for CE06ISSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -19677,7 +19694,8 @@ sources:
         long_name: pCO2 Seawater
         precision: 4
         reference_designator: pco2_seawater
-        units: "\xB5atm"
+        standard_name: partial_pressure_of_carbon_dioxide_in_sea_water
+        units: uatm
       - ancillary_variables: thermistor_raw
         comment: This is the Thermistor Temperature measurement, used to calculate
           the L1 PCO2WAT Partial Pressure of CO2 in Seawater data product.
@@ -19686,7 +19704,7 @@ sources:
         long_name: Thermistor Temperature
         precision: 4
         reference_designator: pco2w_thermistor_temperature
-        units: degree_C
+        units: degrees_Celsius
       - axis: T
         calendar: gregorian
         long_name: time
@@ -21970,7 +21988,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument_blank
-    description: Data produced by Stream Engine version 1.20.0 for CE06ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument_blank
+    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument_blank
     driver: zarr
     metadata:
       data_products:
@@ -21982,7 +22000,7 @@ sources:
         long_name: Thermistor Temperature
         precision: 4
         reference_designator: pco2w_thermistor_temperature
-        units: degree_C
+        units: degrees_Celsius
       - axis: T
         calendar: gregorian
         long_name: time
