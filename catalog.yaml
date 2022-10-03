@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2022-10-02T02:44:02.388216'
+  last_updated: '2022-10-03T02:12:01.398467'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -5540,7 +5540,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-05-ADCPTB104-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.0 for CE02SHBP-LJ01D-05-ADCPTB104-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.2 for CE02SHBP-LJ01D-05-ADCPTB104-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -5895,7 +5895,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-07-VEL3DC108-streamed-vel3d_cd_velocity_data
-    description: Data produced by Stream Engine version 1.20.0 for CE02SHBP-LJ01D-07-VEL3DC108-streamed-vel3d_cd_velocity_data
+    description: Data produced by Stream Engine version 1.20.2 for CE02SHBP-LJ01D-07-VEL3DC108-streamed-vel3d_cd_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -7519,12 +7519,12 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.0 for CE02SHSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: practical_salinity internal_temp_raw temp c_signal_counts
-          c_reference_counts
+      - ancillary_variables: sea_water_practical_salinity internal_temp_raw sea_water_temperature
+          c_signal_counts c_reference_counts
         comment: The Optical Beam Attenuation Coefficient is the rate that the intensity
           of a beam of light will decrease in response to the combined effects of
           absorption and scatter as a function of propagation distance. The Attenuation
@@ -7537,8 +7537,8 @@ sources:
         precision: 6
         reference_designator: beam_attenuation
         units: m-1
-      - ancillary_variables: a_reference_counts practical_salinity a_signal_counts
-          internal_temp_raw beam_attenuation temp
+      - ancillary_variables: a_reference_counts sea_water_practical_salinity a_signal_counts
+          internal_temp_raw beam_attenuation sea_water_temperature
         comment: Optical Absorption Coefficient is the rate that the intensity of
           a beam of light will decrease in response to the absorption (removal) of
           light energy as a function of propagation distance. The Optical Absorption
@@ -7551,7 +7551,8 @@ sources:
         precision: 6
         reference_designator: optical_absorption
         units: m-1
-      - comment: Salinity is generally defined as the concentration of dissolved salt
+      - alternate_parameter_name: ctdbp_cdef_dcl_instrument-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
           in a parcel of seawater. Practical Salinity is a more specific unitless
           quantity calculated from the conductivity of seawater and adjusted for temperature
           and pressure. It is approximately equivalent to Absolute Salinity (the mass
@@ -7561,20 +7562,21 @@ sources:
         instrument: CE02SHSM-RID27-03-CTDBPC000
         long_name: Practical Salinity
         precision: 4
-        reference_designator: practical_salinity
+        reference_designator: sea_water_practical_salinity
         standard_name: sea_water_practical_salinity
         stream: ctdbp_cdef_dcl_instrument
         units: '1'
-      - comment: Seawater temperature near the sensor.
+      - alternate_parameter_name: ctdbp_cdef_dcl_instrument-temp
+        comment: Seawater temperature near the sensor.
         coordinates: time lat lon
         data_product_identifier: TEMPWAT_L1
         instrument: CE02SHSM-RID27-03-CTDBPC000
         long_name: Seawater Temperature
         precision: 4
-        reference_designator: temp
+        reference_designator: sea_water_temperature
         standard_name: sea_water_temperature
         stream: ctdbp_cdef_dcl_instrument
-        units: degree_C
+        units: degrees_Celsius
       - axis: T
         calendar: gregorian
         long_name: time
@@ -11897,32 +11899,45 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-06-DOSTAD108-streamed-do_stable_sample
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSBP-LJ01C-06-DOSTAD108-streamed-do_stable_sample
+    description: Data produced by Stream Engine version 1.20.2 for CE04OSBP-LJ01C-06-DOSTAD108-streamed-do_stable_sample
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: oxygen
-        comment: Dissolved Oxygen (DO) Concentration from the Stable Response Dissolved
-          Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
-          in seawater.
-        coordinates: time lat lon depth
-        data_product_identifier: DOCONCS_L1
-        long_name: DO from Onboard Calculation
-        precision: 4
-        reference_designator: ctd_tc_oxygen
-        units: "\xB5mol L-1"
-      - ancillary_variables: ctd_tc_oxygen practical_salinity seawater_temperature
+      - ancillary_variables: oxygen_from_calphase sea_water_practical_salinity sea_water_temperature
         comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
           Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
           in seawater. This data product is corrected for salinity, temperature, and
           depth.
         coordinates: time lat lon depth
         data_product_identifier: DOXYGEN_L2
+        long_name: DO from Phase - Corrected
+        precision: 4
+        reference_designator: corrected_dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        units: umol kg-1
+      - ancillary_variables: oxygen
+        comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
+          is a measure of the concentration of gaseous oxygen mixed in seawater. This
+          instrument is connected through a CTD. This data product is corrected internally
+          for temperature as measured by the DO thermistor.
+        coordinates: time lat lon depth
+        data_product_identifier: DOCONCS_L1
+        long_name: DO from Onboard Calculation
+        precision: 4
+        reference_designator: ctd_tc_oxygen
+        standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water
+        units: umol L-1
+      - ancillary_variables: ctd_tc_oxygen sea_water_practical_salinity sea_water_temperature
+        comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
+          is a measure of the concentration of gaseous oxygen mixed in seawater. This
+          data product is corrected for salinity, temperature, and pressure.
+        coordinates: time lat lon depth
+        data_product_identifier: DOXYGEN_L2
         long_name: DO from Onboard Calculation - Corrected
         precision: 4
         reference_designator: dissolved_oxygen
         standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
-        units: "\xB5mol kg-1"
+        units: umol kg-1
       - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
           by the weight of the column of seawater above it. It is calculated by subtracting
           one standard atmosphere from the absolute pressure at the sensor to remove
@@ -11935,7 +11950,8 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - comment: Salinity is generally defined as the concentration of dissolved salt
+      - alternate_parameter_name: ctdbp_no_sample-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
           in a parcel of seawater. Practical Salinity is a more specific unitless
           quantity calculated from the conductivity of seawater and adjusted for temperature
           and pressure. It is approximately equivalent to Absolute Salinity (the mass
@@ -11945,20 +11961,21 @@ sources:
         instrument: CE04OSBP-LJ01C-06-CTDBPO108
         long_name: Practical Salinity
         precision: 4
-        reference_designator: practical_salinity
+        reference_designator: sea_water_practical_salinity
         standard_name: sea_water_practical_salinity
         stream: ctdbp_no_sample
         units: '1'
-      - comment: Seawater temperature near the sensor.
+      - alternate_parameter_name: ctdbp_no_sample-seawater_temperature
+        comment: Seawater temperature near the sensor.
         coordinates: time lat lon depth
         data_product_identifier: TEMPWAT_L1
         instrument: CE04OSBP-LJ01C-06-CTDBPO108
         long_name: Seawater Temperature
         precision: 4
-        reference_designator: seawater_temperature
+        reference_designator: sea_water_temperature
         standard_name: sea_water_temperature
         stream: ctdbp_no_sample
-        units: degree_C
+        units: degrees_Celsius
       - axis: T
         calendar: gregorian
         long_name: time
@@ -12052,11 +12069,11 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.2 for CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: practical_salinity internal_temp_raw seawater_temperature
+      - ancillary_variables: sea_water_practical_salinity internal_temp_raw sea_water_temperature
           c_signal_counts c_reference_counts
         comment: The Optical Beam Attenuation Coefficient is the rate that the intensity
           of a beam of light will decrease in response to the combined effects of
@@ -12070,8 +12087,8 @@ sources:
         precision: 6
         reference_designator: beam_attenuation
         units: m-1
-      - ancillary_variables: a_reference_counts practical_salinity a_signal_counts
-          internal_temp_raw beam_attenuation seawater_temperature
+      - ancillary_variables: a_reference_counts sea_water_practical_salinity a_signal_counts
+          internal_temp_raw beam_attenuation sea_water_temperature
         comment: Optical Absorption Coefficient is the rate that the intensity of
           a beam of light will decrease in response to the absorption (removal) of
           light energy as a function of propagation distance. The Optical Absorption
@@ -12084,7 +12101,8 @@ sources:
         precision: 6
         reference_designator: optical_absorption
         units: m-1
-      - comment: Salinity is generally defined as the concentration of dissolved salt
+      - alternate_parameter_name: ctdbp_no_sample-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
           in a parcel of seawater. Practical Salinity is a more specific unitless
           quantity calculated from the conductivity of seawater and adjusted for temperature
           and pressure. It is approximately equivalent to Absolute Salinity (the mass
@@ -12094,20 +12112,21 @@ sources:
         instrument: CE04OSBP-LJ01C-06-CTDBPO108
         long_name: Practical Salinity
         precision: 4
-        reference_designator: practical_salinity
+        reference_designator: sea_water_practical_salinity
         standard_name: sea_water_practical_salinity
         stream: ctdbp_no_sample
         units: '1'
-      - comment: Seawater temperature near the sensor.
+      - alternate_parameter_name: ctdbp_no_sample-seawater_temperature
+        comment: Seawater temperature near the sensor.
         coordinates: time lat lon
         data_product_identifier: TEMPWAT_L1
         instrument: CE04OSBP-LJ01C-06-CTDBPO108
         long_name: Seawater Temperature
         precision: 4
-        reference_designator: seawater_temperature
+        reference_designator: sea_water_temperature
         standard_name: sea_water_temperature
         stream: ctdbp_no_sample
-        units: degree_C
+        units: degrees_Celsius
       - axis: T
         calendar: gregorian
         long_name: time
@@ -13837,11 +13856,11 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.2 for CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: practical_salinity internal_temp_raw seawater_temperature
+      - ancillary_variables: sea_water_practical_salinity internal_temp_raw sea_water_temperature
           c_signal_counts c_reference_counts
         comment: The Optical Beam Attenuation Coefficient is the rate that the intensity
           of a beam of light will decrease in response to the combined effects of
@@ -13867,8 +13886,8 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - ancillary_variables: a_reference_counts practical_salinity a_signal_counts
-          internal_temp_raw beam_attenuation seawater_temperature
+      - ancillary_variables: a_reference_counts sea_water_practical_salinity a_signal_counts
+          internal_temp_raw beam_attenuation sea_water_temperature
         comment: Optical Absorption Coefficient is the rate that the intensity of
           a beam of light will decrease in response to the absorption (removal) of
           light energy as a function of propagation distance. The Optical Absorption
@@ -13881,7 +13900,8 @@ sources:
         precision: 6
         reference_designator: optical_absorption
         units: m-1
-      - comment: Salinity is generally defined as the concentration of dissolved salt
+      - alternate_parameter_name: ctdpf_sbe43_sample-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
           in a parcel of seawater. Practical Salinity is a more specific unitless
           quantity calculated from the conductivity of seawater and adjusted for temperature
           and pressure. It is approximately equivalent to Absolute Salinity (the mass
@@ -13891,20 +13911,21 @@ sources:
         instrument: CE04OSPS-SF01B-2A-CTDPFA107
         long_name: Practical Salinity
         precision: 4
-        reference_designator: practical_salinity
+        reference_designator: sea_water_practical_salinity
         standard_name: sea_water_practical_salinity
         stream: ctdpf_sbe43_sample
         units: '1'
-      - comment: Seawater temperature near the sensor.
+      - alternate_parameter_name: ctdpf_sbe43_sample-seawater_temperature
+        comment: Seawater temperature near the sensor.
         coordinates: lat depth lon time
         data_product_identifier: TEMPWAT_L1
         instrument: CE04OSPS-SF01B-2A-CTDPFA107
         long_name: Seawater Temperature
         precision: 4
-        reference_designator: seawater_temperature
+        reference_designator: sea_water_temperature
         standard_name: sea_water_temperature
         stream: ctdpf_sbe43_sample
-        units: degree_C
+        units: degrees_Celsius
       - axis: T
         calendar: gregorian
         long_name: time
@@ -31055,7 +31076,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSPM-WFP01-01-VEL3DK000-telemetered-vel3d_k_wfp_stc_instrument
-    description: Data produced by Stream Engine version 1.20.0 for CE09OSPM-WFP01-01-VEL3DK000-telemetered-vel3d_k_wfp_stc_instrument
+    description: Data produced by Stream Engine version 1.20.2 for CE09OSPM-WFP01-01-VEL3DK000-telemetered-vel3d_k_wfp_stc_instrument
     driver: zarr
     metadata:
       data_products:
@@ -32037,7 +32058,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
-    description: Data produced by Stream Engine version 1.20.0 for CE09OSSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
+    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -34281,7 +34302,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.0 for CE09OSSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -41685,32 +41706,45 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-LJ01A-12-DOSTAD101-streamed-do_stable_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS01SLBS-LJ01A-12-DOSTAD101-streamed-do_stable_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS01SLBS-LJ01A-12-DOSTAD101-streamed-do_stable_sample
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: oxygen
-        comment: Dissolved Oxygen (DO) Concentration from the Stable Response Dissolved
-          Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
-          in seawater.
-        coordinates: time lat lon depth
-        data_product_identifier: DOCONCS_L1
-        long_name: DO from Onboard Calculation
-        precision: 4
-        reference_designator: ctd_tc_oxygen
-        units: "\xB5mol L-1"
-      - ancillary_variables: ctd_tc_oxygen practical_salinity seawater_temperature
+      - ancillary_variables: oxygen_from_calphase sea_water_practical_salinity sea_water_temperature
         comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
           Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
           in seawater. This data product is corrected for salinity, temperature, and
           depth.
         coordinates: time lat lon depth
         data_product_identifier: DOXYGEN_L2
+        long_name: DO from Phase - Corrected
+        precision: 4
+        reference_designator: corrected_dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        units: umol kg-1
+      - ancillary_variables: oxygen
+        comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
+          is a measure of the concentration of gaseous oxygen mixed in seawater. This
+          instrument is connected through a CTD. This data product is corrected internally
+          for temperature as measured by the DO thermistor.
+        coordinates: time lat lon depth
+        data_product_identifier: DOCONCS_L1
+        long_name: DO from Onboard Calculation
+        precision: 4
+        reference_designator: ctd_tc_oxygen
+        standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water
+        units: umol L-1
+      - ancillary_variables: ctd_tc_oxygen sea_water_practical_salinity sea_water_temperature
+        comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
+          is a measure of the concentration of gaseous oxygen mixed in seawater. This
+          data product is corrected for salinity, temperature, and pressure.
+        coordinates: time lat lon depth
+        data_product_identifier: DOXYGEN_L2
         long_name: DO from Onboard Calculation - Corrected
         precision: 4
         reference_designator: dissolved_oxygen
         standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
-        units: "\xB5mol kg-1"
+        units: umol kg-1
       - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
           by the weight of the column of seawater above it. It is calculated by subtracting
           one standard atmosphere from the absolute pressure at the sensor to remove
@@ -41723,7 +41757,8 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - comment: Salinity is generally defined as the concentration of dissolved salt
+      - alternate_parameter_name: ctdpf_optode_sample-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
           in a parcel of seawater. Practical Salinity is a more specific unitless
           quantity calculated from the conductivity of seawater and adjusted for temperature
           and pressure. It is approximately equivalent to Absolute Salinity (the mass
@@ -41733,20 +41768,21 @@ sources:
         instrument: RS01SLBS-LJ01A-12-CTDPFB101
         long_name: Practical Salinity
         precision: 4
-        reference_designator: practical_salinity
+        reference_designator: sea_water_practical_salinity
         standard_name: sea_water_practical_salinity
         stream: ctdpf_optode_sample
         units: '1'
-      - comment: Seawater temperature near the sensor.
+      - alternate_parameter_name: ctdpf_optode_sample-seawater_temperature
+        comment: Seawater temperature near the sensor.
         coordinates: time lat lon depth
         data_product_identifier: TEMPWAT_L1
         instrument: RS01SLBS-LJ01A-12-CTDPFB101
         long_name: Seawater Temperature
         precision: 4
-        reference_designator: seawater_temperature
+        reference_designator: sea_water_temperature
         standard_name: sea_water_temperature
         stream: ctdpf_optode_sample
-        units: degree_C
+        units: degrees_Celsius
       - axis: T
         calendar: gregorian
         long_name: time
@@ -41769,7 +41805,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
-    description: Data produced by Stream Engine version 1.20.0 for RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
+    description: Data produced by Stream Engine version 1.20.2 for RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
     driver: zarr
     metadata:
       data_products:
@@ -42157,7 +42193,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_iris_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_iris_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_iris_sample
     driver: zarr
     metadata:
       data_products:
@@ -42273,7 +42309,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample_15s
-    description: Data produced by Stream Engine version 1.20.0 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample_15s
+    description: Data produced by Stream Engine version 1.20.2 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample_15s
     driver: zarr
     metadata:
       data_products:
@@ -42289,7 +42325,7 @@ sources:
         precision: 4
         reference_designator: bottom_pressure
         stream: botpt_nano_sample
-        units: psia
+        units: psi
       - comment: These auxiliary data products are timestamps anchored at multiples
           of 15 seconds past the minute which correspond to the time base for the
           BOTSFLU data products which are binned on 15 seconds.
@@ -42499,7 +42535,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-LJ03A-05-HPIESA301-streamed-horizontal_electric_field
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXBS-LJ03A-05-HPIESA301-streamed-horizontal_electric_field
+    description: Data produced by Stream Engine version 1.20.2 for RS03AXBS-LJ03A-05-HPIESA301-streamed-horizontal_electric_field
     driver: zarr
     metadata:
       data_products:
