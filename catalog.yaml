@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2022-10-03T02:12:01.398467'
+  last_updated: '2022-10-04T02:20:20.143841'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -11998,7 +11998,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
-    description: Data produced by Stream Engine version 1.20.0 for CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
+    description: Data produced by Stream Engine version 1.20.2 for CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -39684,7 +39684,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.2 for RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -40674,11 +40674,11 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-3B-OPTAAD101-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-SF01A-3B-OPTAAD101-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS01SBPS-SF01A-3B-OPTAAD101-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: practical_salinity internal_temp_raw seawater_temperature
+      - ancillary_variables: sea_water_practical_salinity internal_temp_raw sea_water_temperature
           c_signal_counts c_reference_counts
         comment: The Optical Beam Attenuation Coefficient is the rate that the intensity
           of a beam of light will decrease in response to the combined effects of
@@ -40704,8 +40704,8 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - ancillary_variables: a_reference_counts practical_salinity a_signal_counts
-          internal_temp_raw beam_attenuation seawater_temperature
+      - ancillary_variables: a_reference_counts sea_water_practical_salinity a_signal_counts
+          internal_temp_raw beam_attenuation sea_water_temperature
         comment: Optical Absorption Coefficient is the rate that the intensity of
           a beam of light will decrease in response to the absorption (removal) of
           light energy as a function of propagation distance. The Optical Absorption
@@ -40718,7 +40718,8 @@ sources:
         precision: 6
         reference_designator: optical_absorption
         units: m-1
-      - comment: Salinity is generally defined as the concentration of dissolved salt
+      - alternate_parameter_name: ctdpf_sbe43_sample-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
           in a parcel of seawater. Practical Salinity is a more specific unitless
           quantity calculated from the conductivity of seawater and adjusted for temperature
           and pressure. It is approximately equivalent to Absolute Salinity (the mass
@@ -40728,20 +40729,21 @@ sources:
         instrument: RS01SBPS-SF01A-2A-CTDPFA102
         long_name: Practical Salinity
         precision: 4
-        reference_designator: practical_salinity
+        reference_designator: sea_water_practical_salinity
         standard_name: sea_water_practical_salinity
         stream: ctdpf_sbe43_sample
         units: '1'
-      - comment: Seawater temperature near the sensor.
+      - alternate_parameter_name: ctdpf_sbe43_sample-seawater_temperature
+        comment: Seawater temperature near the sensor.
         coordinates: lat depth lon time
         data_product_identifier: TEMPWAT_L1
         instrument: RS01SBPS-SF01A-2A-CTDPFA102
         long_name: Seawater Temperature
         precision: 4
-        reference_designator: seawater_temperature
+        reference_designator: sea_water_temperature
         standard_name: sea_water_temperature
         stream: ctdpf_sbe43_sample
-        units: degree_C
+        units: degrees_Celsius
       - axis: T
         calendar: gregorian
         long_name: time
@@ -41385,7 +41387,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-LJ01A-10-ADCPTE101-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.0 for RS01SLBS-LJ01A-10-ADCPTE101-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.2 for RS01SLBS-LJ01A-10-ADCPTE101-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -42134,6 +42136,120 @@ sources:
         instrument: RS01SUM2-MJ01B-12-ADCPSK101
         site: RS01SUM2
         stream: adcp_pd0_beam_parsed
+        stream_method: streamed
+  RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.2 for RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: echo_intensity_beam1
+        comment: Echo intensity is the strength of the returned sound wave pulse transmitted
+          by the ADCP. Echo intensity can be used as an indicator of the amount of
+          sediment or organisms in the water column, as well as of the quality of
+          a velocity measurement.
+        coordinates: time lat lon depth
+        data_product_identifier: ECHOINT-B1_L1
+        long_name: Echo Intensity Beam 1
+        precision: 4
+        reference_designator: corrected_echo_intensity_beam1
+        units: dB
+      - ancillary_variables: echo_intensity_beam2
+        comment: Echo intensity is the strength of the returned sound wave pulse transmitted
+          by the ADCP. Echo intensity can be used as an indicator of the amount of
+          sediment or organisms in the water column, as well as of the quality of
+          a velocity measurement.
+        coordinates: time lat lon depth
+        data_product_identifier: ECHOINT-B2_L1
+        long_name: Echo Intensity Beam 2
+        precision: 4
+        reference_designator: corrected_echo_intensity_beam2
+        units: dB
+      - ancillary_variables: echo_intensity_beam3
+        comment: Echo intensity is the strength of the returned sound wave pulse transmitted
+          by the ADCP. Echo intensity can be used as an indicator of the amount of
+          sediment or organisms in the water column, as well as of the quality of
+          a velocity measurement.
+        coordinates: time lat lon depth
+        data_product_identifier: ECHOINT-B3_L1
+        long_name: Echo Intensity Beam 3
+        precision: 4
+        reference_designator: corrected_echo_intensity_beam3
+        units: dB
+      - ancillary_variables: echo_intensity_beam4
+        comment: Echo intensity is the strength of the returned sound wave pulse transmitted
+          by the ADCP. Echo intensity can be used as an indicator of the amount of
+          sediment or organisms in the water column, as well as of the quality of
+          a velocity measurement.
+        coordinates: time lat lon depth
+        data_product_identifier: ECHOINT-B4_L1
+        long_name: Echo Intensity Beam 4
+        precision: 4
+        reference_designator: corrected_echo_intensity_beam4
+        units: dB
+      - ancillary_variables: sysconfig_vertical_orientation heading velocity_beam3
+          velocity_beam4 pitch percent_good_beam4 roll percent_good_beam2 velocity_beam1
+          velocity_beam2 percent_good_beam1 time percent_good_beam3
+        comment: Eastward sea water velocity component in Earth coordinates with the
+          magnetic variation accounted for.
+        coordinates: time lat lon depth
+        data_product_identifier: VELPROF-VLE_L1
+        long_name: Eastward Sea Water Velocity
+        precision: 4
+        reference_designator: eastward_seawater_velocity
+        standard_name: eastward_sea_water_velocity
+        units: m s-1
+      - ancillary_variables: velocity_beam3 velocity_beam4 percent_good_beam4 percent_good_beam2
+          velocity_beam1 velocity_beam2 percent_good_beam1 percent_good_beam3
+        comment: Error sea water velocity component.
+        coordinates: time lat lon depth
+        data_product_identifier: VELPROF-EVL_L1
+        long_name: Error Velocity
+        precision: 4
+        reference_designator: error_seawater_velocity
+        units: m s-1
+      - ancillary_variables: sysconfig_vertical_orientation heading velocity_beam3
+          velocity_beam4 pitch percent_good_beam4 roll percent_good_beam2 velocity_beam1
+          velocity_beam2 percent_good_beam1 time percent_good_beam3
+        comment: Northward sea water velocity component in Earth coordinates with
+          the magnetic variation accounted for.
+        coordinates: time lat lon depth
+        data_product_identifier: VELPROF-VLN_L1
+        long_name: Northward Sea Water Velocity
+        precision: 4
+        reference_designator: northward_seawater_velocity
+        standard_name: northward_sea_water_velocity
+        units: m s-1
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      - ancillary_variables: sysconfig_vertical_orientation heading velocity_beam3
+          velocity_beam4 pitch percent_good_beam4 roll percent_good_beam2 velocity_beam1
+          velocity_beam2 percent_good_beam1 percent_good_beam3
+        comment: Upward sea water velocity component in Earth coordinates.
+        coordinates: time lat lon depth
+        data_product_identifier: VELPROF-VLU_L1
+        long_name: Upward Sea Water Velocity
+        precision: 4
+        reference_designator: upward_seawater_velocity
+        standard_name: upward_sea_water_velocity
+        units: m s-1
+      id: RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS01SUM2-MJ01B
+        instrument: RS01SUM2-MJ01B-12-ADCPSK101
+        site: RS01SUM2
+        stream: adcp_velocity_beam
         stream_method: streamed
   RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample:
     args:
@@ -43127,7 +43243,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time
+    description: Data produced by Stream Engine version 1.20.2 for RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time
     driver: zarr
     metadata:
       data_products:
@@ -43164,7 +43280,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-MJ03A-12-VEL3DB301-streamed-vel3d_b_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03AXBS-MJ03A-12-VEL3DB301-streamed-vel3d_b_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS03AXBS-MJ03A-12-VEL3DB301-streamed-vel3d_b_sample
     driver: zarr
     metadata:
       data_products:
@@ -46057,7 +46173,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_lily_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_lily_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_lily_sample
     driver: zarr
     metadata:
       data_products:
@@ -46087,7 +46203,7 @@ sources:
         long_name: Seafloor High-Resolution Tilt Magnitude
         precision: 3
         reference_designator: seafloor_tilt_magnitude
-        units: "\xB5rad"
+        units: urad
       - axis: T
         calendar: gregorian
         long_name: time
@@ -46188,7 +46304,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_heat_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_heat_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_heat_sample
     driver: zarr
     metadata:
       data_products:
@@ -46371,21 +46487,36 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ECAL-MJ03E-12-CTDPFB306-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03ECAL-MJ03E-12-CTDPFB306-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS03ECAL-MJ03E-12-CTDPFB306-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
       - ancillary_variables: oxygen
-        comment: Dissolved Oxygen (DO) Concentration from the Stable Response Dissolved
-          Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
-          in seawater.
+        comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
+          is a measure of the concentration of gaseous oxygen mixed in seawater. This
+          instrument is connected through a CTD. This data product is corrected internally
+          for temperature as measured by the DO thermistor.
         coordinates: time lat lon depth
         data_product_identifier: DOCONCS_L1
         long_name: DO from Onboard Calculation
         precision: 4
         reference_designator: ctd_tc_oxygen
-        units: "\xB5mol L-1"
-      - ancillary_variables: pressure practical_salinity temperature
+        standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water
+        units: umol L-1
+      - ancillary_variables: ctd_tc_oxygen sea_water_practical_salinity sea_water_pressure
+          sea_water_temperature
+        comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
+          is a measure of the concentration of gaseous oxygen mixed in seawater. This
+          data product is corrected for salinity, temperature, and pressure.
+        coordinates: time lat lon depth
+        data_product_identifier: DOXYGEN_L2
+        long_name: DO from Onboard Calculation - Corrected
+        precision: 4
+        reference_designator: dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        units: umol kg-1
+      - alternate_parameter_name: density
+        ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
         comment: Seawater Density is defined as mass per unit volume and is calculated
           from the conductivity, temperature and depth of a seawater sample using
           the TEOS-10 equation.
@@ -46393,23 +46524,26 @@ sources:
         data_product_identifier: DENSITY_L2
         long_name: Seawater Density
         precision: 3
-        reference_designator: density
+        reference_designator: sea_water_density
         standard_name: sea_water_density
         units: kg m-3
-      - ancillary_variables: ctd_tc_oxygen practical_salinity pressure temperature
-        comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
-          Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
-          in seawater. This data product is corrected for salinity, temperature, and
-          depth.
+      - alternate_parameter_name: seawater_conductivity
+        ancillary_variables: seawater_conductivity_qartod_results seawater_conductivity_qartod_executed
+          sea_water_pressure sea_water_temperature conductivity
+        comment: Seawater conductivity refers to the ability of seawater to conduct
+          electricity. The presence of ions in the seawater, such as salt, increases
+          the electrical conducting ability of seawater. As such, conductivity can
+          be used as a proxy for determining the quantity of salt in a sample of seawater.
         coordinates: time lat lon depth
-        data_product_identifier: DOXYGEN_L2
-        long_name: DO from Onboard Calculation - Corrected
-        precision: 4
-        reference_designator: dissolved_oxygen
-        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
-        units: "\xB5mol kg-1"
-      - ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
-          pressure conductivity temperature
+        data_product_identifier: CONDWAT_L1
+        long_name: Seawater Conductivity
+        precision: 6
+        reference_designator: sea_water_electrical_conductivity
+        standard_name: sea_water_electrical_conductivity
+        units: S m-1
+      - alternate_parameter_name: practical_salinity
+        ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
+          sea_water_pressure sea_water_electrical_conductivity sea_water_temperature
         comment: Salinity is generally defined as the concentration of dissolved salt
           in a parcel of seawater. Practical Salinity is a more specific unitless
           quantity calculated from the conductivity of seawater and adjusted for temperature
@@ -46419,23 +46553,11 @@ sources:
         data_product_identifier: PRACSAL_L2
         long_name: Practical Salinity
         precision: 4
-        reference_designator: practical_salinity
+        reference_designator: sea_water_practical_salinity
         standard_name: sea_water_practical_salinity
         units: '1'
-      - ancillary_variables: seawater_conductivity_qartod_results seawater_conductivity_qartod_executed
-          pressure seawater_temperature conductivity
-        comment: Seawater conductivity refers to the ability of seawater to conduct
-          electricity. The presence of ions in the seawater, such as salt, increases
-          the electrical conducting ability of seawater. As such, conductivity can
-          be used as a proxy for determining the quantity of salt in a sample of seawater.
-        coordinates: time lat lon depth
-        data_product_identifier: CONDWAT_L1
-        long_name: Seawater Conductivity
-        precision: 6
-        reference_designator: seawater_conductivity
-        standard_name: sea_water_electrical_conductivity
-        units: S m-1
-      - ancillary_variables: seawater_pressure_qartod_results seawater_pressure_qartod_executed
+      - alternate_parameter_name: seawater_pressure
+        ancillary_variables: seawater_pressure_qartod_results seawater_pressure_qartod_executed
           pressure pressure_temp
         comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
           by the weight of the column of seawater above it. It is calculated by subtracting
@@ -46446,19 +46568,20 @@ sources:
         data_product_identifier: PRESWAT_L1
         long_name: Seawater Pressure
         precision: 3
-        reference_designator: seawater_pressure
+        reference_designator: sea_water_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - ancillary_variables: seawater_temperature_qartod_results seawater_temperature_qartod_executed
+      - alternate_parameter_name: seawater_temperature
+        ancillary_variables: seawater_temperature_qartod_results seawater_temperature_qartod_executed
           temperature
         comment: Seawater temperature near the sensor.
         coordinates: time lat lon depth
         data_product_identifier: TEMPWAT_L1
         long_name: Seawater Temperature
         precision: 4
-        reference_designator: seawater_temperature
+        reference_designator: sea_water_temperature
         standard_name: sea_water_temperature
-        units: degree_C
+        units: degrees_Celsius
       - axis: T
         calendar: gregorian
         long_name: time
@@ -46481,7 +46604,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample
     driver: zarr
     metadata:
       data_products:
@@ -46496,7 +46619,8 @@ sources:
         long_name: Vent Fluid Temperature 01
         precision: 2
         reference_designator: temperature1
-        units: degree_C
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
       - comment: 'Vent Fluid Temperature is measured continuously at the sample inlet
           of the Hydrothermal Vent Fluid Interactive Sampler (RASFL) instrument. This
           data product includes temperature measurements made by resistance platinum
@@ -46508,7 +46632,8 @@ sources:
         long_name: Vent Fluid Temperature 02
         precision: 2
         reference_designator: temperature2
-        units: degree_C
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
       - comment: 'Vent Fluid Temperature is measured continuously at the sample inlet
           of the Hydrothermal Vent Fluid Interactive Sampler (RASFL) instrument. This
           data product includes temperature measurements made by resistance platinum
@@ -46520,7 +46645,8 @@ sources:
         long_name: Vent Fluid Temperature 03
         precision: 2
         reference_designator: temperature3
-        units: degree_C
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
       - axis: T
         calendar: gregorian
         long_name: time
@@ -46695,7 +46821,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
     driver: zarr
     metadata:
       data_products:
@@ -46715,8 +46841,8 @@ sources:
         long_name: Thermistor Reference Temperature
         precision: 0
         reference_designator: trhph_thermistor_temp
-        units: degree_C
-      - ancillary_variables: resistivity_x5 resistivity_x1 resistivity_5 vent_fluid_temperaure
+        units: degrees_Celsius
+      - ancillary_variables: resistivity_x5 resistivity_x1 resistivity_5 vent_fluid_temperature
         comment: Vent Fluid Chloride Concentration (Cl-) is calculated using resistivity
           and temperature measured by a Hydrothermal Vent Fluid Temperature and Resistivity
           sensor placed in a high-temperature hydrothermal vent.
@@ -46737,7 +46863,8 @@ sources:
         precision: 4
         reference_designator: vent_fluid_orp
         units: mV
-      - ancillary_variables: resistivity_temp_volts ref_temp_volts
+      - alternate_parameter_name: vent_fluid_temperaure
+        ancillary_variables: resistivity_temp_volts ref_temp_volts
         comment: Vent Fluid Absolute Temperature refers to temperature calculated
           from the Temperature-Resistivity Probe Instrument (TRHPH) Thermistor and
           Thermocouple. It is calculated using response curves from Thermocouple and
@@ -46747,8 +46874,8 @@ sources:
         data_product_identifier: TRHPHTE-ABS_L1
         long_name: Vent Fluid Absolute Temperature
         precision: 4
-        reference_designator: vent_fluid_temperaure
-        units: degree_C
+        reference_designator: vent_fluid_temperature
+        units: degrees_Celsius
       id: RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
       notes: This netCDF product is a copy of the data on the University of Washington
         AWS Cloud Infrastructure.
@@ -46765,7 +46892,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_heat_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_heat_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_heat_sample
     driver: zarr
     metadata:
       data_products:
