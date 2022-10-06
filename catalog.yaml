@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2022-10-05T02:19:17.372466'
+  last_updated: '2022-10-06T02:13:31.705931'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -39230,7 +39230,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.0 for RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.2 for RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -42388,7 +42388,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample
     driver: zarr
     metadata:
       data_products:
@@ -42402,7 +42402,7 @@ sources:
         long_name: Bottom Pressure
         precision: 4
         reference_designator: bottom_pressure
-        units: psia
+        units: psi
       - axis: T
         calendar: gregorian
         long_name: time
