@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2022-10-07T02:30:13.042255'
+  last_updated: '2022-10-08T02:08:53.641414'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -46228,7 +46228,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_nano_sample
-    description: Data produced by Stream Engine version 1.20.0 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_nano_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_nano_sample
     driver: zarr
     metadata:
       data_products:
@@ -46242,7 +46242,7 @@ sources:
         long_name: Bottom Pressure
         precision: 4
         reference_designator: bottom_pressure
-        units: psia
+        units: psi
       - axis: T
         calendar: gregorian
         long_name: time
@@ -46411,7 +46411,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_nano_sample
-    description: Data produced by Stream Engine version 1.19.2 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_nano_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_nano_sample
     driver: zarr
     metadata:
       data_products:
@@ -46425,7 +46425,7 @@ sources:
         long_name: Bottom Pressure
         precision: 4
         reference_designator: bottom_pressure
-        units: psia
+        units: psi
       - axis: T
         calendar: gregorian
         long_name: time
@@ -46999,7 +46999,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_nano_sample
-    description: Data produced by Stream Engine version 1.19.2 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_nano_sample
+    description: Data produced by Stream Engine version 1.20.2 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_nano_sample
     driver: zarr
     metadata:
       data_products:
@@ -47013,7 +47013,7 @@ sources:
         long_name: Bottom Pressure
         precision: 4
         reference_designator: bottom_pressure
-        units: psia
+        units: psi
       - axis: T
         calendar: gregorian
         long_name: time
