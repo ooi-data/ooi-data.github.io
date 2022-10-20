@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2022-10-20T02:37:19.110283'
+  last_updated: '2022-10-20T17:21:46.241690'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -42429,6 +42429,65 @@ sources:
     driver: zarr
     metadata:
       data_products:
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product utilizes the 15-second Mean Seafloor
+          Depth Detided and calculates a mean for each data point over a 10 minute
+          backward-looking window. The rate is derived from the backward-looking depth
+          difference between values with a 10 minute offset.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-10MINRATE
+        long_name: Seafloor Uplift and Deflation - 10-Min Mean Seafloor Uplift Rate
+        precision: 4
+        reference_designator: botsflu_10minrate
+        units: cm hr-1
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is the instantaneous rate of depth change
+          derived from the 15-sec Mean Seafloor Depth Detided using a backward-looking
+          5 minute reference point for the depth difference.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-5MINRATE
+        long_name: Seafloor Uplift and Deflation - 5-Min Rate of Depth Change
+        precision: 4
+        reference_designator: botsflu_5minrate
+        units: cm min-1
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is derived by conversion of the 15-second
+          mean seafloor pressure and removal of the tidal signal predicted for the
+          BOTPT instrument location.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-MEANDEPTH
+        long_name: Seafloor Uplift and Deflation - Mean Seafloor Depth
+        precision: 4
+        reference_designator: botsflu_meandepth
+        units: m
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is 15-second mean seafloor pressure.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-MEANPRES
+        long_name: Seafloor Uplift and Deflation - Mean Seafloor Pressure
+        precision: 4
+        reference_designator: botsflu_meanpres
+        units: psi
+      - ancillary_variables: botsflu_time15s
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is the tide calculated at 15-second time
+          intervals for the location of each BOTPT instrument using tide-prediction
+          software.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-PREDTIDE
+        long_name: Seafloor Uplift and Deflation - Predicted Tide
+        precision: 4
+        reference_designator: botsflu_predtide
+        units: m
       - comment: Seafloor Pressure is a measure of the force on the seafloor exerted
           by the weight of the overlying water column plus the weight of the atmosphere.
           Nano-resolution Bottom Pressure measurements are seafloor pressure measurements
@@ -46269,6 +46328,65 @@ sources:
     driver: zarr
     metadata:
       data_products:
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product utilizes the 15-second Mean Seafloor
+          Depth Detided and calculates a mean for each data point over a 10 minute
+          backward-looking window. The rate is derived from the backward-looking depth
+          difference between values with a 10 minute offset.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-10MINRATE
+        long_name: Seafloor Uplift and Deflation - 10-Min Mean Seafloor Uplift Rate
+        precision: 4
+        reference_designator: botsflu_10minrate
+        units: cm hr-1
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is the instantaneous rate of depth change
+          derived from the 15-sec Mean Seafloor Depth Detided using a backward-looking
+          5 minute reference point for the depth difference.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-5MINRATE
+        long_name: Seafloor Uplift and Deflation - 5-Min Rate of Depth Change
+        precision: 4
+        reference_designator: botsflu_5minrate
+        units: cm min-1
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is derived by conversion of the 15-second
+          mean seafloor pressure and removal of the tidal signal predicted for the
+          BOTPT instrument location.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-MEANDEPTH
+        long_name: Seafloor Uplift and Deflation - Mean Seafloor Depth
+        precision: 4
+        reference_designator: botsflu_meandepth
+        units: m
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is 15-second mean seafloor pressure.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-MEANPRES
+        long_name: Seafloor Uplift and Deflation - Mean Seafloor Pressure
+        precision: 4
+        reference_designator: botsflu_meanpres
+        units: psi
+      - ancillary_variables: botsflu_time15s
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is the tide calculated at 15-second time
+          intervals for the location of each BOTPT instrument using tide-prediction
+          software.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-PREDTIDE
+        long_name: Seafloor Uplift and Deflation - Predicted Tide
+        precision: 4
+        reference_designator: botsflu_predtide
+        units: m
       - comment: Seafloor Pressure is a measure of the force on the seafloor exerted
           by the weight of the overlying water column plus the weight of the atmosphere.
           Nano-resolution Bottom Pressure measurements are seafloor pressure measurements
@@ -46452,6 +46570,65 @@ sources:
     driver: zarr
     metadata:
       data_products:
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product utilizes the 15-second Mean Seafloor
+          Depth Detided and calculates a mean for each data point over a 10 minute
+          backward-looking window. The rate is derived from the backward-looking depth
+          difference between values with a 10 minute offset.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-10MINRATE
+        long_name: Seafloor Uplift and Deflation - 10-Min Mean Seafloor Uplift Rate
+        precision: 4
+        reference_designator: botsflu_10minrate
+        units: cm hr-1
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is the instantaneous rate of depth change
+          derived from the 15-sec Mean Seafloor Depth Detided using a backward-looking
+          5 minute reference point for the depth difference.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-5MINRATE
+        long_name: Seafloor Uplift and Deflation - 5-Min Rate of Depth Change
+        precision: 4
+        reference_designator: botsflu_5minrate
+        units: cm min-1
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is derived by conversion of the 15-second
+          mean seafloor pressure and removal of the tidal signal predicted for the
+          BOTPT instrument location.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-MEANDEPTH
+        long_name: Seafloor Uplift and Deflation - Mean Seafloor Depth
+        precision: 4
+        reference_designator: botsflu_meandepth
+        units: m
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is 15-second mean seafloor pressure.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-MEANPRES
+        long_name: Seafloor Uplift and Deflation - Mean Seafloor Pressure
+        precision: 4
+        reference_designator: botsflu_meanpres
+        units: psi
+      - ancillary_variables: botsflu_time15s
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is the tide calculated at 15-second time
+          intervals for the location of each BOTPT instrument using tide-prediction
+          software.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-PREDTIDE
+        long_name: Seafloor Uplift and Deflation - Predicted Tide
+        precision: 4
+        reference_designator: botsflu_predtide
+        units: m
       - comment: Seafloor Pressure is a measure of the force on the seafloor exerted
           by the weight of the overlying water column plus the weight of the atmosphere.
           Nano-resolution Bottom Pressure measurements are seafloor pressure measurements
@@ -47040,6 +47217,65 @@ sources:
     driver: zarr
     metadata:
       data_products:
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product utilizes the 15-second Mean Seafloor
+          Depth Detided and calculates a mean for each data point over a 10 minute
+          backward-looking window. The rate is derived from the backward-looking depth
+          difference between values with a 10 minute offset.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-10MINRATE
+        long_name: Seafloor Uplift and Deflation - 10-Min Mean Seafloor Uplift Rate
+        precision: 4
+        reference_designator: botsflu_10minrate
+        units: cm hr-1
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is the instantaneous rate of depth change
+          derived from the 15-sec Mean Seafloor Depth Detided using a backward-looking
+          5 minute reference point for the depth difference.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-5MINRATE
+        long_name: Seafloor Uplift and Deflation - 5-Min Rate of Depth Change
+        precision: 4
+        reference_designator: botsflu_5minrate
+        units: cm min-1
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is derived by conversion of the 15-second
+          mean seafloor pressure and removal of the tidal signal predicted for the
+          BOTPT instrument location.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-MEANDEPTH
+        long_name: Seafloor Uplift and Deflation - Mean Seafloor Depth
+        precision: 4
+        reference_designator: botsflu_meandepth
+        units: m
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is 15-second mean seafloor pressure.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-MEANPRES
+        long_name: Seafloor Uplift and Deflation - Mean Seafloor Pressure
+        precision: 4
+        reference_designator: botsflu_meanpres
+        units: psi
+      - ancillary_variables: botsflu_time15s
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is the tide calculated at 15-second time
+          intervals for the location of each BOTPT instrument using tide-prediction
+          software.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-PREDTIDE
+        long_name: Seafloor Uplift and Deflation - Predicted Tide
+        precision: 4
+        reference_designator: botsflu_predtide
+        units: m
       - comment: Seafloor Pressure is a measure of the force on the seafloor exerted
           by the weight of the overlying water column plus the weight of the atmosphere.
           Nano-resolution Bottom Pressure measurements are seafloor pressure measurements
