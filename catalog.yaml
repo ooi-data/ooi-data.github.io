@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2022-11-29T01:41:14.258602'
+  last_updated: '2022-11-30T01:42:42.284745'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -39868,7 +39868,7 @@ sources:
           is a measure of the concentration of gaseous oxygen mixed in seawater. This
           instrument is connected through a CTD. This data product is corrected internally
           for temperature as measured by the DO thermistor.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: DOCONCS_L1
         long_name: DO from Onboard Calculation
         precision: 4
@@ -39880,32 +39880,19 @@ sources:
         comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
           is a measure of the concentration of gaseous oxygen mixed in seawater. This
           data product is corrected for salinity, temperature, and pressure.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: DOXYGEN_L2
         long_name: DO from Onboard Calculation - Corrected
         precision: 4
         reference_designator: dissolved_oxygen
         standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
         units: umol kg-1
-      - comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
-          Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
-          in seawater. This data product is corrected for salinity, temperature, and
-          depth.
-        coordinates: lat depth lon time
-        data_product_identifier: DOXYGEN_L2
-        instrument: RS01SBPS-PC01A-4A-DOSTAD103
-        long_name: DO from Phase - Corrected
-        precision: 4
-        reference_designator: do_stable_sample-corrected_dissolved_oxygen
-        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
-        stream: do_stable_sample
-        units: umol kg-1
       - alternate_parameter_name: density
         ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
         comment: Seawater Density is defined as mass per unit volume and is calculated
           from the conductivity, temperature and depth of a seawater sample using
           the TEOS-10 equation.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: DENSITY_L2
         long_name: Seawater Density
         precision: 3
@@ -39919,7 +39906,7 @@ sources:
           electricity. The presence of ions in the seawater, such as salt, increases
           the electrical conducting ability of seawater. As such, conductivity can
           be used as a proxy for determining the quantity of salt in a sample of seawater.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: CONDWAT_L1
         long_name: Seawater Conductivity
         precision: 6
@@ -39934,7 +39921,7 @@ sources:
           quantity calculated from the conductivity of seawater and adjusted for temperature
           and pressure. It is approximately equivalent to Absolute Salinity (the mass
           fraction of dissolved salt in seawater) but they are not interchangeable.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: PRACSAL_L2
         long_name: Practical Salinity
         precision: 4
@@ -39949,7 +39936,7 @@ sources:
           one standard atmosphere from the absolute pressure at the sensor to remove
           the weight of the atmosphere on top of the water column. The pressure at
           a sensor in situ provides a metric of the depth of that sensor.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: PRESWAT_L1
         long_name: Seawater Pressure
         precision: 3
@@ -39960,7 +39947,7 @@ sources:
         ancillary_variables: seawater_temperature_qartod_results seawater_temperature_qartod_executed
           temperature
         comment: Seawater temperature near the sensor.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: TEMPWAT_L1
         long_name: Seawater Temperature
         precision: 4
