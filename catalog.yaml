@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2022-11-30T01:42:42.284745'
+  last_updated: '2022-12-01T01:53:30.638322'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -41619,19 +41619,6 @@ sources:
         reference_designator: dissolved_oxygen
         standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
         units: umol kg-1
-      - comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
-          Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
-          in seawater. This data product is corrected for salinity, temperature, and
-          depth.
-        coordinates: time lat lon depth
-        data_product_identifier: DOXYGEN_L2
-        instrument: RS01SLBS-LJ01A-12-DOSTAD101
-        long_name: DO from Phase - Corrected
-        precision: 4
-        reference_designator: do_stable_sample-corrected_dissolved_oxygen
-        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
-        stream: do_stable_sample
-        units: umol kg-1
       - alternate_parameter_name: density
         ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
         comment: Seawater Density is defined as mass per unit volume and is calculated
@@ -43128,19 +43115,6 @@ sources:
         precision: 4
         reference_designator: dissolved_oxygen
         standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
-        units: umol kg-1
-      - comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
-          Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
-          in seawater. This data product is corrected for salinity, temperature, and
-          depth.
-        coordinates: time lat lon depth
-        data_product_identifier: DOXYGEN_L2
-        instrument: RS03AXBS-LJ03A-12-DOSTAD301
-        long_name: DO from Phase - Corrected
-        precision: 4
-        reference_designator: do_stable_sample-corrected_dissolved_oxygen
-        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
-        stream: do_stable_sample
         units: umol kg-1
       - alternate_parameter_name: density
         ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
