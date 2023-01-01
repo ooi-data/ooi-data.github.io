@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2022-12-31T01:23:26.821606'
+  last_updated: '2023-01-01T01:45:05.635514'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -83,7 +83,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -318,7 +318,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD35-02-PRESFA000-telemetered-presf_abc_dcl_tide_measurement
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD35-02-PRESFA000-telemetered-presf_abc_dcl_tide_measurement
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD35-02-PRESFA000-telemetered-presf_abc_dcl_tide_measurement
     driver: zarr
     metadata:
       data_products:
@@ -646,7 +646,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD35-04-ADCPTM000-telemetered-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD35-04-ADCPTM000-telemetered-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD35-04-ADCPTM000-telemetered-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -941,7 +941,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -1163,7 +1163,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD35-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD35-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD35-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -1574,7 +1574,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD37-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD37-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD37-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -1885,7 +1885,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD37-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD37-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD37-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -2050,7 +2050,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -2233,7 +2233,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-02-FLORTD000-telemetered-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-02-FLORTD000-telemetered-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-02-FLORTD000-telemetered-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -2520,7 +2520,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -2783,7 +2783,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -3003,7 +3003,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -3246,7 +3246,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -3299,7 +3299,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument_blank
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument_blank
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument_blank
     driver: zarr
     metadata:
       data_products:
@@ -3468,7 +3468,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -3903,7 +3903,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-07-NUTNRB000-telemetered-suna_dcl_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-07-NUTNRB000-telemetered-suna_dcl_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-07-NUTNRB000-telemetered-suna_dcl_recovered
     driver: zarr
     metadata:
       data_products:
@@ -4008,7 +4008,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -4180,7 +4180,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-SBD17-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-SBD17-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-SBD17-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -4430,7 +4430,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-SBD17-06-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-SBD17-06-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-SBD17-06-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -4728,7 +4728,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-SBD17-06-FLORTD000-telemetered-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-SBD17-06-FLORTD000-telemetered-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-SBD17-06-FLORTD000-telemetered-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -5540,7 +5540,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-05-ADCPTB104-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHBP-LJ01D-05-ADCPTB104-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHBP-LJ01D-05-ADCPTB104-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -5796,7 +5796,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-06-DOSTAD106-streamed-do_stable_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHBP-LJ01D-06-DOSTAD106-streamed-do_stable_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHBP-LJ01D-06-DOSTAD106-streamed-do_stable_sample
     driver: zarr
     metadata:
       data_products:
@@ -6405,7 +6405,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID26-01-ADCPTA000-telemetered-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID26-01-ADCPTA000-telemetered-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID26-01-ADCPTA000-telemetered-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -6658,7 +6658,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -6861,7 +6861,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID26-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID26-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID26-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -7296,7 +7296,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID26-07-NUTNRB000-telemetered-suna_dcl_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID26-07-NUTNRB000-telemetered-suna_dcl_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID26-07-NUTNRB000-telemetered-suna_dcl_recovered
     driver: zarr
     metadata:
       data_products:
@@ -7401,7 +7401,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID26-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID26-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID26-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -7519,7 +7519,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -7703,7 +7703,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID27-02-FLORTD000-telemetered-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID27-02-FLORTD000-telemetered-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID27-02-FLORTD000-telemetered-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -7990,7 +7990,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID27-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID27-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID27-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -8180,7 +8180,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID27-04-DOSTAD000-telemetered-dosta_abcdjm_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID27-04-DOSTAD000-telemetered-dosta_abcdjm_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID27-04-DOSTAD000-telemetered-dosta_abcdjm_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -8414,7 +8414,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD11-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD11-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD11-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -8990,7 +8990,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD11-06-METBKA000-telemetered-metbk_a_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD11-06-METBKA000-telemetered-metbk_a_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD11-06-METBKA000-telemetered-metbk_a_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -9206,7 +9206,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD11-06-METBKA000-telemetered-metbk_hourly
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD11-06-METBKA000-telemetered-metbk_hourly
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD11-06-METBKA000-telemetered-metbk_hourly
     driver: zarr
     metadata:
       data_products:
@@ -9865,7 +9865,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_air
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_air
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_air
     driver: zarr
     metadata:
       data_products:
@@ -10048,7 +10048,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_water
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_water
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_water
     driver: zarr
     metadata:
       data_products:
@@ -10423,7 +10423,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
     driver: zarr
     metadata:
       data_products:
@@ -10449,7 +10449,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
     driver: zarr
     metadata:
       data_products:
@@ -10502,7 +10502,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_motion
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_motion
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_motion
     driver: zarr
     metadata:
       data_products:
@@ -10554,7 +10554,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
     driver: zarr
     metadata:
       data_products:
@@ -10589,7 +10589,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_statistics
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_statistics
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_statistics
     driver: zarr
     metadata:
       data_products:
@@ -10816,7 +10816,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-08-FDCHPA000-telemetered-fdchp_a_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-08-FDCHPA000-telemetered-fdchp_a_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-08-FDCHPA000-telemetered-fdchp_a_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -11643,7 +11643,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-05-ADCPSI103-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSBP-LJ01C-05-ADCPSI103-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSBP-LJ01C-05-ADCPSI103-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -11899,7 +11899,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-06-DOSTAD108-streamed-do_stable_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSBP-LJ01C-06-DOSTAD108-streamed-do_stable_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSBP-LJ01C-06-DOSTAD108-streamed-do_stable_sample
     driver: zarr
     metadata:
       data_products:
@@ -11998,7 +11998,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -12069,7 +12069,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
@@ -12270,7 +12270,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPD-DP01B-01-CTDPFL105-recovered_inst-dpc_ctd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSPD-DP01B-01-CTDPFL105-recovered_inst-dpc_ctd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSPD-DP01B-01-CTDPFL105-recovered_inst-dpc_ctd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -12361,7 +12361,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPD-DP01B-01-CTDPFL105-recovered_wfp-dpc_ctd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSPD-DP01B-01-CTDPFL105-recovered_wfp-dpc_ctd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSPD-DP01B-01-CTDPFL105-recovered_wfp-dpc_ctd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -12452,7 +12452,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPD-DP01B-02-VEL3DA105-recovered_inst-dpc_acm_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSPD-DP01B-02-VEL3DA105-recovered_inst-dpc_acm_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSPD-DP01B-02-VEL3DA105-recovered_inst-dpc_acm_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -12544,7 +12544,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPD-DP01B-02-VEL3DA105-recovered_wfp-dpc_acm_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSPD-DP01B-02-VEL3DA105-recovered_wfp-dpc_acm_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSPD-DP01B-02-VEL3DA105-recovered_wfp-dpc_acm_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -12636,7 +12636,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPD-DP01B-03-FLCDRA103-recovered_inst-dpc_flcdrtd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSPD-DP01B-03-FLCDRA103-recovered_inst-dpc_flcdrtd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSPD-DP01B-03-FLCDRA103-recovered_inst-dpc_flcdrtd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -12688,7 +12688,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPD-DP01B-03-FLCDRA103-recovered_wfp-dpc_flcdrtd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSPD-DP01B-03-FLCDRA103-recovered_wfp-dpc_flcdrtd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSPD-DP01B-03-FLCDRA103-recovered_wfp-dpc_flcdrtd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -12740,7 +12740,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPD-DP01B-04-FLNTUA103-recovered_inst-dpc_flnturtd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSPD-DP01B-04-FLNTUA103-recovered_inst-dpc_flnturtd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSPD-DP01B-04-FLNTUA103-recovered_inst-dpc_flnturtd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -12801,7 +12801,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPD-DP01B-04-FLNTUA103-recovered_wfp-dpc_flnturtd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSPD-DP01B-04-FLNTUA103-recovered_wfp-dpc_flnturtd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSPD-DP01B-04-FLNTUA103-recovered_wfp-dpc_flnturtd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -12902,7 +12902,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPD-DP01B-06-DOSTAD105-recovered_inst-dpc_optode_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSPD-DP01B-06-DOSTAD105-recovered_inst-dpc_optode_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSPD-DP01B-06-DOSTAD105-recovered_inst-dpc_optode_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -12990,7 +12990,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPD-DP01B-06-DOSTAD105-recovered_wfp-dpc_optode_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSPD-DP01B-06-DOSTAD105-recovered_wfp-dpc_optode_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSPD-DP01B-06-DOSTAD105-recovered_wfp-dpc_optode_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -13310,7 +13310,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-PC01B-4A-DOSTAD109-streamed-do_stable_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSPS-PC01B-4A-DOSTAD109-streamed-do_stable_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSPS-PC01B-4A-DOSTAD109-streamed-do_stable_sample
     driver: zarr
     metadata:
       data_products:
@@ -13856,7 +13856,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
@@ -14567,7 +14567,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID26-01-ADCPTC000-telemetered-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID26-01-ADCPTC000-telemetered-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID26-01-ADCPTC000-telemetered-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -14820,7 +14820,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -15023,7 +15023,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID26-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID26-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID26-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -15324,7 +15324,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID26-07-NUTNRB000-recovered_inst-suna_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID26-07-NUTNRB000-recovered_inst-suna_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID26-07-NUTNRB000-recovered_inst-suna_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -15458,7 +15458,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID26-07-NUTNRB000-telemetered-suna_dcl_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID26-07-NUTNRB000-telemetered-suna_dcl_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID26-07-NUTNRB000-telemetered-suna_dcl_recovered
     driver: zarr
     metadata:
       data_products:
@@ -15563,7 +15563,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID26-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID26-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID26-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -15681,7 +15681,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -15865,7 +15865,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID27-02-FLORTD000-telemetered-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID27-02-FLORTD000-telemetered-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID27-02-FLORTD000-telemetered-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -16152,7 +16152,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID27-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID27-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID27-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -16342,7 +16342,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID27-04-DOSTAD000-telemetered-dosta_abcdjm_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID27-04-DOSTAD000-telemetered-dosta_abcdjm_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID27-04-DOSTAD000-telemetered-dosta_abcdjm_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -16576,7 +16576,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD11-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD11-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD11-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -17152,7 +17152,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD11-06-METBKA000-telemetered-metbk_a_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD11-06-METBKA000-telemetered-metbk_a_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD11-06-METBKA000-telemetered-metbk_a_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -18027,7 +18027,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_air
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_air
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_air
     driver: zarr
     metadata:
       data_products:
@@ -18210,7 +18210,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_water
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_water
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_water
     driver: zarr
     metadata:
       data_products:
@@ -18585,7 +18585,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
     driver: zarr
     metadata:
       data_products:
@@ -18611,7 +18611,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
     driver: zarr
     metadata:
       data_products:
@@ -18664,7 +18664,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_motion
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_motion
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_motion
     driver: zarr
     metadata:
       data_products:
@@ -18716,7 +18716,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
     driver: zarr
     metadata:
       data_products:
@@ -18751,7 +18751,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_statistics
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_statistics
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_statistics
     driver: zarr
     metadata:
       data_products:
@@ -18848,7 +18848,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -19046,7 +19046,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD35-02-PRESFA000-telemetered-presf_abc_dcl_tide_measurement
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD35-02-PRESFA000-telemetered-presf_abc_dcl_tide_measurement
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD35-02-PRESFA000-telemetered-presf_abc_dcl_tide_measurement
     driver: zarr
     metadata:
       data_products:
@@ -19695,7 +19695,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -19919,7 +19919,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD35-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD35-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD35-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -20330,7 +20330,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD37-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD37-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD37-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -20593,7 +20593,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD37-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD37-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD37-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -20759,7 +20759,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -20943,7 +20943,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-02-FLORTD000-telemetered-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-02-FLORTD000-telemetered-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-02-FLORTD000-telemetered-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -21230,7 +21230,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -21493,7 +21493,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -21713,7 +21713,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -21956,7 +21956,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -22180,7 +22180,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -22615,7 +22615,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-07-NUTNRB000-telemetered-suna_dcl_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-07-NUTNRB000-telemetered-suna_dcl_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-07-NUTNRB000-telemetered-suna_dcl_recovered
     driver: zarr
     metadata:
       data_products:
@@ -22720,7 +22720,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -22892,7 +22892,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-SBD17-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-SBD17-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-SBD17-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -23142,7 +23142,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-SBD17-06-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-SBD17-06-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-SBD17-06-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -23440,7 +23440,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-SBD17-06-FLORTD000-telemetered-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-SBD17-06-FLORTD000-telemetered-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-SBD17-06-FLORTD000-telemetered-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -24203,7 +24203,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -24401,7 +24401,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD35-02-PRESFB000-telemetered-presf_abc_dcl_tide_measurement
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD35-02-PRESFB000-telemetered-presf_abc_dcl_tide_measurement
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD35-02-PRESFB000-telemetered-presf_abc_dcl_tide_measurement
     driver: zarr
     metadata:
       data_products:
@@ -24677,7 +24677,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD35-04-ADCPTC000-telemetered-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD35-04-ADCPTC000-telemetered-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD35-04-ADCPTC000-telemetered-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -24972,7 +24972,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -25196,7 +25196,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD35-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD35-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD35-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -25344,7 +25344,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD37-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD37-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD37-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -25607,7 +25607,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD37-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD37-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD37-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -25870,7 +25870,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD37-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD37-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD37-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -26194,7 +26194,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID26-01-ADCPTA000-telemetered-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID26-01-ADCPTA000-telemetered-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID26-01-ADCPTA000-telemetered-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -26447,7 +26447,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -26650,7 +26650,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID26-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID26-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID26-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -27086,7 +27086,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID26-07-NUTNRB000-telemetered-suna_dcl_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID26-07-NUTNRB000-telemetered-suna_dcl_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID26-07-NUTNRB000-telemetered-suna_dcl_recovered
     driver: zarr
     metadata:
       data_products:
@@ -27191,7 +27191,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID26-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID26-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID26-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -27309,7 +27309,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -27493,7 +27493,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID27-02-FLORTD000-telemetered-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID27-02-FLORTD000-telemetered-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID27-02-FLORTD000-telemetered-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -27780,7 +27780,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID27-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID27-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID27-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -27970,7 +27970,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID27-04-DOSTAD000-telemetered-dosta_abcdjm_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID27-04-DOSTAD000-telemetered-dosta_abcdjm_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID27-04-DOSTAD000-telemetered-dosta_abcdjm_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -28204,7 +28204,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD11-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD11-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD11-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -28487,7 +28487,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD11-06-METBKA000-recovered_host-metbk_hourly
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD11-06-METBKA000-recovered_host-metbk_hourly
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD11-06-METBKA000-recovered_host-metbk_hourly
     driver: zarr
     metadata:
       data_products:
@@ -28780,7 +28780,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD11-06-METBKA000-telemetered-metbk_a_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD11-06-METBKA000-telemetered-metbk_a_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD11-06-METBKA000-telemetered-metbk_a_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -28996,7 +28996,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD11-06-METBKA000-telemetered-metbk_hourly
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD11-06-METBKA000-telemetered-metbk_hourly
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD11-06-METBKA000-telemetered-metbk_hourly
     driver: zarr
     metadata:
       data_products:
@@ -29655,7 +29655,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_air
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_air
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_air
     driver: zarr
     metadata:
       data_products:
@@ -29838,7 +29838,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_water
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_water
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_water
     driver: zarr
     metadata:
       data_products:
@@ -30213,7 +30213,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
     driver: zarr
     metadata:
       data_products:
@@ -30239,7 +30239,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
     driver: zarr
     metadata:
       data_products:
@@ -30292,7 +30292,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_motion
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_motion
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_motion
     driver: zarr
     metadata:
       data_products:
@@ -30344,7 +30344,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
     driver: zarr
     metadata:
       data_products:
@@ -30379,7 +30379,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_statistics
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_statistics
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_statistics
     driver: zarr
     metadata:
       data_products:
@@ -32058,7 +32058,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD35-01-VEL3DD000-telemetered-vel3d_cd_dcl_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -32256,7 +32256,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD35-02-PRESFC000-telemetered-presf_abc_dcl_tide_measurement
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD35-02-PRESFC000-telemetered-presf_abc_dcl_tide_measurement
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD35-02-PRESFC000-telemetered-presf_abc_dcl_tide_measurement
     driver: zarr
     metadata:
       data_products:
@@ -32532,7 +32532,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD35-04-ADCPSJ000-telemetered-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD35-04-ADCPSJ000-telemetered-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD35-04-ADCPSJ000-telemetered-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -32827,7 +32827,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD35-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -33051,7 +33051,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD35-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD35-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD35-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -33199,7 +33199,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD37-01-OPTAAC000-telemetered-optaa_dj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD37-01-OPTAAC000-telemetered-optaa_dj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD37-01-OPTAAC000-telemetered-optaa_dj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -33462,7 +33462,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD37-03-CTDBPE000-telemetered-ctdbp_cdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD37-03-CTDBPE000-telemetered-ctdbp_cdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD37-03-CTDBPE000-telemetered-ctdbp_cdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -33725,7 +33725,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD37-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD37-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD37-03-DOSTAD000-telemetered-dosta_abcdjm_ctdbp_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -34049,7 +34049,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID26-01-ADCPTC000-telemetered-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID26-01-ADCPTC000-telemetered-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID26-01-ADCPTC000-telemetered-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -34302,7 +34302,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID26-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -34505,7 +34505,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID26-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID26-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID26-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -34940,7 +34940,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID26-07-NUTNRB000-telemetered-suna_dcl_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID26-07-NUTNRB000-telemetered-suna_dcl_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID26-07-NUTNRB000-telemetered-suna_dcl_recovered
     driver: zarr
     metadata:
       data_products:
@@ -35045,7 +35045,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID26-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID26-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID26-08-SPKIRB000-telemetered-spkir_abj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -35163,7 +35163,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID27-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -35347,7 +35347,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID27-02-FLORTD000-telemetered-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID27-02-FLORTD000-telemetered-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID27-02-FLORTD000-telemetered-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -35634,7 +35634,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID27-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID27-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID27-03-CTDBPC000-telemetered-ctdbp_cdef_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -35824,7 +35824,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID27-04-DOSTAD000-telemetered-dosta_abcdjm_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID27-04-DOSTAD000-telemetered-dosta_abcdjm_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID27-04-DOSTAD000-telemetered-dosta_abcdjm_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -36058,7 +36058,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD11-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD11-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD11-04-VELPTA000-telemetered-velpt_ab_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -36634,7 +36634,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD11-06-METBKA000-telemetered-metbk_a_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD11-06-METBKA000-telemetered-metbk_a_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD11-06-METBKA000-telemetered-metbk_a_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -36850,7 +36850,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD11-06-METBKA000-telemetered-metbk_hourly
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD11-06-METBKA000-telemetered-metbk_hourly
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD11-06-METBKA000-telemetered-metbk_hourly
     driver: zarr
     metadata:
       data_products:
@@ -37509,7 +37509,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_air
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_air
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_air
     driver: zarr
     metadata:
       data_products:
@@ -37692,7 +37692,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_water
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_water
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD12-04-PCO2AA000-telemetered-pco2a_a_dcl_instrument_water
     driver: zarr
     metadata:
       data_products:
@@ -38067,7 +38067,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_fourier
     driver: zarr
     metadata:
       data_products:
@@ -38093,7 +38093,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_mean_directional
     driver: zarr
     metadata:
       data_products:
@@ -38198,7 +38198,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_non_directional
     driver: zarr
     metadata:
       data_products:
@@ -38233,7 +38233,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_statistics
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_statistics
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD12-05-WAVSSA000-telemetered-wavss_a_dcl_statistics
     driver: zarr
     metadata:
       data_products:
@@ -38350,7 +38350,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPD-DP01A-01-CTDPFL104-recovered_wfp-dpc_ctd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS01SBPD-DP01A-01-CTDPFL104-recovered_wfp-dpc_ctd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for RS01SBPD-DP01A-01-CTDPFL104-recovered_wfp-dpc_ctd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -38676,7 +38676,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPD-DP01A-03-FLCDRA102-recovered_wfp-dpc_flcdrtd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS01SBPD-DP01A-03-FLCDRA102-recovered_wfp-dpc_flcdrtd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for RS01SBPD-DP01A-03-FLCDRA102-recovered_wfp-dpc_flcdrtd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -38825,7 +38825,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPD-DP01A-04-FLNTUA102-recovered_wfp-dpc_flnturtd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS01SBPD-DP01A-04-FLNTUA102-recovered_wfp-dpc_flnturtd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for RS01SBPD-DP01A-04-FLNTUA102-recovered_wfp-dpc_flnturtd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -39010,7 +39010,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPD-DP01A-06-DOSTAD104-recovered_wfp-dpc_optode_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS01SBPD-DP01A-06-DOSTAD104-recovered_wfp-dpc_optode_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for RS01SBPD-DP01A-06-DOSTAD104-recovered_wfp-dpc_optode_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -39230,7 +39230,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.2 for RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.4 for RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -39684,7 +39684,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.2 for RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.4 for RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -39821,7 +39821,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam_5
-    description: Data produced by Stream Engine version 1.20.2 for RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam_5
+    description: Data produced by Stream Engine version 1.20.4 for RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam_5
     driver: zarr
     metadata:
       data_products:
@@ -40078,7 +40078,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-4A-DOSTAD103-streamed-do_stable_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS01SBPS-PC01A-4A-DOSTAD103-streamed-do_stable_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS01SBPS-PC01A-4A-DOSTAD103-streamed-do_stable_sample
     driver: zarr
     metadata:
       data_products:
@@ -40558,7 +40558,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record
-    description: Data produced by Stream Engine version 1.20.2 for RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.4 for RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record
     driver: zarr
     metadata:
       data_products:
@@ -40766,7 +40766,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample
     driver: zarr
     metadata:
       data_products:
@@ -41147,7 +41147,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-LJ01A-05-HPIESA101-streamed-echo_sounding
-    description: Data produced by Stream Engine version 1.20.2 for RS01SLBS-LJ01A-05-HPIESA101-streamed-echo_sounding
+    description: Data produced by Stream Engine version 1.20.4 for RS01SLBS-LJ01A-05-HPIESA101-streamed-echo_sounding
     driver: zarr
     metadata:
       data_products:
@@ -41215,7 +41215,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-LJ01A-05-HPIESA101-streamed-horizontal_electric_field
-    description: Data produced by Stream Engine version 1.20.2 for RS01SLBS-LJ01A-05-HPIESA101-streamed-horizontal_electric_field
+    description: Data produced by Stream Engine version 1.20.4 for RS01SLBS-LJ01A-05-HPIESA101-streamed-horizontal_electric_field
     driver: zarr
     metadata:
       data_products:
@@ -41241,7 +41241,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-LJ01A-05-HPIESA101-streamed-hpies_data_header
-    description: Data produced by Stream Engine version 1.20.2 for RS01SLBS-LJ01A-05-HPIESA101-streamed-hpies_data_header
+    description: Data produced by Stream Engine version 1.20.4 for RS01SLBS-LJ01A-05-HPIESA101-streamed-hpies_data_header
     driver: zarr
     metadata:
       data_products:
@@ -41710,7 +41710,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-LJ01A-12-DOSTAD101-streamed-do_stable_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS01SLBS-LJ01A-12-DOSTAD101-streamed-do_stable_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS01SLBS-LJ01A-12-DOSTAD101-streamed-do_stable_sample
     driver: zarr
     metadata:
       data_products:
@@ -41809,7 +41809,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
-    description: Data produced by Stream Engine version 1.20.2 for RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
+    description: Data produced by Stream Engine version 1.20.4 for RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
     driver: zarr
     metadata:
       data_products:
@@ -41846,7 +41846,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-MJ01A-12-VEL3DB101-streamed-vel3d_b_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS01SLBS-MJ01A-12-VEL3DB101-streamed-vel3d_b_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS01SLBS-MJ01A-12-VEL3DB101-streamed-vel3d_b_sample
     driver: zarr
     metadata:
       data_products:
@@ -41917,7 +41917,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SUM1-LJ01B-09-PRESTB102-streamed-prest_real_time
-    description: Data produced by Stream Engine version 1.20.2 for RS01SUM1-LJ01B-09-PRESTB102-streamed-prest_real_time
+    description: Data produced by Stream Engine version 1.20.4 for RS01SUM1-LJ01B-09-PRESTB102-streamed-prest_real_time
     driver: zarr
     metadata:
       data_products:
@@ -41954,7 +41954,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SUM1-LJ01B-12-VEL3DB104-streamed-vel3d_b_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS01SUM1-LJ01B-12-VEL3DB104-streamed-vel3d_b_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS01SUM1-LJ01B-12-VEL3DB104-streamed-vel3d_b_sample
     driver: zarr
     metadata:
       data_products:
@@ -42145,7 +42145,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.2 for RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.4 for RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -42285,7 +42285,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_heat_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_heat_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_heat_sample
     driver: zarr
     metadata:
       data_products:
@@ -42311,7 +42311,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_iris_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_iris_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_iris_sample
     driver: zarr
     metadata:
       data_products:
@@ -42337,7 +42337,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_lily_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_lily_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_lily_sample
     driver: zarr
     metadata:
       data_products:
@@ -43010,7 +43010,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-LJ03A-11-OPTAAC303-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXBS-LJ03A-11-OPTAAC303-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXBS-LJ03A-11-OPTAAC303-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
@@ -43207,7 +43207,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-LJ03A-12-DOSTAD301-streamed-do_stable_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXBS-LJ03A-12-DOSTAD301-streamed-do_stable_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXBS-LJ03A-12-DOSTAD301-streamed-do_stable_sample
     driver: zarr
     metadata:
       data_products:
@@ -43306,7 +43306,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time
     driver: zarr
     metadata:
       data_products:
@@ -43343,7 +43343,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-MJ03A-12-VEL3DB301-streamed-vel3d_b_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXBS-MJ03A-12-VEL3DB301-streamed-vel3d_b_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXBS-MJ03A-12-VEL3DB301-streamed-vel3d_b_sample
     driver: zarr
     metadata:
       data_products:
@@ -43414,7 +43414,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPD-DP03A-01-CTDPFL304-recovered_inst-dpc_ctd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPD-DP03A-01-CTDPFL304-recovered_inst-dpc_ctd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPD-DP03A-01-CTDPFL304-recovered_inst-dpc_ctd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -43505,7 +43505,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPD-DP03A-01-CTDPFL304-recovered_wfp-dpc_ctd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPD-DP03A-01-CTDPFL304-recovered_wfp-dpc_ctd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPD-DP03A-01-CTDPFL304-recovered_wfp-dpc_ctd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -43596,7 +43596,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPD-DP03A-02-VEL3DA303-recovered_inst-dpc_acm_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPD-DP03A-02-VEL3DA303-recovered_inst-dpc_acm_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPD-DP03A-02-VEL3DA303-recovered_inst-dpc_acm_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -43688,7 +43688,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPD-DP03A-02-VEL3DA303-recovered_wfp-dpc_acm_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPD-DP03A-02-VEL3DA303-recovered_wfp-dpc_acm_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPD-DP03A-02-VEL3DA303-recovered_wfp-dpc_acm_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -43780,7 +43780,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPD-DP03A-03-FLCDRA302-recovered_inst-dpc_flcdrtd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPD-DP03A-03-FLCDRA302-recovered_inst-dpc_flcdrtd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPD-DP03A-03-FLCDRA302-recovered_inst-dpc_flcdrtd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -43884,7 +43884,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPD-DP03A-03-FLNTUA302-recovered_inst-dpc_flnturtd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPD-DP03A-03-FLNTUA302-recovered_inst-dpc_flnturtd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPD-DP03A-03-FLNTUA302-recovered_inst-dpc_flnturtd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -44086,7 +44086,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPD-DP03A-06-DOSTAD304-recovered_inst-dpc_optode_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPD-DP03A-06-DOSTAD304-recovered_inst-dpc_optode_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPD-DP03A-06-DOSTAD304-recovered_inst-dpc_optode_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -44174,7 +44174,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPD-DP03A-06-DOSTAD304-recovered_wfp-dpc_optode_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPD-DP03A-06-DOSTAD304-recovered_wfp-dpc_optode_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPD-DP03A-06-DOSTAD304-recovered_wfp-dpc_optode_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -44394,7 +44394,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-05-ADCPTD302-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPS-PC03A-05-ADCPTD302-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPS-PC03A-05-ADCPTD302-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -44810,7 +44810,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -44947,7 +44947,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam_5
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam_5
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam_5
     driver: zarr
     metadata:
       data_products:
@@ -45115,7 +45115,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-4A-DOSTAD303-streamed-do_stable_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPS-PC03A-4A-DOSTAD303-streamed-do_stable_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPS-PC03A-4A-DOSTAD303-streamed-do_stable_sample
     driver: zarr
     metadata:
       data_products:
@@ -45595,7 +45595,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record
     driver: zarr
     metadata:
       data_products:
@@ -45711,7 +45711,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-3B-OPTAAD301-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPS-SF03A-3B-OPTAAD301-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPS-SF03A-3B-OPTAAD301-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
@@ -45803,7 +45803,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample
     driver: zarr
     metadata:
       data_products:
@@ -46184,7 +46184,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_heat_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_heat_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_heat_sample
     driver: zarr
     metadata:
       data_products:
@@ -46210,7 +46210,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_iris_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_iris_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_iris_sample
     driver: zarr
     metadata:
       data_products:
@@ -46236,7 +46236,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_lily_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_lily_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_lily_sample
     driver: zarr
     metadata:
       data_products:
@@ -46426,7 +46426,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_heat_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_heat_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_heat_sample
     driver: zarr
     metadata:
       data_products:
@@ -46452,7 +46452,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_iris_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_iris_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_iris_sample
     driver: zarr
     metadata:
       data_products:
@@ -46478,7 +46478,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_lily_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_lily_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_lily_sample
     driver: zarr
     metadata:
       data_products:
@@ -46668,7 +46668,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ECAL-MJ03E-12-CTDPFB306-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03ECAL-MJ03E-12-CTDPFB306-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03ECAL-MJ03E-12-CTDPFB306-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -46785,7 +46785,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample
     driver: zarr
     metadata:
       data_products:
@@ -47002,7 +47002,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
     driver: zarr
     metadata:
       data_products:
@@ -47073,7 +47073,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_heat_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_heat_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_heat_sample
     driver: zarr
     metadata:
       data_products:
@@ -47099,7 +47099,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_iris_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_iris_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_iris_sample
     driver: zarr
     metadata:
       data_products:
@@ -47125,7 +47125,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_lily_sample
-    description: Data produced by Stream Engine version 1.20.2 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_lily_sample
+    description: Data produced by Stream Engine version 1.20.4 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_lily_sample
     driver: zarr
     metadata:
       data_products:
