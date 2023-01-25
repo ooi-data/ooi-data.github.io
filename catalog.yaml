@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2023-01-24T01:35:31.436774'
+  last_updated: '2023-01-25T01:25:23.467047'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -31076,7 +31076,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSPM-WFP01-01-VEL3DK000-telemetered-vel3d_k_wfp_stc_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSPM-WFP01-01-VEL3DK000-telemetered-vel3d_k_wfp_stc_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSPM-WFP01-01-VEL3DK000-telemetered-vel3d_k_wfp_stc_instrument
     driver: zarr
     metadata:
       data_products:
@@ -31309,7 +31309,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSPM-WFP01-02-DOFSTK000-telemetered-dofst_k_wfp_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSPM-WFP01-02-DOFSTK000-telemetered-dofst_k_wfp_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSPM-WFP01-02-DOFSTK000-telemetered-dofst_k_wfp_instrument
     driver: zarr
     metadata:
       data_products:
@@ -31569,7 +31569,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSPM-WFP01-03-CTDPFK000-telemetered-ctdpf_ckl_wfp_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSPM-WFP01-03-CTDPFK000-telemetered-ctdpf_ckl_wfp_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSPM-WFP01-03-CTDPFK000-telemetered-ctdpf_ckl_wfp_instrument
     driver: zarr
     metadata:
       data_products:
@@ -31776,7 +31776,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSPM-WFP01-04-FLORTK000-telemetered-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSPM-WFP01-04-FLORTK000-telemetered-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSPM-WFP01-04-FLORTK000-telemetered-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -31939,7 +31939,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSPM-WFP01-05-PARADK000-telemetered-parad_k__stc_imodem_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSPM-WFP01-05-PARADK000-telemetered-parad_k__stc_imodem_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSPM-WFP01-05-PARADK000-telemetered-parad_k__stc_imodem_instrument
     driver: zarr
     metadata:
       data_products:
