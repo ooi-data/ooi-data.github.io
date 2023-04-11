@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2023-02-06T01:27:10.994712'
+  last_updated: '2023-04-11T21:11:53.510913'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -1311,7 +1311,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD37-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD37-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD37-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -20067,7 +20067,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD37-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD37-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD37-01-OPTAAD000-telemetered-optaa_dj_dcl_instrument
     driver: zarr
     metadata:
       data_products:
@@ -22009,7 +22009,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument_blank
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument_blank
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-05-PCO2WB000-telemetered-pco2w_abc_dcl_instrument_blank
     driver: zarr
     metadata:
       data_products:
@@ -30405,7 +30405,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSP-SP001-01-DOSTAJ000-recovered_cspp-dosta_abcdjm_cspp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSP-SP001-01-DOSTAJ000-recovered_cspp-dosta_abcdjm_cspp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSP-SP001-01-DOSTAJ000-recovered_cspp-dosta_abcdjm_cspp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -30493,7 +30493,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSP-SP001-02-VELPTJ000-recovered_cspp-velpt_j_cspp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSP-SP001-02-VELPTJ000-recovered_cspp-velpt_j_cspp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSP-SP001-02-VELPTJ000-recovered_cspp-velpt_j_cspp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -30560,7 +30560,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSP-SP001-04-OPTAAJ000-recovered_cspp-optaa_dj_cspp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSP-SP001-04-OPTAAJ000-recovered_cspp-optaa_dj_cspp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSP-SP001-04-OPTAAJ000-recovered_cspp-optaa_dj_cspp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -30652,7 +30652,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSP-SP001-05-NUTNRJ000-recovered_cspp-nutnr_j_cspp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSP-SP001-05-NUTNRJ000-recovered_cspp-nutnr_j_cspp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSP-SP001-05-NUTNRJ000-recovered_cspp-nutnr_j_cspp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -30731,7 +30731,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSP-SP001-06-SPKIRJ000-recovered_cspp-spkir_abj_cspp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSP-SP001-06-SPKIRJ000-recovered_cspp-spkir_abj_cspp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSP-SP001-06-SPKIRJ000-recovered_cspp-spkir_abj_cspp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -30873,7 +30873,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSP-SP001-08-CTDPFJ000-recovered_cspp-ctdpf_j_cspp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSP-SP001-08-CTDPFJ000-recovered_cspp-ctdpf_j_cspp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSP-SP001-08-CTDPFJ000-recovered_cspp-ctdpf_j_cspp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -30958,7 +30958,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSP-SP001-09-PARADJ000-recovered_cspp-parad_j_cspp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSP-SP001-09-PARADJ000-recovered_cspp-parad_j_cspp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSP-SP001-09-PARADJ000-recovered_cspp-parad_j_cspp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
