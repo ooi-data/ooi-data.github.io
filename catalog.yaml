@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2023-04-15T00:49:51.549819'
+  last_updated: '2023-04-16T00:50:18.957797'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -6167,7 +6167,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID26-01-ADCPTA000-recovered_host-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID26-01-ADCPTA000-recovered_host-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID26-01-ADCPTA000-recovered_host-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -6286,7 +6286,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID26-01-ADCPTA000-recovered_inst-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID26-01-ADCPTA000-recovered_inst-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID26-01-ADCPTA000-recovered_inst-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -6524,7 +6524,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID26-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID26-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID26-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -6591,7 +6591,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID26-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID26-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID26-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -6995,7 +6995,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID26-07-NUTNRB000-recovered_host-suna_dcl_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID26-07-NUTNRB000-recovered_host-suna_dcl_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID26-07-NUTNRB000-recovered_host-suna_dcl_recovered
     driver: zarr
     metadata:
       data_products:
@@ -7162,7 +7162,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID26-07-NUTNRB000-recovered_inst-suna_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID26-07-NUTNRB000-recovered_inst-suna_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID26-07-NUTNRB000-recovered_inst-suna_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -7363,7 +7363,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID26-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID26-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID26-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -7439,7 +7439,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID27-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID27-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID27-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -7599,7 +7599,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID27-02-FLORTD000-recovered_host-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID27-02-FLORTD000-recovered_host-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID27-02-FLORTD000-recovered_host-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -7807,7 +7807,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID27-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID27-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID27-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -7897,7 +7897,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID27-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID27-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID27-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -8080,7 +8080,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-RID27-04-DOSTAD000-recovered_host-dosta_abcdjm_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-RID27-04-DOSTAD000-recovered_host-dosta_abcdjm_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-RID27-04-DOSTAD000-recovered_host-dosta_abcdjm_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -8280,7 +8280,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD11-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD11-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD11-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -8347,7 +8347,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD11-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD11-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD11-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -8481,7 +8481,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD11-06-METBKA000-recovered_host-metbk_a_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD11-06-METBKA000-recovered_host-metbk_a_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD11-06-METBKA000-recovered_host-metbk_a_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -8697,7 +8697,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD11-06-METBKA000-recovered_host-metbk_hourly
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD11-06-METBKA000-recovered_host-metbk_hourly
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD11-06-METBKA000-recovered_host-metbk_hourly
     driver: zarr
     metadata:
       data_products:
@@ -9499,7 +9499,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_air_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_air_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_air_recovered
     driver: zarr
     metadata:
       data_products:
@@ -9682,7 +9682,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_water_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_water_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_water_recovered
     driver: zarr
     metadata:
       data_products:
@@ -10231,7 +10231,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_fourier_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_fourier_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_fourier_recovered
     driver: zarr
     metadata:
       data_products:
@@ -10257,7 +10257,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_mean_directional_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_mean_directional_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_mean_directional_recovered
     driver: zarr
     metadata:
       data_products:
@@ -10310,7 +10310,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_motion_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_motion_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_motion_recovered
     driver: zarr
     metadata:
       data_products:
@@ -10362,7 +10362,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_non_directional_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_non_directional_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_non_directional_recovered
     driver: zarr
     metadata:
       data_products:
@@ -10397,7 +10397,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_statistics_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_statistics_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_statistics_recovered
     driver: zarr
     metadata:
       data_products:
@@ -10615,7 +10615,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHSM-SBD12-08-FDCHPA000-recovered_host-fdchp_a_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE02SHSM-SBD12-08-FDCHPA000-recovered_host-fdchp_a_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE02SHSM-SBD12-08-FDCHPA000-recovered_host-fdchp_a_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -14329,7 +14329,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID26-01-ADCPTC000-recovered_host-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID26-01-ADCPTC000-recovered_host-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID26-01-ADCPTC000-recovered_host-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -14448,7 +14448,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID26-01-ADCPTC000-recovered_inst-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID26-01-ADCPTC000-recovered_inst-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID26-01-ADCPTC000-recovered_inst-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -14686,7 +14686,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID26-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID26-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID26-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -14753,7 +14753,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID26-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID26-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID26-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -15157,7 +15157,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID26-07-NUTNRB000-recovered_host-suna_dcl_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID26-07-NUTNRB000-recovered_host-suna_dcl_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID26-07-NUTNRB000-recovered_host-suna_dcl_recovered
     driver: zarr
     metadata:
       data_products:
@@ -15525,7 +15525,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID26-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID26-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID26-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -15601,7 +15601,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID27-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID27-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID27-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -15761,7 +15761,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID27-02-FLORTD000-recovered_host-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID27-02-FLORTD000-recovered_host-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID27-02-FLORTD000-recovered_host-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -15969,7 +15969,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID27-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID27-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID27-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -16059,7 +16059,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID27-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID27-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID27-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -16242,7 +16242,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-RID27-04-DOSTAD000-recovered_host-dosta_abcdjm_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-RID27-04-DOSTAD000-recovered_host-dosta_abcdjm_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-RID27-04-DOSTAD000-recovered_host-dosta_abcdjm_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -16442,7 +16442,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD11-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD11-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD11-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -16509,7 +16509,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD11-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD11-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD11-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -16643,7 +16643,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD11-06-METBKA000-recovered_host-metbk_a_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD11-06-METBKA000-recovered_host-metbk_a_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD11-06-METBKA000-recovered_host-metbk_a_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -16859,7 +16859,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD11-06-METBKA000-recovered_host-metbk_hourly
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD11-06-METBKA000-recovered_host-metbk_hourly
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD11-06-METBKA000-recovered_host-metbk_hourly
     driver: zarr
     metadata:
       data_products:
@@ -17661,7 +17661,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_air_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_air_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_air_recovered
     driver: zarr
     metadata:
       data_products:
@@ -17844,7 +17844,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_water_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_water_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_water_recovered
     driver: zarr
     metadata:
       data_products:
@@ -18393,7 +18393,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_fourier_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_fourier_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_fourier_recovered
     driver: zarr
     metadata:
       data_products:
@@ -18419,7 +18419,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_mean_directional_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_mean_directional_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_mean_directional_recovered
     driver: zarr
     metadata:
       data_products:
@@ -18472,7 +18472,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_motion_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_motion_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_motion_recovered
     driver: zarr
     metadata:
       data_products:
@@ -18524,7 +18524,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_non_directional_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_non_directional_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_non_directional_recovered
     driver: zarr
     metadata:
       data_products:
@@ -18559,7 +18559,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_statistics_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_statistics_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE04OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_statistics_recovered
     driver: zarr
     metadata:
       data_products:
@@ -18777,7 +18777,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD35-01-VEL3DD000-recovered_host-vel3d_cd_dcl_velocity_data_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD35-01-VEL3DD000-recovered_host-vel3d_cd_dcl_velocity_data_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD35-01-VEL3DD000-recovered_host-vel3d_cd_dcl_velocity_data_recovered
     driver: zarr
     metadata:
       data_products:
@@ -18919,7 +18919,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD35-02-PRESFA000-recovered_host-presf_abc_dcl_tide_measurement_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD35-02-PRESFA000-recovered_host-presf_abc_dcl_tide_measurement_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD35-02-PRESFA000-recovered_host-presf_abc_dcl_tide_measurement_recovered
     driver: zarr
     metadata:
       data_products:
@@ -18957,7 +18957,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD35-02-PRESFA000-recovered_inst-presf_abc_tide_measurement_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD35-02-PRESFA000-recovered_inst-presf_abc_tide_measurement_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD35-02-PRESFA000-recovered_inst-presf_abc_tide_measurement_recovered
     driver: zarr
     metadata:
       data_products:
@@ -19008,7 +19008,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD35-02-PRESFA000-recovered_inst-presf_abc_wave_burst_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD35-02-PRESFA000-recovered_inst-presf_abc_wave_burst_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD35-02-PRESFA000-recovered_inst-presf_abc_wave_burst_recovered
     driver: zarr
     metadata:
       data_products:
@@ -19084,7 +19084,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD35-04-ADCPTM000-recovered_host-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD35-04-ADCPTM000-recovered_host-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD35-04-ADCPTM000-recovered_host-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -19203,7 +19203,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD35-04-ADCPTM000-recovered_inst-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD35-04-ADCPTM000-recovered_inst-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD35-04-ADCPTM000-recovered_inst-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -20147,7 +20147,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD37-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD37-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD37-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -20237,7 +20237,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD37-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD37-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD37-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -20420,7 +20420,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD37-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD37-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD37-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -20506,7 +20506,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-MFD37-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-MFD37-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-MFD37-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -20679,7 +20679,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -20839,7 +20839,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-02-FLORTD000-recovered_host-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-02-FLORTD000-recovered_host-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-02-FLORTD000-recovered_host-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -21047,7 +21047,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -21137,7 +21137,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -21320,7 +21320,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -21406,7 +21406,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -21579,7 +21579,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -21646,7 +21646,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -22314,7 +22314,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-07-NUTNRB000-recovered_host-suna_dcl_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-07-NUTNRB000-recovered_host-suna_dcl_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-07-NUTNRB000-recovered_host-suna_dcl_recovered
     driver: zarr
     metadata:
       data_products:
@@ -22481,7 +22481,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-07-NUTNRB000-recovered_inst-suna_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-07-NUTNRB000-recovered_inst-suna_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-07-NUTNRB000-recovered_inst-suna_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -22682,7 +22682,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-RID16-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-RID16-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-RID16-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -22758,7 +22758,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-SBD17-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-SBD17-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-SBD17-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -22825,7 +22825,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-SBD17-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-SBD17-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-SBD17-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -22959,7 +22959,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-SBD17-06-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-SBD17-06-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-SBD17-06-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -23049,7 +23049,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-SBD17-06-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-SBD17-06-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-SBD17-06-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -23232,7 +23232,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-SBD17-06-FLORTD000-recovered_host-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-SBD17-06-FLORTD000-recovered_host-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-SBD17-06-FLORTD000-recovered_host-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -23336,7 +23336,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE06ISSM-SBD17-06-FLORTD000-recovered_inst-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE06ISSM-SBD17-06-FLORTD000-recovered_inst-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE06ISSM-SBD17-06-FLORTD000-recovered_inst-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -24132,7 +24132,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD35-01-VEL3DD000-recovered_host-vel3d_cd_dcl_velocity_data_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD35-01-VEL3DD000-recovered_host-vel3d_cd_dcl_velocity_data_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD35-01-VEL3DD000-recovered_host-vel3d_cd_dcl_velocity_data_recovered
     driver: zarr
     metadata:
       data_products:
@@ -24274,7 +24274,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD35-02-PRESFB000-recovered_host-presf_abc_dcl_tide_measurement_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD35-02-PRESFB000-recovered_host-presf_abc_dcl_tide_measurement_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD35-02-PRESFB000-recovered_host-presf_abc_dcl_tide_measurement_recovered
     driver: zarr
     metadata:
       data_products:
@@ -24312,7 +24312,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD35-02-PRESFB000-recovered_inst-presf_abc_tide_measurement_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD35-02-PRESFB000-recovered_inst-presf_abc_tide_measurement_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD35-02-PRESFB000-recovered_inst-presf_abc_tide_measurement_recovered
     driver: zarr
     metadata:
       data_products:
@@ -24363,7 +24363,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD35-02-PRESFB000-recovered_inst-presf_abc_wave_burst_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD35-02-PRESFB000-recovered_inst-presf_abc_wave_burst_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD35-02-PRESFB000-recovered_inst-presf_abc_wave_burst_recovered
     driver: zarr
     metadata:
       data_products:
@@ -24439,7 +24439,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD35-04-ADCPTC000-recovered_host-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD35-04-ADCPTC000-recovered_host-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD35-04-ADCPTC000-recovered_host-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -24558,7 +24558,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD35-04-ADCPTC000-recovered_inst-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD35-04-ADCPTC000-recovered_inst-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD35-04-ADCPTC000-recovered_inst-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -25264,7 +25264,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD37-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD37-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD37-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -25424,7 +25424,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD37-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD37-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD37-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -25514,7 +25514,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD37-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD37-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD37-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -25697,7 +25697,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD37-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD37-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD37-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -25783,7 +25783,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-MFD37-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-MFD37-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-MFD37-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -25956,7 +25956,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID26-01-ADCPTA000-recovered_host-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID26-01-ADCPTA000-recovered_host-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID26-01-ADCPTA000-recovered_host-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -26075,7 +26075,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID26-01-ADCPTA000-recovered_inst-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID26-01-ADCPTA000-recovered_inst-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID26-01-ADCPTA000-recovered_inst-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -26313,7 +26313,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID26-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID26-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID26-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -26380,7 +26380,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID26-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID26-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID26-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -26785,7 +26785,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID26-07-NUTNRB000-recovered_host-suna_dcl_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID26-07-NUTNRB000-recovered_host-suna_dcl_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID26-07-NUTNRB000-recovered_host-suna_dcl_recovered
     driver: zarr
     metadata:
       data_products:
@@ -26952,7 +26952,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID26-07-NUTNRB000-recovered_inst-suna_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID26-07-NUTNRB000-recovered_inst-suna_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID26-07-NUTNRB000-recovered_inst-suna_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -27229,7 +27229,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID27-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID27-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID27-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -27389,7 +27389,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID27-02-FLORTD000-recovered_host-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID27-02-FLORTD000-recovered_host-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID27-02-FLORTD000-recovered_host-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -27597,7 +27597,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID27-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID27-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID27-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -27687,7 +27687,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID27-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID27-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID27-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -27870,7 +27870,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-RID27-04-DOSTAD000-recovered_host-dosta_abcdjm_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-RID27-04-DOSTAD000-recovered_host-dosta_abcdjm_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-RID27-04-DOSTAD000-recovered_host-dosta_abcdjm_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -28070,7 +28070,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD11-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD11-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD11-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -28137,7 +28137,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD11-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD11-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD11-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -28271,7 +28271,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD11-06-METBKA000-recovered_host-metbk_a_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD11-06-METBKA000-recovered_host-metbk_a_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD11-06-METBKA000-recovered_host-metbk_a_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -29289,7 +29289,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_air_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_air_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_air_recovered
     driver: zarr
     metadata:
       data_products:
@@ -29472,7 +29472,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_water_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_water_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_water_recovered
     driver: zarr
     metadata:
       data_products:
@@ -30021,7 +30021,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_fourier_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_fourier_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_fourier_recovered
     driver: zarr
     metadata:
       data_products:
@@ -30047,7 +30047,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_mean_directional_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_mean_directional_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_mean_directional_recovered
     driver: zarr
     metadata:
       data_products:
@@ -30100,7 +30100,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_motion_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_motion_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_motion_recovered
     driver: zarr
     metadata:
       data_products:
@@ -30152,7 +30152,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_non_directional_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_non_directional_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_non_directional_recovered
     driver: zarr
     metadata:
       data_products:
@@ -30187,7 +30187,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_statistics_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_statistics_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE07SHSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_statistics_recovered
     driver: zarr
     metadata:
       data_products:
@@ -30995,7 +30995,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSPM-WFP01-01-VEL3DK000-recovered_wfp-vel3d_k_wfp_instrument
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSPM-WFP01-01-VEL3DK000-recovered_wfp-vel3d_k_wfp_instrument
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSPM-WFP01-01-VEL3DK000-recovered_wfp-vel3d_k_wfp_instrument
     driver: zarr
     metadata:
       data_products:
@@ -31233,7 +31233,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSPM-WFP01-02-DOFSTK000-recovered_wfp-dofst_k_wfp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSPM-WFP01-02-DOFSTK000-recovered_wfp-dofst_k_wfp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSPM-WFP01-02-DOFSTK000-recovered_wfp-dofst_k_wfp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -31477,7 +31477,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSPM-WFP01-03-CTDPFK000-recovered_wfp-ctdpf_ckl_wfp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSPM-WFP01-03-CTDPFK000-recovered_wfp-ctdpf_ckl_wfp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSPM-WFP01-03-CTDPFK000-recovered_wfp-ctdpf_ckl_wfp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -31661,7 +31661,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSPM-WFP01-04-FLORTK000-recovered_wfp-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSPM-WFP01-04-FLORTK000-recovered_wfp-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSPM-WFP01-04-FLORTK000-recovered_wfp-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -31891,7 +31891,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSPM-WFP01-05-PARADK000-recovered_wfp-parad_k__stc_imodem_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSPM-WFP01-05-PARADK000-recovered_wfp-parad_k__stc_imodem_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSPM-WFP01-05-PARADK000-recovered_wfp-parad_k__stc_imodem_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -31987,7 +31987,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD35-01-VEL3DD000-recovered_host-vel3d_cd_dcl_velocity_data_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD35-01-VEL3DD000-recovered_host-vel3d_cd_dcl_velocity_data_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD35-01-VEL3DD000-recovered_host-vel3d_cd_dcl_velocity_data_recovered
     driver: zarr
     metadata:
       data_products:
@@ -32129,7 +32129,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD35-02-PRESFC000-recovered_host-presf_abc_dcl_tide_measurement_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD35-02-PRESFC000-recovered_host-presf_abc_dcl_tide_measurement_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD35-02-PRESFC000-recovered_host-presf_abc_dcl_tide_measurement_recovered
     driver: zarr
     metadata:
       data_products:
@@ -32167,7 +32167,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD35-02-PRESFC000-recovered_inst-presf_abc_tide_measurement_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD35-02-PRESFC000-recovered_inst-presf_abc_tide_measurement_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD35-02-PRESFC000-recovered_inst-presf_abc_tide_measurement_recovered
     driver: zarr
     metadata:
       data_products:
@@ -32294,7 +32294,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD35-04-ADCPSJ000-recovered_host-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD35-04-ADCPSJ000-recovered_host-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD35-04-ADCPSJ000-recovered_host-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -32413,7 +32413,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD35-04-ADCPSJ000-recovered_inst-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD35-04-ADCPSJ000-recovered_inst-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD35-04-ADCPSJ000-recovered_inst-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -33119,7 +33119,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD37-01-OPTAAC000-recovered_host-optaa_dj_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD37-01-OPTAAC000-recovered_host-optaa_dj_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD37-01-OPTAAC000-recovered_host-optaa_dj_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -33279,7 +33279,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD37-03-CTDBPE000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD37-03-CTDBPE000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD37-03-CTDBPE000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -33369,7 +33369,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD37-03-CTDBPE000-recovered_inst-ctdbp_cdef_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD37-03-CTDBPE000-recovered_inst-ctdbp_cdef_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD37-03-CTDBPE000-recovered_inst-ctdbp_cdef_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -33552,7 +33552,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD37-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD37-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD37-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -33638,7 +33638,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-MFD37-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-MFD37-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-MFD37-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -33811,7 +33811,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID26-01-ADCPTC000-recovered_host-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID26-01-ADCPTC000-recovered_host-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID26-01-ADCPTC000-recovered_host-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -33930,7 +33930,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID26-01-ADCPTC000-recovered_inst-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID26-01-ADCPTC000-recovered_inst-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID26-01-ADCPTC000-recovered_inst-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -34168,7 +34168,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID26-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID26-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID26-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -34235,7 +34235,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID26-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID26-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID26-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -34639,7 +34639,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID26-07-NUTNRB000-recovered_host-suna_dcl_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID26-07-NUTNRB000-recovered_host-suna_dcl_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID26-07-NUTNRB000-recovered_host-suna_dcl_recovered
     driver: zarr
     metadata:
       data_products:
@@ -35007,7 +35007,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID26-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID26-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID26-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -35083,7 +35083,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID27-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID27-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID27-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -35243,7 +35243,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID27-02-FLORTD000-recovered_host-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID27-02-FLORTD000-recovered_host-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID27-02-FLORTD000-recovered_host-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -35451,7 +35451,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID27-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID27-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID27-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -35541,7 +35541,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID27-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID27-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID27-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -35724,7 +35724,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-RID27-04-DOSTAD000-recovered_host-dosta_abcdjm_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-RID27-04-DOSTAD000-recovered_host-dosta_abcdjm_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-RID27-04-DOSTAD000-recovered_host-dosta_abcdjm_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -35924,7 +35924,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD11-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD11-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD11-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -35991,7 +35991,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD11-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD11-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD11-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -36125,7 +36125,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD11-06-METBKA000-recovered_host-metbk_a_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD11-06-METBKA000-recovered_host-metbk_a_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD11-06-METBKA000-recovered_host-metbk_a_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -37143,7 +37143,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_air_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_air_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_air_recovered
     driver: zarr
     metadata:
       data_products:
@@ -37326,7 +37326,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_water_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_water_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD12-04-PCO2AA000-recovered_host-pco2a_a_dcl_instrument_water_recovered
     driver: zarr
     metadata:
       data_products:
@@ -37875,7 +37875,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_fourier_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_fourier_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_fourier_recovered
     driver: zarr
     metadata:
       data_products:
@@ -37901,7 +37901,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_mean_directional_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_mean_directional_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_mean_directional_recovered
     driver: zarr
     metadata:
       data_products:
@@ -38006,7 +38006,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_non_directional_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_non_directional_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_non_directional_recovered
     driver: zarr
     metadata:
       data_products:
@@ -38041,7 +38041,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE09OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_statistics_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE09OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_statistics_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE09OSSM-SBD12-05-WAVSSA000-recovered_host-wavss_a_dcl_statistics_recovered
     driver: zarr
     metadata:
       data_products:
