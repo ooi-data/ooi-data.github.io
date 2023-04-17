@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2023-04-16T00:50:18.957797'
+  last_updated: '2023-04-17T00:49:24.011813'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -12,7 +12,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD35-01-VEL3DD000-recovered_host-vel3d_cd_dcl_velocity_data_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD35-01-VEL3DD000-recovered_host-vel3d_cd_dcl_velocity_data_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD35-01-VEL3DD000-recovered_host-vel3d_cd_dcl_velocity_data_recovered
     driver: zarr
     metadata:
       data_products:
@@ -154,7 +154,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD35-02-PRESFA000-recovered_host-presf_abc_dcl_tide_measurement_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD35-02-PRESFA000-recovered_host-presf_abc_dcl_tide_measurement_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD35-02-PRESFA000-recovered_host-presf_abc_dcl_tide_measurement_recovered
     driver: zarr
     metadata:
       data_products:
@@ -229,7 +229,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD35-02-PRESFA000-recovered_inst-presf_abc_tide_measurement_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD35-02-PRESFA000-recovered_inst-presf_abc_tide_measurement_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD35-02-PRESFA000-recovered_inst-presf_abc_tide_measurement_recovered
     driver: zarr
     metadata:
       data_products:
@@ -280,7 +280,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD35-02-PRESFA000-recovered_inst-presf_abc_wave_burst_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD35-02-PRESFA000-recovered_inst-presf_abc_wave_burst_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD35-02-PRESFA000-recovered_inst-presf_abc_wave_burst_recovered
     driver: zarr
     metadata:
       data_products:
@@ -356,7 +356,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD35-04-ADCPTM000-recovered_host-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD35-04-ADCPTM000-recovered_host-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD35-04-ADCPTM000-recovered_host-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -475,7 +475,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD35-04-ADCPTM000-recovered_inst-adcp_velocity_earth
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD35-04-ADCPTM000-recovered_inst-adcp_velocity_earth
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD35-04-ADCPTM000-recovered_inst-adcp_velocity_earth
     driver: zarr
     metadata:
       data_products:
@@ -1391,7 +1391,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD37-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD37-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD37-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -1481,7 +1481,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD37-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD37-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD37-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -1712,7 +1712,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD37-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD37-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD37-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -1798,7 +1798,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-MFD37-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-MFD37-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-MFD37-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -1971,7 +1971,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-01-OPTAAD000-recovered_host-optaa_dj_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -2130,7 +2130,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-02-FLORTD000-recovered_host-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-02-FLORTD000-recovered_host-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-02-FLORTD000-recovered_host-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -2337,7 +2337,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-03-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -2427,7 +2427,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-03-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -2610,7 +2610,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-03-DOSTAD000-recovered_host-dosta_abcdjm_ctdbp_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -2696,7 +2696,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-03-DOSTAD000-recovered_inst-dosta_abcdjm_ctdbp_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -2869,7 +2869,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -2936,7 +2936,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -3602,7 +3602,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-07-NUTNRB000-recovered_host-suna_dcl_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-07-NUTNRB000-recovered_host-suna_dcl_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-07-NUTNRB000-recovered_host-suna_dcl_recovered
     driver: zarr
     metadata:
       data_products:
@@ -3769,7 +3769,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-07-NUTNRB000-recovered_inst-suna_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-07-NUTNRB000-recovered_inst-suna_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-07-NUTNRB000-recovered_inst-suna_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -3970,7 +3970,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-RID16-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-RID16-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-RID16-08-SPKIRB000-recovered_host-spkir_abj_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -4046,7 +4046,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-SBD17-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-SBD17-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-SBD17-04-VELPTA000-recovered_host-velpt_ab_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -4113,7 +4113,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-SBD17-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-SBD17-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-SBD17-04-VELPTA000-recovered_inst-velpt_ab_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -4247,7 +4247,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-SBD17-06-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-SBD17-06-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-SBD17-06-CTDBPC000-recovered_host-ctdbp_cdef_dcl_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -4337,7 +4337,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-SBD17-06-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-SBD17-06-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-SBD17-06-CTDBPC000-recovered_inst-ctdbp_cdef_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -4520,7 +4520,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-SBD17-06-FLORTD000-recovered_host-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-SBD17-06-FLORTD000-recovered_host-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-SBD17-06-FLORTD000-recovered_host-flort_sample
     driver: zarr
     metadata:
       data_products:
@@ -4624,7 +4624,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE01ISSM-SBD17-06-FLORTD000-recovered_inst-flort_sample
-    description: Data produced by Stream Engine version 1.20.2 for CE01ISSM-SBD17-06-FLORTD000-recovered_inst-flort_sample
+    description: Data produced by Stream Engine version 1.20.4 for CE01ISSM-SBD17-06-FLORTD000-recovered_inst-flort_sample
     driver: zarr
     metadata:
       data_products:
