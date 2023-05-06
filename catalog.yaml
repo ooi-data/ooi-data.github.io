@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2023-05-05T00:43:49.795119'
+  last_updated: '2023-05-06T00:43:59.097069'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -6046,13 +6046,13 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-09-PCO2WB103-streamed-pco2w_b_sami_data_record
-    description: Data produced by Stream Engine version 1.20.4 for CE02SHBP-LJ01D-09-PCO2WB103-streamed-pco2w_b_sami_data_record
+    description: Data produced by Stream Engine version 1.20.6 for CE02SHBP-LJ01D-09-PCO2WB103-streamed-pco2w_b_sami_data_record
     driver: zarr
     metadata:
       data_products:
       - ancillary_variables: pco2_seawater_qartod_results pco2_seawater_qartod_executed
-          pco2w_b_absorbance_blank_434 thermistor_raw light_measurements record_type
-          pco2w_b_absorbance_blank_620
+          pco2w_b_absorbance_blank_434 pco2w_thermistor_temperature light_measurements
+          record_type pco2w_b_absorbance_blank_620
         comment: 'Partial Pressure of CO2 in Seawater provides a measure of the amount
           of CO2 and HCO3 in seawater. Specifically, it refers to the pressure that
           would be exerted by CO2 if all other gases were removed. Partial pressure
