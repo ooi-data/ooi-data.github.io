@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2023-09-23T00:51:44.096519'
+  last_updated: '2023-09-24T00:56:13.555121'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -38259,7 +38259,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPD-DP01A-01-CTDPFL104-recovered_inst-dpc_ctd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.4 for RS01SBPD-DP01A-01-CTDPFL104-recovered_inst-dpc_ctd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.6 for RS01SBPD-DP01A-01-CTDPFL104-recovered_inst-dpc_ctd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -38441,7 +38441,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPD-DP01A-02-VEL3DA103-recovered_inst-dpc_acm_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS01SBPD-DP01A-02-VEL3DA103-recovered_inst-dpc_acm_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.6 for RS01SBPD-DP01A-02-VEL3DA103-recovered_inst-dpc_acm_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -38533,7 +38533,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPD-DP01A-02-VEL3DA103-recovered_wfp-dpc_acm_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.2 for RS01SBPD-DP01A-02-VEL3DA103-recovered_wfp-dpc_acm_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.6 for RS01SBPD-DP01A-02-VEL3DA103-recovered_wfp-dpc_acm_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -38676,7 +38676,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPD-DP01A-03-FLCDRA102-recovered_wfp-dpc_flcdrtd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.4 for RS01SBPD-DP01A-03-FLCDRA102-recovered_wfp-dpc_flcdrtd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.6 for RS01SBPD-DP01A-03-FLCDRA102-recovered_wfp-dpc_flcdrtd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -38825,7 +38825,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPD-DP01A-04-FLNTUA102-recovered_wfp-dpc_flnturtd_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.4 for RS01SBPD-DP01A-04-FLNTUA102-recovered_wfp-dpc_flnturtd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.6 for RS01SBPD-DP01A-04-FLNTUA102-recovered_wfp-dpc_flnturtd_instrument_recovered
     driver: zarr
     metadata:
       data_products:
@@ -38922,7 +38922,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPD-DP01A-06-DOSTAD104-recovered_inst-dpc_optode_instrument_recovered
-    description: Data produced by Stream Engine version 1.20.4 for RS01SBPD-DP01A-06-DOSTAD104-recovered_inst-dpc_optode_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.6 for RS01SBPD-DP01A-06-DOSTAD104-recovered_inst-dpc_optode_instrument_recovered
     driver: zarr
     metadata:
       data_products:
