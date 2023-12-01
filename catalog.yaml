@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2023-11-30T11:14:16.990927'
+  last_updated: '2023-12-01T01:01:54.634828'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -3046,6 +3046,56 @@ sources:
         instrument: RS03AXPS-SF03A-2D-PHSENA301
         site: RS03AXPS
         stream: phsen_data_record
+        stream_method: streamed
+  RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record
+    description: Data produced by Stream Engine version 1.20.6 for RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record
+    driver: zarr
+    metadata:
+      data_products:
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: spkir_samples
+        comment: 'Downwelling Spectral Irradiance is the measure of electromagnetic
+          radiation per unit area received (i.e. incident) by a sensor within the
+          seawater column. Downwelling spectral irradiance is calculated from measurements
+          made across 7 specific- pre-defined wavebands as follows: 1 = 412nm, 2 =
+          443nm, 3 = 490nm, 4 = 510nm, 5 = 555nm, 6 = 620nm, 7 = 683nm.'
+        coordinates: lat depth lon time
+        data_product_identifier: SPECTIR_L1
+        long_name: Downwelling Spectral Irradiance
+        precision: 4
+        reference_designator: spkir_downwelling_vector
+        units: uW cm-2 nm-1
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03AXPS-SF03A
+        instrument: RS03AXPS-SF03A-3D-SPKIRA301
+        site: RS03AXPS
+        stream: spkir_data_record
         stream_method: streamed
   RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample:
     args:
