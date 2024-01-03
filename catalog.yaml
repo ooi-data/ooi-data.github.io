@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-01-02T11:13:32.496262'
+  last_updated: '2024-01-03T11:14:17.597714'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -1127,7 +1127,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_dark_sample
-    description: Data produced by Stream Engine version 1.20.7 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_dark_sample
+    description: Data produced by Stream Engine version 1.20.8 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_dark_sample
     driver: zarr
     metadata:
       data_products:
@@ -1172,7 +1172,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_sample
-    description: Data produced by Stream Engine version 1.20.7 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_sample
+    description: Data produced by Stream Engine version 1.20.8 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_sample
     driver: zarr
     metadata:
       data_products:
@@ -1188,14 +1188,16 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - comment: Dissolved Nitrate Concentration, uncorrected for temperature and
+      - ancillary_variables: nitrate_concentration_qartod_results nitrate_concentration_qartod_executed
+        comment: Dissolved Nitrate Concentration, uncorrected for temperature and
           salinity effects.
         coordinates: lat depth lon time
         data_product_identifier: NITRDIS_L1
         long_name: Dissolved Nitrate Concentration
         reference_designator: nitrate_concentration
         units: umol L-1
-      - ancillary_variables: sea_water_temperature frame_type spectral_channels sea_water_practical_salinity
+      - ancillary_variables: salinity_corrected_nitrate_qartod_results salinity_corrected_nitrate_qartod_executed
+          sea_water_temperature frame_type spectral_channels sea_water_practical_salinity
           nutnr_dark_value_used_for_fit
         comment: Temperature and salinity corrected dissolved nitrate concentration.
         coordinates: lat depth lon time
@@ -1399,7 +1401,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.7 for RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.8 for RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -1415,8 +1417,8 @@ sources:
         reference_designator: ctd_tc_oxygen
         standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water
         units: umol L-1
-      - ancillary_variables: ctd_tc_oxygen sea_water_practical_salinity sea_water_pressure
-          sea_water_temperature
+      - ancillary_variables: dissolved_oxygen_qartod_results dissolved_oxygen_qartod_executed
+          ctd_tc_oxygen sea_water_practical_salinity sea_water_pressure sea_water_temperature
         comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
           is a measure of the concentration of gaseous oxygen mixed in seawater. This
           data product is corrected for salinity, temperature, and pressure.
@@ -1697,11 +1699,12 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-4C-FLORDD103-streamed-flort_d_data_record
-    description: Data produced by Stream Engine version 1.20.7 for RS01SBPS-PC01A-4C-FLORDD103-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.8 for RS01SBPS-PC01A-4C-FLORDD103-streamed-flort_d_data_record
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: raw_signal_cdom
+      - ancillary_variables: fluorometric_cdom_qartod_results fluorometric_cdom_qartod_executed
+          raw_signal_cdom
         comment: Fluorometric CDOM Concentration is a measure of how much light has
           been re-emitted (fluoresced) from colored organic compounds found in the
           colored dissolved organic matter (CDOM) in seawater. Examples of CDOM include
@@ -1716,7 +1719,8 @@ sources:
         precision: 6
         reference_designator: fluorometric_cdom
         units: ppb
-      - ancillary_variables: raw_signal_chl
+      - ancillary_variables: fluorometric_chlorophyll_a_qartod_results fluorometric_chlorophyll_a_qartod_executed
+          raw_signal_chl
         comment: Fluorometric Chlorophyll-a Concentration is an estimate of phytoplankton
           biomass using fluorescence. The fluorometer emits light at a specific wavelength
           that is absorbed by chlorophyll and re-emitted as light at a different wavelength.
@@ -1743,8 +1747,8 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - ancillary_variables: total_volume_scattering_coefficient sea_water_temperature
-          sea_water_practical_salinity
+      - ancillary_variables: optical_backscatter_qartod_results optical_backscatter_qartod_executed
+          total_volume_scattering_coefficient sea_water_temperature sea_water_practical_salinity
         comment: Optical Backscatter (Red Wavelengths) is a measure of the amount
           of red light (630-740 nm wavelengths) scattered in the backward direction
           due to suspended matter within seawater, providing a proxy for turbidity
