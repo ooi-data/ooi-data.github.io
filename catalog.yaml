@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-01-03T11:14:17.597714'
+  last_updated: '2024-01-04T11:13:38.425083'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -1924,7 +1924,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-2D-PHSENA101-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.6 for RS01SBPS-SF01A-2D-PHSENA101-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.8 for RS01SBPS-SF01A-2D-PHSENA101-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -2053,7 +2053,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_dark_sample
-    description: Data produced by Stream Engine version 1.20.6 for RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_dark_sample
+    description: Data produced by Stream Engine version 1.20.8 for RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_dark_sample
     driver: zarr
     metadata:
       data_products:
@@ -2259,7 +2259,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-4F-PCO2WA101-streamed-pco2w_a_sami_data_record
-    description: Data produced by Stream Engine version 1.20.6 for RS01SBPS-SF01A-4F-PCO2WA101-streamed-pco2w_a_sami_data_record
+    description: Data produced by Stream Engine version 1.20.8 for RS01SBPS-SF01A-4F-PCO2WA101-streamed-pco2w_a_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -3110,7 +3110,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-2D-PHSENA301-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.6 for RS03AXPS-SF03A-2D-PHSENA301-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.8 for RS03AXPS-SF03A-2D-PHSENA301-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -3239,7 +3239,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample
-    description: Data produced by Stream Engine version 1.20.7 for RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample
+    description: Data produced by Stream Engine version 1.20.8 for RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample
     driver: zarr
     metadata:
       data_products:
@@ -3447,7 +3447,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-4F-PCO2WA301-streamed-pco2w_a_sami_data_record
-    description: Data produced by Stream Engine version 1.20.6 for RS03AXPS-SF03A-4F-PCO2WA301-streamed-pco2w_a_sami_data_record
+    description: Data produced by Stream Engine version 1.20.8 for RS03AXPS-SF03A-4F-PCO2WA301-streamed-pco2w_a_sami_data_record
     driver: zarr
     metadata:
       data_products:
