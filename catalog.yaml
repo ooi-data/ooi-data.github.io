@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-01-04T11:13:38.425083'
+  last_updated: '2024-01-05T11:14:07.854061'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -2098,7 +2098,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_sample
-    description: Data produced by Stream Engine version 1.20.6 for RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_sample
+    description: Data produced by Stream Engine version 1.20.8 for RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_sample
     driver: zarr
     metadata:
       data_products:
@@ -2114,14 +2114,16 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - comment: Dissolved Nitrate Concentration, uncorrected for temperature and
+      - ancillary_variables: nitrate_concentration_qartod_results nitrate_concentration_qartod_executed
+        comment: Dissolved Nitrate Concentration, uncorrected for temperature and
           salinity effects.
         coordinates: lat depth lon time
         data_product_identifier: NITRDIS_L1
         long_name: Dissolved Nitrate Concentration
         reference_designator: nitrate_concentration
         units: umol L-1
-      - ancillary_variables: sea_water_temperature frame_type spectral_channels sea_water_practical_salinity
+      - ancillary_variables: salinity_corrected_nitrate_qartod_results salinity_corrected_nitrate_qartod_executed
+          sea_water_temperature frame_type spectral_channels sea_water_practical_salinity
           nutnr_dark_value_used_for_fit
         comment: Temperature and salinity corrected dissolved nitrate concentration.
         coordinates: lat depth lon time
