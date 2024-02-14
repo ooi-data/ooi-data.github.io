@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-02-13T11:15:17.611520'
+  last_updated: '2024-02-14T11:15:24.089162'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -1071,6 +1071,183 @@ sources:
         site: CE04OSPS
         stream: phsen_data_record
         stream_method: streamed
+  CE04OSPS-SF01B-3A-FLORTD104-streamed-flort_d_data_record:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/CE04OSPS-SF01B-3A-FLORTD104-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.8 for CE04OSPS-SF01B-3A-FLORTD104-streamed-flort_d_data_record
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: fluorometric_cdom_qartod_results fluorometric_cdom_qartod_executed
+          raw_signal_cdom
+        comment: Fluorometric CDOM Concentration is a measure of how much light has
+          been re-emitted (fluoresced) from colored organic compounds found in the
+          colored dissolved organic matter (CDOM) in seawater. Examples of CDOM include
+          tannins (polyphenols that bind to proteins and other large molecules) or
+          lignins (polymers of phenolic acids) from decaying plant material and byproducts
+          from the decomposition of animals. It accounts for the tea-like color in
+          seawater. CDOM is not particulate, but seawater can contain both CDOM and
+          turbidity.
+        coordinates: lat depth lon time
+        data_product_identifier: CDOMFLO_L1
+        long_name: CDOM Concentration
+        precision: 6
+        reference_designator: fluorometric_cdom
+        units: ppb
+      - ancillary_variables: fluorometric_chlorophyll_a_qartod_results fluorometric_chlorophyll_a_qartod_executed
+          raw_signal_chl
+        comment: Fluorometric Chlorophyll-a Concentration is an estimate of phytoplankton
+          biomass using fluorescence. The fluorometer emits light at a specific wavelength
+          that is absorbed by chlorophyll and re-emitted as light at a different wavelength.
+          By measuring the intensity of the re-emitted wavelength of light the chlorophyll-a
+          concentration in the surrounding seawater can be estimated. Chlorophyll-a
+          concentrations can be used as a proxy for phytoplankton biomass as it is
+          a dominant photosynthetic pigment.
+        coordinates: lat depth lon time
+        data_product_identifier: CHLAFLO_L1
+        long_name: Chlorophyll-a Concentration
+        precision: 6
+        reference_designator: fluorometric_chlorophyll_a
+        standard_name: mass_concentration_of_chlorophyll_a_in_sea_water
+        units: ug L-1
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: optical_backscatter_qartod_results optical_backscatter_qartod_executed
+          total_volume_scattering_coefficient sea_water_temperature sea_water_practical_salinity
+        comment: Optical Backscatter (Red Wavelengths) is a measure of the amount
+          of red light (630-740 nm wavelengths) scattered in the backward direction
+          due to suspended matter within seawater, providing a proxy for turbidity
+          and suspended solids.
+        coordinates: lat depth lon time
+        data_product_identifier: FLUBSCT_L2
+        long_name: Optical Backscatter
+        precision: 4
+        reference_designator: optical_backscatter
+        units: m-1
+      - alternate_parameter_name: ctdpf_sbe43_sample-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: lat depth lon time
+        data_product_identifier: PRACSAL_L2
+        instrument: CE04OSPS-SF01B-2A-CTDPFA107
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        stream: ctdpf_sbe43_sample
+        units: '1'
+      - alternate_parameter_name: ctdpf_sbe43_sample-seawater_temperature
+        comment: Seawater temperature near the sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: TEMPWAT_L1
+        instrument: CE04OSPS-SF01B-2A-CTDPFA107
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        stream: ctdpf_sbe43_sample
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      - ancillary_variables: raw_signal_beta
+        comment: Total Volume Scattering Coefficient values represent the volume scattering
+          from particles and the molecular scattering from water at a given wavelength
+          of light and the default angle of 117 degrees for the ECO meter.
+        coordinates: lat depth lon time
+        data_product_identifier: FLUBSCT_L1
+        long_name: Total Volume Scattering Coefficient
+        precision: 6
+        reference_designator: total_volume_scattering_coefficient
+        units: m-1 sr-1
+      id: CE04OSPS-SF01B-3A-FLORTD104-streamed-flort_d_data_record
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: CE04OSPS-SF01B
+        instrument: CE04OSPS-SF01B-3A-FLORTD104
+        site: CE04OSPS
+        stream: flort_d_data_record
+        stream_method: streamed
+  CE04OSPS-SF01B-3C-PARADA102-streamed-parad_sa_sample:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/CE04OSPS-SF01B-3C-PARADA102-streamed-parad_sa_sample
+    description: Data produced by Stream Engine version 1.20.8 for CE04OSPS-SF01B-3C-PARADA102-streamed-parad_sa_sample
+    driver: zarr
+    metadata:
+      data_products:
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: par
+        comment: Photosynthetically Active Radiation (PAR) is the measure of the density
+          of photons per unit area that are in the spectral range of light (400-700
+          nanometers) that primary producers use for photosynthesis.
+        coordinates: lat depth lon time
+        data_product_identifier: OPTPARW_L1
+        long_name: Photosynthetically Active Radiation
+        precision: 4
+        reference_designator: par_counts_output
+        standard_name: downwelling_photosynthetic_photon_flux_in_sea_water
+        units: umol photons m-2 s-1
+      - comment: Photosynthetically Active Radiation (PAR) is the measure of the density
+          of photons per unit area that are in the spectral range of light (400-700
+          nanometers) that primary producers use for photosynthesis.
+        coordinates: lat depth lon time
+        data_product_identifier: OPTPARW_L1
+        long_name: Measured Photosynthetically Active Radiation
+        precision: 4
+        reference_designator: par_measured
+        standard_name: downwelling_photosynthetic_photon_flux_in_sea_water
+        units: umol photons m-2 s-1
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: CE04OSPS-SF01B-3C-PARADA102-streamed-parad_sa_sample
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: CE04OSPS-SF01B
+        instrument: CE04OSPS-SF01B-3C-PARADA102
+        site: CE04OSPS
+        stream: parad_sa_sample
+        stream_method: streamed
   CE04OSPS-SF01B-3D-SPKIRA102-streamed-spkir_data_record:
     args:
       consolidated: true
@@ -1996,6 +2173,183 @@ sources:
         instrument: RS01SBPS-SF01A-2D-PHSENA101
         site: RS01SBPS
         stream: phsen_data_record
+        stream_method: streamed
+  RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.8 for RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: fluorometric_cdom_qartod_results fluorometric_cdom_qartod_executed
+          raw_signal_cdom
+        comment: Fluorometric CDOM Concentration is a measure of how much light has
+          been re-emitted (fluoresced) from colored organic compounds found in the
+          colored dissolved organic matter (CDOM) in seawater. Examples of CDOM include
+          tannins (polyphenols that bind to proteins and other large molecules) or
+          lignins (polymers of phenolic acids) from decaying plant material and byproducts
+          from the decomposition of animals. It accounts for the tea-like color in
+          seawater. CDOM is not particulate, but seawater can contain both CDOM and
+          turbidity.
+        coordinates: lat depth lon time
+        data_product_identifier: CDOMFLO_L1
+        long_name: CDOM Concentration
+        precision: 6
+        reference_designator: fluorometric_cdom
+        units: ppb
+      - ancillary_variables: fluorometric_chlorophyll_a_qartod_results fluorometric_chlorophyll_a_qartod_executed
+          raw_signal_chl
+        comment: Fluorometric Chlorophyll-a Concentration is an estimate of phytoplankton
+          biomass using fluorescence. The fluorometer emits light at a specific wavelength
+          that is absorbed by chlorophyll and re-emitted as light at a different wavelength.
+          By measuring the intensity of the re-emitted wavelength of light the chlorophyll-a
+          concentration in the surrounding seawater can be estimated. Chlorophyll-a
+          concentrations can be used as a proxy for phytoplankton biomass as it is
+          a dominant photosynthetic pigment.
+        coordinates: lat depth lon time
+        data_product_identifier: CHLAFLO_L1
+        long_name: Chlorophyll-a Concentration
+        precision: 6
+        reference_designator: fluorometric_chlorophyll_a
+        standard_name: mass_concentration_of_chlorophyll_a_in_sea_water
+        units: ug L-1
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: optical_backscatter_qartod_results optical_backscatter_qartod_executed
+          total_volume_scattering_coefficient sea_water_temperature sea_water_practical_salinity
+        comment: Optical Backscatter (Red Wavelengths) is a measure of the amount
+          of red light (630-740 nm wavelengths) scattered in the backward direction
+          due to suspended matter within seawater, providing a proxy for turbidity
+          and suspended solids.
+        coordinates: lat depth lon time
+        data_product_identifier: FLUBSCT_L2
+        long_name: Optical Backscatter
+        precision: 4
+        reference_designator: optical_backscatter
+        units: m-1
+      - alternate_parameter_name: ctdpf_sbe43_sample-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: lat depth lon time
+        data_product_identifier: PRACSAL_L2
+        instrument: RS01SBPS-SF01A-2A-CTDPFA102
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        stream: ctdpf_sbe43_sample
+        units: '1'
+      - alternate_parameter_name: ctdpf_sbe43_sample-seawater_temperature
+        comment: Seawater temperature near the sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: TEMPWAT_L1
+        instrument: RS01SBPS-SF01A-2A-CTDPFA102
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        stream: ctdpf_sbe43_sample
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      - ancillary_variables: raw_signal_beta
+        comment: Total Volume Scattering Coefficient values represent the volume scattering
+          from particles and the molecular scattering from water at a given wavelength
+          of light and the default angle of 117 degrees for the ECO meter.
+        coordinates: lat depth lon time
+        data_product_identifier: FLUBSCT_L1
+        long_name: Total Volume Scattering Coefficient
+        precision: 6
+        reference_designator: total_volume_scattering_coefficient
+        units: m-1 sr-1
+      id: RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS01SBPS-SF01A
+        instrument: RS01SBPS-SF01A-3A-FLORTD101
+        site: RS01SBPS
+        stream: flort_d_data_record
+        stream_method: streamed
+  RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample
+    description: Data produced by Stream Engine version 1.20.8 for RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample
+    driver: zarr
+    metadata:
+      data_products:
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: par
+        comment: Photosynthetically Active Radiation (PAR) is the measure of the density
+          of photons per unit area that are in the spectral range of light (400-700
+          nanometers) that primary producers use for photosynthesis.
+        coordinates: lat depth lon time
+        data_product_identifier: OPTPARW_L1
+        long_name: Photosynthetically Active Radiation
+        precision: 4
+        reference_designator: par_counts_output
+        standard_name: downwelling_photosynthetic_photon_flux_in_sea_water
+        units: umol photons m-2 s-1
+      - comment: Photosynthetically Active Radiation (PAR) is the measure of the density
+          of photons per unit area that are in the spectral range of light (400-700
+          nanometers) that primary producers use for photosynthesis.
+        coordinates: lat depth lon time
+        data_product_identifier: OPTPARW_L1
+        long_name: Measured Photosynthetically Active Radiation
+        precision: 4
+        reference_designator: par_measured
+        standard_name: downwelling_photosynthetic_photon_flux_in_sea_water
+        units: umol photons m-2 s-1
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS01SBPS-SF01A
+        instrument: RS01SBPS-SF01A-3C-PARADA101
+        site: RS01SBPS
+        stream: parad_sa_sample
         stream_method: streamed
   RS01SBPS-SF01A-3D-SPKIRA101-streamed-spkir_data_record:
     args:
@@ -3210,6 +3564,183 @@ sources:
         instrument: RS03AXPS-SF03A-2D-PHSENA301
         site: RS03AXPS
         stream: phsen_data_record
+        stream_method: streamed
+  RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.8 for RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: fluorometric_cdom_qartod_results fluorometric_cdom_qartod_executed
+          raw_signal_cdom
+        comment: Fluorometric CDOM Concentration is a measure of how much light has
+          been re-emitted (fluoresced) from colored organic compounds found in the
+          colored dissolved organic matter (CDOM) in seawater. Examples of CDOM include
+          tannins (polyphenols that bind to proteins and other large molecules) or
+          lignins (polymers of phenolic acids) from decaying plant material and byproducts
+          from the decomposition of animals. It accounts for the tea-like color in
+          seawater. CDOM is not particulate, but seawater can contain both CDOM and
+          turbidity.
+        coordinates: lat depth lon time
+        data_product_identifier: CDOMFLO_L1
+        long_name: CDOM Concentration
+        precision: 6
+        reference_designator: fluorometric_cdom
+        units: ppb
+      - ancillary_variables: fluorometric_chlorophyll_a_qartod_results fluorometric_chlorophyll_a_qartod_executed
+          raw_signal_chl
+        comment: Fluorometric Chlorophyll-a Concentration is an estimate of phytoplankton
+          biomass using fluorescence. The fluorometer emits light at a specific wavelength
+          that is absorbed by chlorophyll and re-emitted as light at a different wavelength.
+          By measuring the intensity of the re-emitted wavelength of light the chlorophyll-a
+          concentration in the surrounding seawater can be estimated. Chlorophyll-a
+          concentrations can be used as a proxy for phytoplankton biomass as it is
+          a dominant photosynthetic pigment.
+        coordinates: lat depth lon time
+        data_product_identifier: CHLAFLO_L1
+        long_name: Chlorophyll-a Concentration
+        precision: 6
+        reference_designator: fluorometric_chlorophyll_a
+        standard_name: mass_concentration_of_chlorophyll_a_in_sea_water
+        units: ug L-1
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: optical_backscatter_qartod_results optical_backscatter_qartod_executed
+          total_volume_scattering_coefficient sea_water_temperature sea_water_practical_salinity
+        comment: Optical Backscatter (Red Wavelengths) is a measure of the amount
+          of red light (630-740 nm wavelengths) scattered in the backward direction
+          due to suspended matter within seawater, providing a proxy for turbidity
+          and suspended solids.
+        coordinates: lat depth lon time
+        data_product_identifier: FLUBSCT_L2
+        long_name: Optical Backscatter
+        precision: 4
+        reference_designator: optical_backscatter
+        units: m-1
+      - alternate_parameter_name: ctdpf_sbe43_sample-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: lat depth lon time
+        data_product_identifier: PRACSAL_L2
+        instrument: RS03AXPS-SF03A-2A-CTDPFA302
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        stream: ctdpf_sbe43_sample
+        units: '1'
+      - alternate_parameter_name: ctdpf_sbe43_sample-seawater_temperature
+        comment: Seawater temperature near the sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: TEMPWAT_L1
+        instrument: RS03AXPS-SF03A-2A-CTDPFA302
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        stream: ctdpf_sbe43_sample
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      - ancillary_variables: raw_signal_beta
+        comment: Total Volume Scattering Coefficient values represent the volume scattering
+          from particles and the molecular scattering from water at a given wavelength
+          of light and the default angle of 117 degrees for the ECO meter.
+        coordinates: lat depth lon time
+        data_product_identifier: FLUBSCT_L1
+        long_name: Total Volume Scattering Coefficient
+        precision: 6
+        reference_designator: total_volume_scattering_coefficient
+        units: m-1 sr-1
+      id: RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03AXPS-SF03A
+        instrument: RS03AXPS-SF03A-3A-FLORTD301
+        site: RS03AXPS
+        stream: flort_d_data_record
+        stream_method: streamed
+  RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample
+    description: Data produced by Stream Engine version 1.20.8 for RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample
+    driver: zarr
+    metadata:
+      data_products:
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: par
+        comment: Photosynthetically Active Radiation (PAR) is the measure of the density
+          of photons per unit area that are in the spectral range of light (400-700
+          nanometers) that primary producers use for photosynthesis.
+        coordinates: lat depth lon time
+        data_product_identifier: OPTPARW_L1
+        long_name: Photosynthetically Active Radiation
+        precision: 4
+        reference_designator: par_counts_output
+        standard_name: downwelling_photosynthetic_photon_flux_in_sea_water
+        units: umol photons m-2 s-1
+      - comment: Photosynthetically Active Radiation (PAR) is the measure of the density
+          of photons per unit area that are in the spectral range of light (400-700
+          nanometers) that primary producers use for photosynthesis.
+        coordinates: lat depth lon time
+        data_product_identifier: OPTPARW_L1
+        long_name: Measured Photosynthetically Active Radiation
+        precision: 4
+        reference_designator: par_measured
+        standard_name: downwelling_photosynthetic_photon_flux_in_sea_water
+        units: umol photons m-2 s-1
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03AXPS-SF03A
+        instrument: RS03AXPS-SF03A-3C-PARADA301
+        site: RS03AXPS
+        stream: parad_sa_sample
         stream_method: streamed
   RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record:
     args:
