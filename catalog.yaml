@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-03-13T11:15:55.256748'
+  last_updated: '2024-03-14T11:13:02.205111'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -4536,4 +4536,209 @@ sources:
         instrument: RS03ECAL-MJ03E-12-CTDPFB306
         site: RS03ECAL
         stream: ctdpf_optode_sample
+        stream_method: streamed
+  RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample
+    description: Data produced by Stream Engine version 1.20.8 for RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample
+    driver: zarr
+    metadata:
+      data_products:
+      - comment: 'Vent Fluid Temperature is measured continuously at the sample inlet
+          of the Hydrothermal Vent Fluid Interactive Sampler (RASFL) instrument. This
+          data product includes temperature measurements made by resistance platinum
+          detectors at three locations: two in a low temperature vent and one at a
+          nearby high temperature vent. Locations of the detectors can be found in
+          the metadata.'
+        coordinates: time lat lon
+        data_product_identifier: TEMPVNT_L1
+        long_name: Vent Fluid Temperature 01
+        precision: 2
+        reference_designator: temperature1
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
+      - comment: 'Vent Fluid Temperature is measured continuously at the sample inlet
+          of the Hydrothermal Vent Fluid Interactive Sampler (RASFL) instrument. This
+          data product includes temperature measurements made by resistance platinum
+          detectors at three locations: two in a low temperature vent and one at a
+          nearby high temperature vent. Locations of the detectors can be found in
+          the metadata.'
+        coordinates: time lat lon
+        data_product_identifier: TEMPVNT_L1
+        long_name: Vent Fluid Temperature 02
+        precision: 2
+        reference_designator: temperature2
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
+      - comment: 'Vent Fluid Temperature is measured continuously at the sample inlet
+          of the Hydrothermal Vent Fluid Interactive Sampler (RASFL) instrument. This
+          data product includes temperature measurements made by resistance platinum
+          detectors at three locations: two in a low temperature vent and one at a
+          nearby high temperature vent. Locations of the detectors can be found in
+          the metadata.'
+        coordinates: time lat lon
+        data_product_identifier: TEMPVNT_L1
+        long_name: Vent Fluid Temperature 03
+        precision: 2
+        reference_designator: temperature3
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03INT1-MJ03C
+        instrument: RS03INT1-MJ03C-07-D1000A301
+        site: RS03INT1
+        stream: d1000_sample
+        stream_method: streamed
+  RS03INT1-MJ03C-09-TRHPHA302-streamed-trhph_sample:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03INT1-MJ03C-09-TRHPHA302-streamed-trhph_sample
+    description: Data produced by Stream Engine version 1.20.8 for RS03INT1-MJ03C-09-TRHPHA302-streamed-trhph_sample
+    driver: zarr
+    metadata:
+      data_products:
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      - ancillary_variables: ref_temp_volts
+        comment: Thermistor Reference Temperature from TRHPH is an intermediate data
+          product that is important for monitoring and troubleshooting the instrument.
+          It is engineering data that should not be confused with scientific data
+          as it does not represent a scientifically meaningful environmental temperature.
+        coordinates: time lat lon
+        data_product_identifier: TRHPHTE_REF_L1
+        long_name: Thermistor Reference Temperature
+        precision: 0
+        reference_designator: trhph_thermistor_temp
+        units: degrees_Celsius
+      - ancillary_variables: resistivity_x5 resistivity_x1 resistivity_5 vent_fluid_temperature
+        comment: Vent Fluid Chloride Concentration (Cl-) is calculated using resistivity
+          and temperature measured by a Hydrothermal Vent Fluid Temperature and Resistivity
+          sensor placed in a high-temperature hydrothermal vent.
+        coordinates: time lat lon
+        data_product_identifier: TRHPHCC_L2
+        long_name: Vent Fluid Chloride Concentration
+        precision: 4
+        reference_designator: vent_fluid_chloride_conc
+        units: mmol kg-1
+      - ancillary_variables: eh_sensor
+        comment: Vent Fluid Oxidation-Reduction Potential (ORP) is a measure of the
+          tendency of a vent fluid, and the chemical species within it, to acquire
+          electrons (i.e. be reduced). The more positive the potential, the greater
+          the affinity for electrons and tendency to be reduced.
+        coordinates: time lat lon
+        data_product_identifier: TRHPHEH_L1
+        long_name: Vent Fluid Oxidation-Reduction Potential
+        precision: 4
+        reference_designator: vent_fluid_orp
+        units: mV
+      - ancillary_variables: resistivity_temp_volts ref_temp_volts
+        comment: Vent Fluid Absolute Temperature refers to temperature calculated
+          from the Temperature-Resistivity Probe Instrument (TRHPH) Thermistor and
+          Thermocouple. It is calculated using response curves from Thermocouple and
+          Thermistor Temperature (in volts) that are adjusted to the custom instrument
+          design and corrected by laboratory calibration.
+        coordinates: time lat lon
+        data_product_identifier: TRHPHTE-ABS_L1
+        long_name: Vent Fluid Absolute Temperature
+        precision: 4
+        reference_designator: vent_fluid_temperature
+        units: degrees_Celsius
+      id: RS03INT1-MJ03C-09-TRHPHA302-streamed-trhph_sample
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03INT1-MJ03C
+        instrument: RS03INT1-MJ03C-09-TRHPHA302
+        site: RS03INT1
+        stream: trhph_sample
+        stream_method: streamed
+  RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
+    description: Data produced by Stream Engine version 1.20.8 for RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
+    driver: zarr
+    metadata:
+      data_products:
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      - ancillary_variables: ref_temp_volts
+        comment: Thermistor Reference Temperature from TRHPH is an intermediate data
+          product that is important for monitoring and troubleshooting the instrument.
+          It is engineering data that should not be confused with scientific data
+          as it does not represent a scientifically meaningful environmental temperature.
+        coordinates: time lat lon
+        data_product_identifier: TRHPHTE_REF_L1
+        long_name: Thermistor Reference Temperature
+        precision: 0
+        reference_designator: trhph_thermistor_temp
+        units: degrees_Celsius
+      - ancillary_variables: resistivity_x5 resistivity_x1 resistivity_5 vent_fluid_temperature
+        comment: Vent Fluid Chloride Concentration (Cl-) is calculated using resistivity
+          and temperature measured by a Hydrothermal Vent Fluid Temperature and Resistivity
+          sensor placed in a high-temperature hydrothermal vent.
+        coordinates: time lat lon
+        data_product_identifier: TRHPHCC_L2
+        long_name: Vent Fluid Chloride Concentration
+        precision: 4
+        reference_designator: vent_fluid_chloride_conc
+        units: mmol kg-1
+      - ancillary_variables: eh_sensor
+        comment: Vent Fluid Oxidation-Reduction Potential (ORP) is a measure of the
+          tendency of a vent fluid, and the chemical species within it, to acquire
+          electrons (i.e. be reduced). The more positive the potential, the greater
+          the affinity for electrons and tendency to be reduced.
+        coordinates: time lat lon
+        data_product_identifier: TRHPHEH_L1
+        long_name: Vent Fluid Oxidation-Reduction Potential
+        precision: 4
+        reference_designator: vent_fluid_orp
+        units: mV
+      - ancillary_variables: resistivity_temp_volts ref_temp_volts
+        comment: Vent Fluid Absolute Temperature refers to temperature calculated
+          from the Temperature-Resistivity Probe Instrument (TRHPH) Thermistor and
+          Thermocouple. It is calculated using response curves from Thermocouple and
+          Thermistor Temperature (in volts) that are adjusted to the custom instrument
+          design and corrected by laboratory calibration.
+        coordinates: time lat lon
+        data_product_identifier: TRHPHTE-ABS_L1
+        long_name: Vent Fluid Absolute Temperature
+        precision: 4
+        reference_designator: vent_fluid_temperature
+        units: degrees_Celsius
+      id: RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03INT1-MJ03C
+        instrument: RS03INT1-MJ03C-10-TRHPHA301
+        site: RS03INT1
+        stream: trhph_sample
         stream_method: streamed
