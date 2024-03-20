@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-03-19T11:13:50.250069'
+  last_updated: '2024-03-20T11:13:31.249824'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -2918,6 +2918,43 @@ sources:
         site: RS01SLBS
         stream: ctdpf_optode_sample
         stream_method: streamed
+  RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
+    description: Data produced by Stream Engine version 1.20.8 for RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: absolute_pressure
+        comment: Seafloor Pressure is a measurement of the force on the seafloor exerted
+          by the weight of the overlying seawater column plus the weight of the atmosphere
+          (hydrostatic plus atmospheric).
+        coordinates: time lat lon
+        data_product_identifier: SFLPRES_L1
+        long_name: Seafloor Pressure
+        precision: 4
+        reference_designator: seafloor_pressure
+        standard_name: sea_water_pressure_at_sea_floor
+        units: dbar
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS01SLBS-MJ01A
+        instrument: RS01SLBS-MJ01A-06-PRESTA101
+        site: RS01SLBS
+        stream: prest_real_time
+        stream_method: streamed
   RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam:
     args:
       consolidated: true
@@ -3291,6 +3328,43 @@ sources:
         instrument: RS03AXBS-LJ03A-12-CTDPFB301
         site: RS03AXBS
         stream: ctdpf_optode_sample
+        stream_method: streamed
+  RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time
+    description: Data produced by Stream Engine version 1.20.8 for RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: absolute_pressure
+        comment: Seafloor Pressure is a measurement of the force on the seafloor exerted
+          by the weight of the overlying seawater column plus the weight of the atmosphere
+          (hydrostatic plus atmospheric).
+        coordinates: time lat lon
+        data_product_identifier: SFLPRES_L1
+        long_name: Seafloor Pressure
+        precision: 4
+        reference_designator: seafloor_pressure
+        standard_name: sea_water_pressure_at_sea_floor
+        units: dbar
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03AXBS-MJ03A
+        instrument: RS03AXBS-MJ03A-06-PRESTA301
+        site: RS03AXBS
+        stream: prest_real_time
         stream_method: streamed
   RS03AXPS-PC03A-4A-CTDPFA303-streamed-ctdpf_optode_sample:
     args:
