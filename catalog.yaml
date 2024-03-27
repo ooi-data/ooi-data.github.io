@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-03-26T11:13:44.259616'
+  last_updated: '2024-03-27T11:13:12.332172'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -3589,6 +3589,74 @@ sources:
         instrument: RS03ASHS-MJ03B-10-CTDPFB304
         site: RS03ASHS
         stream: ctdpf_optode_sample
+        stream_method: streamed
+  RS03AXBS-LJ03A-05-HPIESA301-streamed-echo_sounding:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXBS-LJ03A-05-HPIESA301-streamed-echo_sounding
+    description: Data produced by Stream Engine version 1.20.8 for RS03AXBS-LJ03A-05-HPIESA301-streamed-echo_sounding
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: hpies_pressure
+        comment: Seafloor Pressure is a measurement of the force on the seafloor exerted
+          by the weight of the overlying seawater column plus the weight of the atmosphere
+          (hydrostatic plus atmospheric).
+        coordinates: time lat lon
+        data_product_identifier: IESPRES_L1
+        long_name: Seafloor Pressure
+        precision: 3
+        reference_designator: hpies_pressure_L1
+        units: dbar
+      - ancillary_variables: hpies_travel_time1
+        comment: 1st Round-trip acoustic travel time (RATT) in Seconds.
+        coordinates: time lat lon
+        data_product_identifier: IESRATT_L1
+        long_name: Round-Trip Acoustic Travel Time 1
+        precision: 5
+        reference_designator: hpies_travel_time1_L1
+        units: seconds
+      - ancillary_variables: hpies_travel_time2
+        comment: 2nd Round-trip acoustic travel time (RATT) in Seconds.
+        coordinates: time lat lon
+        data_product_identifier: IESRATT_L1
+        long_name: Round-Trip Acoustic Travel Time 2
+        precision: 5
+        reference_designator: hpies_travel_time2_L1
+        units: seconds
+      - ancillary_variables: hpies_travel_time3
+        comment: 3rd Round-trip acoustic travel time (RATT) in Seconds.
+        coordinates: time lat lon
+        data_product_identifier: IESRATT_L1
+        long_name: Round-Trip Acoustic Travel Time 3
+        precision: 5
+        reference_designator: hpies_travel_time3_L1
+        units: seconds
+      - ancillary_variables: hpies_travel_time4
+        comment: 4th Round-trip acoustic travel time (RATT) in Seconds.
+        coordinates: time lat lon
+        data_product_identifier: IESRATT_L1
+        long_name: Round-Trip Acoustic Travel Time 4
+        precision: 5
+        reference_designator: hpies_travel_time4_L1
+        units: seconds
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS03AXBS-LJ03A-05-HPIESA301-streamed-echo_sounding
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03AXBS-LJ03A
+        instrument: RS03AXBS-LJ03A-05-HPIESA301
+        site: RS03AXBS
+        stream: echo_sounding
         stream_method: streamed
   RS03AXBS-LJ03A-10-ADCPTE303-streamed-adcp_velocity_beam:
     args:
