@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-03-29T11:14:22.634894'
+  last_updated: '2024-03-30T11:13:41.508630'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -638,6 +638,79 @@ sources:
         instrument: CE04OSBP-LJ01C-06-CTDBPO108
         site: CE04OSBP
         stream: ctdbp_no_sample
+        stream_method: streamed
+  CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
+    description: Data produced by Stream Engine version 1.20.8 for CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
+    driver: zarr
+    metadata:
+      data_products:
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      - ancillary_variables: status_code turbulent_velocity_north turbulent_velocity_east
+          driver_timestamp
+        comment: Turbulent Point Water Velocity is the measurement of current velocity,
+          which can be used to derive turbulence data. Current velocity is measured
+          within a 1 cm3 box by transmitting a sound pulse from the center transducer.
+          The instrument measures the Doppler shift introduced by the reflections
+          from particles suspended in the water, which is picked up by the 3 receivers
+          that surround the center transducer. This data product is the eastward component
+          of turbulent seawater velocity relative to true North.
+        coordinates: time lat lon depth
+        data_product_identifier: VELPTTU-VLE_L1
+        long_name: Eastward Turbulent Point Seawater Velocity
+        precision: 3
+        reference_designator: vel3d_c_eastward_turbulent_velocity
+        standard_name: eastward_sea_water_velocity
+        units: m s-1
+      - ancillary_variables: status_code turbulent_velocity_north turbulent_velocity_east
+          driver_timestamp
+        comment: Turbulent Point Water Velocity is the measurement of current velocity,
+          which can be used to derive turbulence data. Current velocity is measured
+          within a 1 cm3 box by transmitting a sound pulse from the center transducer.
+          The instrument measures the Doppler shift introduced by the reflections
+          from particles suspended in the water, which is picked up by the 3 receivers
+          that surround the center transducer. This data product is the northward
+          component of turbulent seawater velocity relative to true North.
+        coordinates: time lat lon depth
+        data_product_identifier: VELPTTU-VLN_L1
+        long_name: Northward Turbulent Point Seawater Velocity
+        precision: 3
+        reference_designator: vel3d_c_northward_turbulent_velocity
+        standard_name: northward_sea_water_velocity
+        units: m s-1
+      - ancillary_variables: status_code turbulent_velocity_vertical
+        comment: Turbulent Point Water Velocity is the measurement of current velocity,
+          which can be used to derive turbulence data. Current velocity is measured
+          within a 1 cm3 box by transmitting a sound pulse from the center transducer.
+          The instrument measures the Doppler shift introduced by the reflections
+          from particles suspended in the water, which is picked up by the 3 receivers
+          that surround the center transducer. This data product is the upward component
+          of turbulent seawater velocity.
+        coordinates: time lat lon depth
+        data_product_identifier: VELPTTU-VLU_L1
+        long_name: Upward Turbulent Point Seawater Velocity
+        precision: 3
+        reference_designator: vel3d_c_upward_turbulent_velocity
+        standard_name: upward_sea_water_velocity
+        units: m s-1
+      id: CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: CE04OSBP-LJ01C
+        instrument: CE04OSBP-LJ01C-07-VEL3DC107
+        site: CE04OSBP
+        stream: vel3d_cd_velocity_data
         stream_method: streamed
   CE04OSBP-LJ01C-09-PCO2WB104-streamed-pco2w_b_sami_data_record:
     args:
