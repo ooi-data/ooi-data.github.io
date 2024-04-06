@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-04-05T11:13:12.027525'
+  last_updated: '2024-04-06T11:12:04.351040'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -3828,6 +3828,106 @@ sources:
         instrument: RS03ASHS-MJ03B-07-TMPSFA301
         site: RS03ASHS
         stream: tmpsf_sample
+        stream_method: streamed
+  RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample_15s:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample_15s
+    description: Data produced by Stream Engine version 1.20.8 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample_15s
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product utilizes the 15-second Mean Seafloor
+          Depth Detided and calculates a mean for each data point over a 10 minute
+          backward-looking window. The rate is derived from the backward-looking depth
+          difference between values with a 10 minute offset.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-10MINRATE
+        long_name: Seafloor Uplift and Deflation - 10-Min Mean Seafloor Uplift Rate
+        precision: 4
+        reference_designator: botsflu_10minrate
+        units: cm hr-1
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is the instantaneous rate of depth change
+          derived from the 15-sec Mean Seafloor Depth Detided using a backward-looking
+          5 minute reference point for the depth difference.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-5MINRATE
+        long_name: Seafloor Uplift and Deflation - 5-Min Rate of Depth Change
+        precision: 4
+        reference_designator: botsflu_5minrate
+        units: cm min-1
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is derived by conversion of the 15-second
+          mean seafloor pressure and removal of the tidal signal predicted for the
+          BOTPT instrument location.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-MEANDEPTH
+        long_name: Seafloor Uplift and Deflation - Mean Seafloor Depth
+        precision: 4
+        reference_designator: botsflu_meandepth
+        units: m
+      - ancillary_variables: bottom_pressure
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is 15-second mean seafloor pressure.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-MEANPRES
+        long_name: Seafloor Uplift and Deflation - Mean Seafloor Pressure
+        precision: 4
+        reference_designator: botsflu_meanpres
+        units: psi
+      - ancillary_variables: botsflu_time15s
+        comment: Seafloor Uplift and Deflation is a measure of the inflation and deflation
+          (i.e., "breathing") of the seafloor. These data are calculated using Nano-resolution
+          Bottom Pressure. This data product is the tide calculated at 15-second time
+          intervals for the location of each BOTPT instrument using tide-prediction
+          software.
+        coordinates: time lat lon
+        data_product_identifier: BOTSFLU-PREDTIDE
+        long_name: Seafloor Uplift and Deflation - Predicted Tide
+        precision: 4
+        reference_designator: botsflu_predtide
+        units: m
+      - comment: Seafloor Pressure is a measure of the force on the seafloor exerted
+          by the weight of the overlying water column plus the weight of the atmosphere.
+          Nano-resolution Bottom Pressure measurements are seafloor pressure measurements
+          with very high sample rate and accuracy. This high resolution provides sufficient
+          precision to enable the measurement of the rise and fall of the seafloor.
+        coordinates: time lat lon
+        data_product_identifier: BOTPRES_L1
+        instrument: RS03ASHS-MJ03B-09-BOTPTA304
+        long_name: Bottom Pressure
+        precision: 4
+        reference_designator: bottom_pressure
+        stream: botpt_nano_sample
+        units: psi
+      - comment: These auxiliary data products are timestamps anchored at multiples
+          of 15 seconds past the minute which correspond to the time base for the
+          BOTSFLU data products which are binned on 15 seconds.
+        data_product_identifier: TIME15S
+        long_name: Seafloor Uplift and Deflation - Timestamp 15s
+        precision: 4
+        reference_designator: time
+        units: seconds since 1900-01-01
+      id: RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample_15s
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03ASHS-MJ03B
+        instrument: RS03ASHS-MJ03B-09-BOTPTA304
+        site: RS03ASHS
+        stream: botpt_nano_sample_15s
         stream_method: streamed
   RS03ASHS-MJ03B-10-CTDPFB304-streamed-ctdpf_optode_sample:
     args:
