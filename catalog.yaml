@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-04-11T11:14:27.675084'
+  last_updated: '2024-04-12T11:16:09.363326'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -4590,6 +4590,44 @@ sources:
         instrument: RS03AXPS-PC03A-05-ADCPTD302
         site: RS03AXPS
         stream: adcp_velocity_beam
+        stream_method: streamed
+  RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam_5:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam_5
+    description: Data produced by Stream Engine version 1.20.8 for RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam_5
+    driver: zarr
+    metadata:
+      data_products:
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam_5
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03AXPS-PC03A
+        instrument: RS03AXPS-PC03A-06-VADCPA301
+        site: RS03AXPS
+        stream: vadcp_velocity_beam_5
         stream_method: streamed
   RS03AXPS-PC03A-4A-CTDPFA303-streamed-ctdpf_optode_sample:
     args:
