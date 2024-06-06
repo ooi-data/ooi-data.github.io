@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-06-05T11:14:18.923940'
+  last_updated: '2024-06-06T11:14:42.991091'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -784,6 +784,86 @@ sources:
         instrument: CE04OSBP-LJ01C-07-VEL3DC107
         site: CE04OSBP
         stream: vel3d_cd_velocity_data
+        stream_method: streamed
+  CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.8 for CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: sea_water_practical_salinity internal_temp_raw sea_water_temperature
+          c_signal_counts c_reference_counts
+        comment: The Optical Beam Attenuation Coefficient is the rate that the intensity
+          of a beam of light will decrease in response to the combined effects of
+          absorption and scatter as a function of propagation distance. The Attenuation
+          Coefficient results from the spectral beam attenuation of the combination
+          of all seawater impurities including all particulate and dissolved matter
+          of optical importance.
+        coordinates: time lat lon
+        data_product_identifier: OPTATTN_L2
+        long_name: Optical Beam Attenuation Coefficient
+        precision: 6
+        reference_designator: beam_attenuation
+        units: m-1
+      - ancillary_variables: a_reference_counts sea_water_practical_salinity a_signal_counts
+          internal_temp_raw beam_attenuation sea_water_temperature
+        comment: Optical Absorption Coefficient is the rate that the intensity of
+          a beam of light will decrease in response to the absorption (removal) of
+          light energy as a function of propagation distance. The Optical Absorption
+          Coefficient reflects the absorption coefficient for the combination of all
+          seawater impurities including all particulate and dissolved matter of optical
+          importance.
+        coordinates: time lat lon
+        data_product_identifier: OPTABSN_L2
+        long_name: Optical Absorption Coefficient
+        precision: 6
+        reference_designator: optical_absorption
+        units: m-1
+      - alternate_parameter_name: ctdbp_no_sample-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: time lat lon
+        data_product_identifier: PRACSAL_L2
+        instrument: CE04OSBP-LJ01C-06-CTDBPO108
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        stream: ctdbp_no_sample
+        units: '1'
+      - alternate_parameter_name: ctdbp_no_sample-seawater_temperature
+        comment: Seawater temperature near the sensor.
+        coordinates: time lat lon
+        data_product_identifier: TEMPWAT_L1
+        instrument: CE04OSBP-LJ01C-06-CTDBPO108
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        stream: ctdbp_no_sample
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: CE04OSBP-LJ01C
+        instrument: CE04OSBP-LJ01C-08-OPTAAC104
+        site: CE04OSBP
+        stream: optaa_sample
         stream_method: streamed
   CE04OSBP-LJ01C-09-PCO2WB104-streamed-pco2w_b_sami_data_record:
     args:
@@ -1586,6 +1666,98 @@ sources:
         instrument: CE04OSPS-SF01B-3A-FLORTD104
         site: CE04OSPS
         stream: flort_d_data_record
+        stream_method: streamed
+  CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.8 for CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: sea_water_practical_salinity internal_temp_raw sea_water_temperature
+          c_signal_counts c_reference_counts
+        comment: The Optical Beam Attenuation Coefficient is the rate that the intensity
+          of a beam of light will decrease in response to the combined effects of
+          absorption and scatter as a function of propagation distance. The Attenuation
+          Coefficient results from the spectral beam attenuation of the combination
+          of all seawater impurities including all particulate and dissolved matter
+          of optical importance.
+        coordinates: lat depth lon time
+        data_product_identifier: OPTATTN_L2
+        long_name: Optical Beam Attenuation Coefficient
+        precision: 6
+        reference_designator: beam_attenuation
+        units: m-1
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: a_reference_counts sea_water_practical_salinity a_signal_counts
+          internal_temp_raw beam_attenuation sea_water_temperature
+        comment: Optical Absorption Coefficient is the rate that the intensity of
+          a beam of light will decrease in response to the absorption (removal) of
+          light energy as a function of propagation distance. The Optical Absorption
+          Coefficient reflects the absorption coefficient for the combination of all
+          seawater impurities including all particulate and dissolved matter of optical
+          importance.
+        coordinates: lat depth lon time
+        data_product_identifier: OPTABSN_L2
+        long_name: Optical Absorption Coefficient
+        precision: 6
+        reference_designator: optical_absorption
+        units: m-1
+      - alternate_parameter_name: ctdpf_sbe43_sample-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: lat depth lon time
+        data_product_identifier: PRACSAL_L2
+        instrument: CE04OSPS-SF01B-2A-CTDPFA107
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        stream: ctdpf_sbe43_sample
+        units: '1'
+      - alternate_parameter_name: ctdpf_sbe43_sample-seawater_temperature
+        comment: Seawater temperature near the sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: TEMPWAT_L1
+        instrument: CE04OSPS-SF01B-2A-CTDPFA107
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        stream: ctdpf_sbe43_sample
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: CE04OSPS-SF01B
+        instrument: CE04OSPS-SF01B-3B-OPTAAD105
+        site: CE04OSPS
+        stream: optaa_sample
         stream_method: streamed
   CE04OSPS-SF01B-3C-PARADA102-streamed-parad_sa_sample:
     args:
