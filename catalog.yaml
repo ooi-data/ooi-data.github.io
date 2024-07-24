@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-07-23T11:15:54.073873'
+  last_updated: '2024-07-24T11:14:44.953280'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -3712,7 +3712,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-LJ01A-10-ADCPTE101-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.8 for RS01SLBS-LJ01A-10-ADCPTE101-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.10 for RS01SLBS-LJ01A-10-ADCPTE101-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
