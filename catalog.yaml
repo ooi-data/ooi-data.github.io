@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-08-20T11:16:34.934641'
+  last_updated: '2024-08-21T11:13:57.983491'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -3644,7 +3644,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-LJ01A-05-HPIESA101-streamed-echo_sounding
-    description: Data produced by Stream Engine version 1.20.8 for RS01SLBS-LJ01A-05-HPIESA101-streamed-echo_sounding
+    description: Data produced by Stream Engine version 1.20.10 for RS01SLBS-LJ01A-05-HPIESA101-streamed-echo_sounding
     driver: zarr
     metadata:
       data_products:
@@ -4035,7 +4035,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
-    description: Data produced by Stream Engine version 1.20.8 for RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
+    description: Data produced by Stream Engine version 1.20.10 for RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
     driver: zarr
     metadata:
       data_products:
@@ -4072,7 +4072,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-MJ01A-12-VEL3DB101-streamed-vel3d_b_sample
-    description: Data produced by Stream Engine version 1.20.8 for RS01SLBS-MJ01A-12-VEL3DB101-streamed-vel3d_b_sample
+    description: Data produced by Stream Engine version 1.20.10 for RS01SLBS-MJ01A-12-VEL3DB101-streamed-vel3d_b_sample
     driver: zarr
     metadata:
       data_products:
