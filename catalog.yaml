@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-09-10T11:16:14.285261'
+  last_updated: '2024-09-11T11:17:53.653868'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -2733,6 +2733,113 @@ sources:
         site: RS01SBPS
         stream: flort_d_data_record
         stream_method: streamed
+  RS01SBPS-SF01A-2A-CTDPFA102-streamed-ctdpf_sbe43_sample:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS01SBPS-SF01A-2A-CTDPFA102-streamed-ctdpf_sbe43_sample
+    description: Data produced by Stream Engine version 1.20.10 for RS01SBPS-SF01A-2A-CTDPFA102-streamed-ctdpf_sbe43_sample
+    driver: zarr
+    metadata:
+      data_products:
+      - comment: Dissolved Oxygen (DO) Concentration from the Fast Response (Fastrep)
+          DO Instrument is a measure of the concentration of gaseous oxygen mixed
+          in seawater. This Instrument measures dissolved oxygen concentrations on
+          shallow coastal profilers through rapid oxygen gradients. This data product
+          is corrected for salinity, temperature, and depth from a collocated CTD.
+        coordinates: lat depth lon time
+        data_product_identifier: DOCONCF_L2
+        instrument: RS01SBPS-SF01A-2A-DOFSTA102
+        long_name: Dissolved Oxygen - Pressure Temp Sal Corrected (CTD)
+        precision: 4
+        reference_designator: do_fast_sample-corrected_dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        stream: do_fast_sample
+        units: umol kg-1
+      - alternate_parameter_name: density
+        ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
+        comment: Seawater Density is defined as mass per unit volume and is calculated
+          from the conductivity, temperature and depth of a seawater sample using
+          the TEOS-10 equation.
+        coordinates: lat depth lon time
+        data_product_identifier: DENSITY_L2
+        long_name: Seawater Density
+        precision: 3
+        reference_designator: sea_water_density
+        standard_name: sea_water_density
+        units: kg m-3
+      - alternate_parameter_name: seawater_conductivity
+        ancillary_variables: seawater_conductivity_qartod_results seawater_conductivity_qartod_executed
+          sea_water_pressure sea_water_temperature conductivity
+        comment: Seawater conductivity refers to the ability of seawater to conduct
+          electricity. The presence of ions in the seawater, such as salt, increases
+          the electrical conducting ability of seawater. As such, conductivity can
+          be used as a proxy for determining the quantity of salt in a sample of seawater.
+        coordinates: lat depth lon time
+        data_product_identifier: CONDWAT_L1
+        long_name: Seawater Conductivity
+        precision: 6
+        reference_designator: sea_water_electrical_conductivity
+        standard_name: sea_water_electrical_conductivity
+        units: S m-1
+      - alternate_parameter_name: practical_salinity
+        ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
+          sea_water_pressure sea_water_electrical_conductivity sea_water_temperature
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: lat depth lon time
+        data_product_identifier: PRACSAL_L2
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        units: '1'
+      - alternate_parameter_name: seawater_pressure
+        ancillary_variables: seawater_pressure_qartod_results seawater_pressure_qartod_executed
+          pressure pressure_temp
+        comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: sea_water_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - alternate_parameter_name: seawater_temperature
+        ancillary_variables: seawater_temperature_qartod_results seawater_temperature_qartod_executed
+          temperature
+        comment: Seawater temperature near the sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: TEMPWAT_L1
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS01SBPS-SF01A-2A-CTDPFA102-streamed-ctdpf_sbe43_sample
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS01SBPS-SF01A
+        instrument: RS01SBPS-SF01A-2A-CTDPFA102
+        site: RS01SBPS
+        stream: ctdpf_sbe43_sample
+        stream_method: streamed
   RS01SBPS-SF01A-2D-PHSENA101-streamed-phsen_data_record:
     args:
       consolidated: true
@@ -4606,6 +4713,123 @@ sources:
         site: RS03AXBS
         stream: optaa_sample
         stream_method: streamed
+  RS03AXBS-LJ03A-12-CTDPFB301-streamed-ctdpf_optode_sample:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXBS-LJ03A-12-CTDPFB301-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.10 for RS03AXBS-LJ03A-12-CTDPFB301-streamed-ctdpf_optode_sample
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: oxygen
+        comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
+          is a measure of the concentration of gaseous oxygen mixed in seawater. This
+          instrument is connected through a CTD. This data product is corrected internally
+          for temperature as measured by the DO thermistor.
+        coordinates: time lat lon depth
+        data_product_identifier: DOCONCS_L1
+        long_name: DO from Onboard Calculation
+        precision: 4
+        reference_designator: ctd_tc_oxygen
+        standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water
+        units: umol L-1
+      - ancillary_variables: dissolved_oxygen_qartod_results dissolved_oxygen_qartod_executed
+          ctd_tc_oxygen sea_water_practical_salinity sea_water_pressure sea_water_temperature
+        comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
+          is a measure of the concentration of gaseous oxygen mixed in seawater. This
+          data product is corrected for salinity, temperature, and pressure.
+        coordinates: time lat lon depth
+        data_product_identifier: DOXYGEN_L2
+        long_name: DO from Onboard Calculation - Corrected
+        precision: 4
+        reference_designator: dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        units: umol kg-1
+      - alternate_parameter_name: density
+        ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
+        comment: Seawater Density is defined as mass per unit volume and is calculated
+          from the conductivity, temperature and depth of a seawater sample using
+          the TEOS-10 equation.
+        coordinates: time lat lon depth
+        data_product_identifier: DENSITY_L2
+        long_name: Seawater Density
+        precision: 3
+        reference_designator: sea_water_density
+        standard_name: sea_water_density
+        units: kg m-3
+      - alternate_parameter_name: seawater_conductivity
+        ancillary_variables: seawater_conductivity_qartod_results seawater_conductivity_qartod_executed
+          sea_water_pressure sea_water_temperature conductivity
+        comment: Seawater conductivity refers to the ability of seawater to conduct
+          electricity. The presence of ions in the seawater, such as salt, increases
+          the electrical conducting ability of seawater. As such, conductivity can
+          be used as a proxy for determining the quantity of salt in a sample of seawater.
+        coordinates: time lat lon depth
+        data_product_identifier: CONDWAT_L1
+        long_name: Seawater Conductivity
+        precision: 6
+        reference_designator: sea_water_electrical_conductivity
+        standard_name: sea_water_electrical_conductivity
+        units: S m-1
+      - alternate_parameter_name: practical_salinity
+        ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
+          sea_water_pressure sea_water_electrical_conductivity sea_water_temperature
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: time lat lon depth
+        data_product_identifier: PRACSAL_L2
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        units: '1'
+      - alternate_parameter_name: seawater_pressure
+        ancillary_variables: seawater_pressure_qartod_results seawater_pressure_qartod_executed
+          pressure pressure_temp
+        comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: time lat lon depth
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: sea_water_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - alternate_parameter_name: seawater_temperature
+        ancillary_variables: seawater_temperature_qartod_results seawater_temperature_qartod_executed
+          temperature
+        comment: Seawater temperature near the sensor.
+        coordinates: time lat lon depth
+        data_product_identifier: TEMPWAT_L1
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS03AXBS-LJ03A-12-CTDPFB301-streamed-ctdpf_optode_sample
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03AXBS-LJ03A
+        instrument: RS03AXBS-LJ03A-12-CTDPFB301
+        site: RS03AXBS
+        stream: ctdpf_optode_sample
+        stream_method: streamed
   RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time:
     args:
       consolidated: true
@@ -5223,6 +5447,231 @@ sources:
         instrument: RS03AXPS-PC03A-4B-PHSENA302
         site: RS03AXPS
         stream: phsen_data_record
+        stream_method: streamed
+  RS03AXPS-PC03A-4C-FLORDD303-streamed-flort_d_data_record:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXPS-PC03A-4C-FLORDD303-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.10 for RS03AXPS-PC03A-4C-FLORDD303-streamed-flort_d_data_record
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: fluorometric_cdom_qartod_results fluorometric_cdom_qartod_executed
+          raw_signal_cdom
+        comment: Fluorometric CDOM Concentration is a measure of how much light has
+          been re-emitted (fluoresced) from colored organic compounds found in the
+          colored dissolved organic matter (CDOM) in seawater. Examples of CDOM include
+          tannins (polyphenols that bind to proteins and other large molecules) or
+          lignins (polymers of phenolic acids) from decaying plant material and byproducts
+          from the decomposition of animals. It accounts for the tea-like color in
+          seawater. CDOM is not particulate, but seawater can contain both CDOM and
+          turbidity.
+        coordinates: lat depth lon time
+        data_product_identifier: CDOMFLO_L1
+        long_name: CDOM Concentration
+        precision: 6
+        reference_designator: fluorometric_cdom
+        units: ppb
+      - ancillary_variables: fluorometric_chlorophyll_a_qartod_results fluorometric_chlorophyll_a_qartod_executed
+          raw_signal_chl
+        comment: Fluorometric Chlorophyll-a Concentration is an estimate of phytoplankton
+          biomass using fluorescence. The fluorometer emits light at a specific wavelength
+          that is absorbed by chlorophyll and re-emitted as light at a different wavelength.
+          By measuring the intensity of the re-emitted wavelength of light the chlorophyll-a
+          concentration in the surrounding seawater can be estimated. Chlorophyll-a
+          concentrations can be used as a proxy for phytoplankton biomass as it is
+          a dominant photosynthetic pigment.
+        coordinates: lat depth lon time
+        data_product_identifier: CHLAFLO_L1
+        long_name: Chlorophyll-a Concentration
+        precision: 6
+        reference_designator: fluorometric_chlorophyll_a
+        standard_name: mass_concentration_of_chlorophyll_a_in_sea_water
+        units: ug L-1
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: optical_backscatter_qartod_results optical_backscatter_qartod_executed
+          total_volume_scattering_coefficient sea_water_temperature sea_water_practical_salinity
+        comment: Optical Backscatter (Red Wavelengths) is a measure of the amount
+          of red light (630-740 nm wavelengths) scattered in the backward direction
+          due to suspended matter within seawater, providing a proxy for turbidity
+          and suspended solids.
+        coordinates: lat depth lon time
+        data_product_identifier: FLUBSCT_L2
+        long_name: Optical Backscatter
+        precision: 4
+        reference_designator: optical_backscatter
+        units: m-1
+      - alternate_parameter_name: ctdpf_optode_sample-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: lat depth lon time
+        data_product_identifier: PRACSAL_L2
+        instrument: RS03AXPS-PC03A-4A-CTDPFA303
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        stream: ctdpf_optode_sample
+        units: '1'
+      - alternate_parameter_name: ctdpf_optode_sample-seawater_temperature
+        comment: Seawater temperature near the sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: TEMPWAT_L1
+        instrument: RS03AXPS-PC03A-4A-CTDPFA303
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        stream: ctdpf_optode_sample
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      - ancillary_variables: raw_signal_beta
+        comment: Total Volume Scattering Coefficient values represent the volume scattering
+          from particles and the molecular scattering from water at a given wavelength
+          of light and the default angle of 117 degrees for the ECO meter.
+        coordinates: lat depth lon time
+        data_product_identifier: FLUBSCT_L1
+        long_name: Total Volume Scattering Coefficient
+        precision: 6
+        reference_designator: total_volume_scattering_coefficient
+        units: m-1 sr-1
+      id: RS03AXPS-PC03A-4C-FLORDD303-streamed-flort_d_data_record
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03AXPS-PC03A
+        instrument: RS03AXPS-PC03A-4C-FLORDD303
+        site: RS03AXPS
+        stream: flort_d_data_record
+        stream_method: streamed
+  RS03AXPS-SF03A-2A-CTDPFA302-streamed-ctdpf_sbe43_sample:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXPS-SF03A-2A-CTDPFA302-streamed-ctdpf_sbe43_sample
+    description: Data produced by Stream Engine version 1.20.10 for RS03AXPS-SF03A-2A-CTDPFA302-streamed-ctdpf_sbe43_sample
+    driver: zarr
+    metadata:
+      data_products:
+      - comment: Dissolved Oxygen (DO) Concentration from the Fast Response (Fastrep)
+          DO Instrument is a measure of the concentration of gaseous oxygen mixed
+          in seawater. This Instrument measures dissolved oxygen concentrations on
+          shallow coastal profilers through rapid oxygen gradients. This data product
+          is corrected for salinity, temperature, and depth from a collocated CTD.
+        coordinates: lat depth lon time
+        data_product_identifier: DOCONCF_L2
+        instrument: RS03AXPS-SF03A-2A-DOFSTA302
+        long_name: Dissolved Oxygen - Pressure Temp Sal Corrected (CTD)
+        precision: 4
+        reference_designator: do_fast_sample-corrected_dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        stream: do_fast_sample
+        units: umol kg-1
+      - alternate_parameter_name: density
+        ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
+        comment: Seawater Density is defined as mass per unit volume and is calculated
+          from the conductivity, temperature and depth of a seawater sample using
+          the TEOS-10 equation.
+        coordinates: lat depth lon time
+        data_product_identifier: DENSITY_L2
+        long_name: Seawater Density
+        precision: 3
+        reference_designator: sea_water_density
+        standard_name: sea_water_density
+        units: kg m-3
+      - alternate_parameter_name: seawater_conductivity
+        ancillary_variables: seawater_conductivity_qartod_results seawater_conductivity_qartod_executed
+          sea_water_pressure sea_water_temperature conductivity
+        comment: Seawater conductivity refers to the ability of seawater to conduct
+          electricity. The presence of ions in the seawater, such as salt, increases
+          the electrical conducting ability of seawater. As such, conductivity can
+          be used as a proxy for determining the quantity of salt in a sample of seawater.
+        coordinates: lat depth lon time
+        data_product_identifier: CONDWAT_L1
+        long_name: Seawater Conductivity
+        precision: 6
+        reference_designator: sea_water_electrical_conductivity
+        standard_name: sea_water_electrical_conductivity
+        units: S m-1
+      - alternate_parameter_name: practical_salinity
+        ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
+          sea_water_pressure sea_water_electrical_conductivity sea_water_temperature
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: lat depth lon time
+        data_product_identifier: PRACSAL_L2
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        units: '1'
+      - alternate_parameter_name: seawater_pressure
+        ancillary_variables: seawater_pressure_qartod_results seawater_pressure_qartod_executed
+          pressure pressure_temp
+        comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: sea_water_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - alternate_parameter_name: seawater_temperature
+        ancillary_variables: seawater_temperature_qartod_results seawater_temperature_qartod_executed
+          temperature
+        comment: Seawater temperature near the sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: TEMPWAT_L1
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS03AXPS-SF03A-2A-CTDPFA302-streamed-ctdpf_sbe43_sample
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03AXPS-SF03A
+        instrument: RS03AXPS-SF03A-2A-CTDPFA302
+        site: RS03AXPS
+        stream: ctdpf_sbe43_sample
         stream_method: streamed
   RS03AXPS-SF03A-2D-PHSENA301-streamed-phsen_data_record:
     args:
@@ -6331,6 +6780,120 @@ sources:
         instrument: RS03INT1-MJ03C-10-TRHPHA301
         site: RS03INT1
         stream: trhph_sample
+        stream_method: streamed
+  RS03INT2-MJ03D-11-CTDPFB307-streamed-ctdpf_optode_sample:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03INT2-MJ03D-11-CTDPFB307-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.10 for RS03INT2-MJ03D-11-CTDPFB307-streamed-ctdpf_optode_sample
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: oxygen
+        comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
+          is a measure of the concentration of gaseous oxygen mixed in seawater. This
+          instrument is connected through a CTD. This data product is corrected internally
+          for temperature as measured by the DO thermistor.
+        coordinates: time lat lon depth
+        data_product_identifier: DOCONCS_L1
+        long_name: DO from Onboard Calculation
+        precision: 4
+        reference_designator: ctd_tc_oxygen
+        standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water
+        units: umol L-1
+      - ancillary_variables: ctd_tc_oxygen sea_water_practical_salinity sea_water_pressure
+          sea_water_temperature
+        comment: Dissolved Oxygen (DO) concentration from the Stable Response DO Instrument
+          is a measure of the concentration of gaseous oxygen mixed in seawater. This
+          data product is corrected for salinity, temperature, and pressure.
+        coordinates: time lat lon depth
+        data_product_identifier: DOXYGEN_L2
+        long_name: DO from Onboard Calculation - Corrected
+        precision: 4
+        reference_designator: dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        units: umol kg-1
+      - alternate_parameter_name: density
+        ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
+        comment: Seawater Density is defined as mass per unit volume and is calculated
+          from the conductivity, temperature and depth of a seawater sample using
+          the TEOS-10 equation.
+        coordinates: time lat lon depth
+        data_product_identifier: DENSITY_L2
+        long_name: Seawater Density
+        precision: 3
+        reference_designator: sea_water_density
+        standard_name: sea_water_density
+        units: kg m-3
+      - alternate_parameter_name: seawater_conductivity
+        ancillary_variables: sea_water_pressure sea_water_temperature conductivity
+        comment: Seawater conductivity refers to the ability of seawater to conduct
+          electricity. The presence of ions in the seawater, such as salt, increases
+          the electrical conducting ability of seawater. As such, conductivity can
+          be used as a proxy for determining the quantity of salt in a sample of seawater.
+        coordinates: time lat lon depth
+        data_product_identifier: CONDWAT_L1
+        long_name: Seawater Conductivity
+        precision: 6
+        reference_designator: sea_water_electrical_conductivity
+        standard_name: sea_water_electrical_conductivity
+        units: S m-1
+      - alternate_parameter_name: practical_salinity
+        ancillary_variables: sea_water_pressure sea_water_electrical_conductivity
+          sea_water_temperature
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: time lat lon depth
+        data_product_identifier: PRACSAL_L2
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        units: '1'
+      - alternate_parameter_name: seawater_pressure
+        ancillary_variables: pressure pressure_temp
+        comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: time lat lon depth
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: sea_water_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - alternate_parameter_name: seawater_temperature
+        ancillary_variables: temperature
+        comment: Seawater temperature near the sensor.
+        coordinates: time lat lon depth
+        data_product_identifier: TEMPWAT_L1
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS03INT2-MJ03D-11-CTDPFB307-streamed-ctdpf_optode_sample
+      notes: This netCDF product is a copy of the data on the University of Washington
+        AWS Cloud Infrastructure.
+      owner: University of Washington Cabled Array Value Add Team.
+      reference_designator:
+        infrastructure: RS03INT2-MJ03D
+        instrument: RS03INT2-MJ03D-11-CTDPFB307
+        site: RS03INT2
+        stream: ctdpf_optode_sample
         stream_method: streamed
   RS03INT2-MJ03D-12-VEL3DB304-streamed-vel3d_b_sample:
     args:
