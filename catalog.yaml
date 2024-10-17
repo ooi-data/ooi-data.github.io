@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-10-16T11:16:50.632316'
+  last_updated: '2024-10-17T11:16:42.030035'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -2639,108 +2639,6 @@ sources:
         instrument: RS01SBPS-PC01A-4A-CTDPFA103
         site: RS01SBPS
         stream: ctdpf_optode_sample
-        stream_method: streamed
-  RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_sbe43_sample:
-    args:
-      consolidated: true
-      storage_options:
-        anon: true
-      urlpath: s3://ooi-data/RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_sbe43_sample
-    description: Data produced by Stream Engine version 1.20.8 for RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_sbe43_sample
-    driver: zarr
-    metadata:
-      data_products:
-      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
-          by the weight of the column of seawater above it. It is calculated by subtracting
-          one standard atmosphere from the absolute pressure at the sensor to remove
-          the weight of the atmosphere on top of the water column. The pressure at
-          a sensor in situ provides a metric of the depth of that sensor.
-        coordinates: lat depth lon time
-        data_product_identifier: PRESWAT_L1
-        long_name: Seawater Pressure
-        precision: 3
-        reference_designator: int_ctd_pressure
-        standard_name: sea_water_pressure
-        units: dbar
-      - alternate_parameter_name: density
-        ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
-        comment: Seawater Density is defined as mass per unit volume and is calculated
-          from the conductivity, temperature and depth of a seawater sample using
-          the TEOS-10 equation.
-        coordinates: lat depth lon time
-        data_product_identifier: DENSITY_L2
-        long_name: Seawater Density
-        precision: 3
-        reference_designator: sea_water_density
-        standard_name: sea_water_density
-        units: kg m-3
-      - alternate_parameter_name: seawater_conductivity
-        ancillary_variables: sea_water_pressure sea_water_temperature conductivity
-        comment: Seawater conductivity refers to the ability of seawater to conduct
-          electricity. The presence of ions in the seawater, such as salt, increases
-          the electrical conducting ability of seawater. As such, conductivity can
-          be used as a proxy for determining the quantity of salt in a sample of seawater.
-        coordinates: lat depth lon time
-        data_product_identifier: CONDWAT_L1
-        long_name: Seawater Conductivity
-        precision: 6
-        reference_designator: sea_water_electrical_conductivity
-        standard_name: sea_water_electrical_conductivity
-        units: S m-1
-      - alternate_parameter_name: practical_salinity
-        ancillary_variables: sea_water_pressure sea_water_electrical_conductivity
-          sea_water_temperature
-        comment: Salinity is generally defined as the concentration of dissolved salt
-          in a parcel of seawater. Practical Salinity is a more specific unitless
-          quantity calculated from the conductivity of seawater and adjusted for temperature
-          and pressure. It is approximately equivalent to Absolute Salinity (the mass
-          fraction of dissolved salt in seawater) but they are not interchangeable.
-        coordinates: lat depth lon time
-        data_product_identifier: PRACSAL_L2
-        long_name: Practical Salinity
-        precision: 4
-        reference_designator: sea_water_practical_salinity
-        standard_name: sea_water_practical_salinity
-        units: '1'
-      - alternate_parameter_name: seawater_pressure
-        ancillary_variables: pressure pressure_temp
-        comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
-          by the weight of the column of seawater above it. It is calculated by subtracting
-          one standard atmosphere from the absolute pressure at the sensor to remove
-          the weight of the atmosphere on top of the water column. The pressure at
-          a sensor in situ provides a metric of the depth of that sensor.
-        coordinates: lat depth lon time
-        data_product_identifier: PRESWAT_L1
-        long_name: Seawater Pressure
-        precision: 3
-        reference_designator: sea_water_pressure
-        standard_name: sea_water_pressure
-        units: dbar
-      - alternate_parameter_name: seawater_temperature
-        ancillary_variables: temperature
-        comment: Seawater temperature near the sensor.
-        coordinates: lat depth lon time
-        data_product_identifier: TEMPWAT_L1
-        long_name: Seawater Temperature
-        precision: 4
-        reference_designator: sea_water_temperature
-        standard_name: sea_water_temperature
-        units: degrees_Celsius
-      - axis: T
-        calendar: gregorian
-        long_name: time
-        reference_designator: time
-        standard_name: time
-        units: seconds since 1900-01-01 0:0:0
-      id: RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_sbe43_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
-      reference_designator:
-        infrastructure: RS01SBPS-PC01A
-        instrument: RS01SBPS-PC01A-4A-CTDPFA103
-        site: RS01SBPS
-        stream: ctdpf_sbe43_sample
         stream_method: streamed
   RS01SBPS-PC01A-4B-PHSENA102-streamed-phsen_data_record:
     args:
