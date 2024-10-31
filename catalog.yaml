@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-10-30T11:16:22.077995'
+  last_updated: '2024-10-31T11:18:12.878025'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -2236,9 +2236,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: CE04OSPS-SF01B-4F-PCO2WA102-streamed-pco2w_a_sami_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: CE04OSPS-SF01B
         instrument: CE04OSPS-SF01B-4F-PCO2WA102
@@ -2362,9 +2363,10 @@ sources:
         standard_name: upward_sea_water_velocity
         units: m s-1
       id: RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-PC01A
         instrument: RS01SBPS-PC01A-05-ADCPTD102
@@ -2654,9 +2656,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_optode_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-PC01A
         instrument: RS01SBPS-PC01A-4A-CTDPFA103
@@ -2733,9 +2736,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SBPS-PC01A-4B-PHSENA102-streamed-phsen_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-PC01A
         instrument: RS01SBPS-PC01A-4B-PHSENA102
@@ -2851,9 +2855,10 @@ sources:
         reference_designator: total_volume_scattering_coefficient
         units: m-1 sr-1
       id: RS01SBPS-PC01A-4C-FLORDD103-streamed-flort_d_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-PC01A
         instrument: RS01SBPS-PC01A-4C-FLORDD103
@@ -2958,9 +2963,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SBPS-SF01A-2A-CTDPFA102-streamed-ctdpf_sbe43_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-SF01A
         instrument: RS01SBPS-SF01A-2A-CTDPFA102
@@ -3037,9 +3043,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SBPS-SF01A-2D-PHSENA101-streamed-phsen_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-SF01A
         instrument: RS01SBPS-SF01A-2D-PHSENA101
@@ -3155,9 +3162,10 @@ sources:
         reference_designator: total_volume_scattering_coefficient
         units: m-1 sr-1
       id: RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-SF01A
         instrument: RS01SBPS-SF01A-3A-FLORTD101
@@ -3247,9 +3255,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SBPS-SF01A-3B-OPTAAD101-streamed-optaa_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-SF01A
         instrument: RS01SBPS-SF01A-3B-OPTAAD101
@@ -3306,9 +3315,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-SF01A
         instrument: RS01SBPS-SF01A-3C-PARADA101
@@ -3356,9 +3366,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SBPS-SF01A-3D-SPKIRA101-streamed-spkir_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-SF01A
         instrument: RS01SBPS-SF01A-3D-SPKIRA101
@@ -3401,9 +3412,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_dark_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-SF01A
         instrument: RS01SBPS-SF01A-4A-NUTNRA101
@@ -3482,9 +3494,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-SF01A
         instrument: RS01SBPS-SF01A-4A-NUTNRA101
@@ -3564,9 +3577,10 @@ sources:
         standard_name: upward_sea_water_velocity
         units: m s-1
       id: RS01SBPS-SF01A-4B-VELPTD102-streamed-velpt_velocity_data
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-SF01A
         instrument: RS01SBPS-SF01A-4B-VELPTD102
@@ -3630,9 +3644,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SBPS-SF01A-4F-PCO2WA101-streamed-pco2w_a_sami_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-SF01A
         instrument: RS01SBPS-SF01A-4F-PCO2WA101
@@ -3698,9 +3713,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SLBS-LJ01A-05-HPIESA101-streamed-echo_sounding
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SLBS-LJ01A
         instrument: RS01SLBS-LJ01A-05-HPIESA101
@@ -3824,9 +3840,10 @@ sources:
         standard_name: upward_sea_water_velocity
         units: m s-1
       id: RS01SLBS-LJ01A-10-ADCPTE101-streamed-adcp_velocity_beam
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SLBS-LJ01A
         instrument: RS01SLBS-LJ01A-10-ADCPTE101
@@ -3904,9 +3921,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SLBS-LJ01A-11-OPTAAC103-streamed-optaa_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SLBS-LJ01A
         instrument: RS01SLBS-LJ01A-11-OPTAAC103
@@ -4021,9 +4039,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SLBS-LJ01A-12-CTDPFB101-streamed-ctdpf_optode_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SLBS-LJ01A
         instrument: RS01SLBS-LJ01A-12-CTDPFB101
@@ -4058,9 +4077,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SLBS-MJ01A
         instrument: RS01SLBS-MJ01A-06-PRESTA101
@@ -4129,9 +4149,10 @@ sources:
         standard_name: upward_sea_water_velocity
         units: m s-1
       id: RS01SLBS-MJ01A-12-VEL3DB101-streamed-vel3d_b_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SLBS-MJ01A
         instrument: RS01SLBS-MJ01A-12-VEL3DB101
@@ -4166,9 +4187,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS01SUM1-LJ01B-09-PRESTB102-streamed-prest_real_time
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SUM1-LJ01B
         instrument: RS01SUM1-LJ01B-09-PRESTB102
@@ -4237,9 +4259,10 @@ sources:
         standard_name: upward_sea_water_velocity
         units: m s-1
       id: RS01SUM1-LJ01B-12-VEL3DB104-streamed-vel3d_b_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SUM1-LJ01B
         instrument: RS01SUM1-LJ01B-12-VEL3DB104
@@ -4351,9 +4374,10 @@ sources:
         standard_name: upward_sea_water_velocity
         units: m s-1
       id: RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SUM2-MJ01B
         instrument: RS01SUM2-MJ01B-12-ADCPSK101
@@ -4377,9 +4401,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03ASHS-MJ03B
         instrument: RS03ASHS-MJ03B-07-TMPSFA301
@@ -4594,9 +4619,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03ASHS-MJ03B-10-CTDPFB304-streamed-ctdpf_optode_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03ASHS-MJ03B
         instrument: RS03ASHS-MJ03B-10-CTDPFB304
@@ -4662,9 +4688,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXBS-LJ03A-05-HPIESA301-streamed-echo_sounding
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXBS-LJ03A
         instrument: RS03AXBS-LJ03A-05-HPIESA301
@@ -4788,9 +4815,10 @@ sources:
         standard_name: upward_sea_water_velocity
         units: m s-1
       id: RS03AXBS-LJ03A-10-ADCPTE303-streamed-adcp_velocity_beam
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXBS-LJ03A
         instrument: RS03AXBS-LJ03A-10-ADCPTE303
@@ -4868,9 +4896,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXBS-LJ03A-11-OPTAAC303-streamed-optaa_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXBS-LJ03A
         instrument: RS03AXBS-LJ03A-11-OPTAAC303
@@ -4985,9 +5014,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXBS-LJ03A-12-CTDPFB301-streamed-ctdpf_optode_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXBS-LJ03A
         instrument: RS03AXBS-LJ03A-12-CTDPFB301
@@ -5022,9 +5052,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXBS-MJ03A
         instrument: RS03AXBS-MJ03A-06-PRESTA301
@@ -5093,9 +5124,10 @@ sources:
         standard_name: upward_sea_water_velocity
         units: m s-1
       id: RS03AXBS-MJ03A-12-VEL3DB301-streamed-vel3d_b_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXBS-MJ03A
         instrument: RS03AXBS-MJ03A-12-VEL3DB301
@@ -5219,9 +5251,10 @@ sources:
         standard_name: upward_sea_water_velocity
         units: m s-1
       id: RS03AXPS-PC03A-05-ADCPTD302-streamed-adcp_velocity_beam
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-PC03A
         instrument: RS03AXPS-PC03A-05-ADCPTD302
@@ -5524,9 +5557,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXPS-PC03A-4A-CTDPFA303-streamed-ctdpf_optode_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-PC03A
         instrument: RS03AXPS-PC03A-4A-CTDPFA303
@@ -5603,9 +5637,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXPS-PC03A-4B-PHSENA302-streamed-phsen_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-PC03A
         instrument: RS03AXPS-PC03A-4B-PHSENA302
@@ -5721,9 +5756,10 @@ sources:
         reference_designator: total_volume_scattering_coefficient
         units: m-1 sr-1
       id: RS03AXPS-PC03A-4C-FLORDD303-streamed-flort_d_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-PC03A
         instrument: RS03AXPS-PC03A-4C-FLORDD303
@@ -5828,9 +5864,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXPS-SF03A-2A-CTDPFA302-streamed-ctdpf_sbe43_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-SF03A
         instrument: RS03AXPS-SF03A-2A-CTDPFA302
@@ -5907,9 +5944,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXPS-SF03A-2D-PHSENA301-streamed-phsen_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-SF03A
         instrument: RS03AXPS-SF03A-2D-PHSENA301
@@ -6025,9 +6063,10 @@ sources:
         reference_designator: total_volume_scattering_coefficient
         units: m-1 sr-1
       id: RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-SF03A
         instrument: RS03AXPS-SF03A-3A-FLORTD301
@@ -6117,9 +6156,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXPS-SF03A-3B-OPTAAD301-streamed-optaa_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-SF03A
         instrument: RS03AXPS-SF03A-3B-OPTAAD301
@@ -6176,9 +6216,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-SF03A
         instrument: RS03AXPS-SF03A-3C-PARADA301
@@ -6226,9 +6267,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-SF03A
         instrument: RS03AXPS-SF03A-3D-SPKIRA301
@@ -6271,9 +6313,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-SF03A
         instrument: RS03AXPS-SF03A-4A-NUTNRA301
@@ -6352,9 +6395,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-SF03A
         instrument: RS03AXPS-SF03A-4A-NUTNRA301
@@ -6434,9 +6478,10 @@ sources:
         standard_name: upward_sea_water_velocity
         units: m s-1
       id: RS03AXPS-SF03A-4B-VELPTD302-streamed-velpt_velocity_data
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-SF03A
         instrument: RS03AXPS-SF03A-4B-VELPTD302
@@ -6500,9 +6545,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03AXPS-SF03A-4F-PCO2WA301-streamed-pco2w_a_sami_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-SF03A
         instrument: RS03AXPS-SF03A-4F-PCO2WA301
@@ -6614,9 +6660,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03CCAL-MJ03F-12-CTDPFB305-streamed-ctdpf_optode_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03CCAL-MJ03F
         instrument: RS03CCAL-MJ03F-12-CTDPFB305
@@ -6731,9 +6778,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03ECAL-MJ03E-12-CTDPFB306-streamed-ctdpf_optode_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03ECAL-MJ03E
         instrument: RS03ECAL-MJ03E-12-CTDPFB306
@@ -6796,9 +6844,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03INT1-MJ03C
         instrument: RS03INT1-MJ03C-07-D1000A301
@@ -6866,9 +6915,10 @@ sources:
         reference_designator: vent_fluid_temperature
         units: degrees_Celsius
       id: RS03INT1-MJ03C-09-TRHPHA302-streamed-trhph_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03INT1-MJ03C
         instrument: RS03INT1-MJ03C-09-TRHPHA302
@@ -6936,9 +6986,10 @@ sources:
         reference_designator: vent_fluid_temperature
         units: degrees_Celsius
       id: RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03INT1-MJ03C
         instrument: RS03INT1-MJ03C-10-TRHPHA301
@@ -7050,9 +7101,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: RS03INT2-MJ03D-11-CTDPFB307-streamed-ctdpf_optode_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03INT2-MJ03D
         instrument: RS03INT2-MJ03D-11-CTDPFB307
@@ -7121,9 +7173,10 @@ sources:
         standard_name: upward_sea_water_velocity
         units: m s-1
       id: RS03INT2-MJ03D-12-VEL3DB304-streamed-vel3d_b_sample
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03INT2-MJ03D
         instrument: RS03INT2-MJ03D-12-VEL3DB304
