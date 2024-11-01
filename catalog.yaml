@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-10-31T11:18:12.878025'
+  last_updated: '2024-11-01T11:16:39.974327'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -1078,6 +1078,98 @@ sources:
         site: CE04OSBP
         stream: phsen_data_record
         stream_method: streamed
+  CE04OSPD-DP01B-01-CTDPFL105-recovered_inst-dpc_ctd_instrument_recovered:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/CE04OSPD-DP01B-01-CTDPFL105-recovered_inst-dpc_ctd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.13 for CE04OSPD-DP01B-01-CTDPFL105-recovered_inst-dpc_ctd_instrument_recovered
+    driver: zarr
+    metadata:
+      data_products:
+      - alternate_parameter_name: density
+        ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
+        comment: Seawater Density is defined as mass per unit volume and is calculated
+          from the conductivity, temperature and depth of a seawater sample using
+          the TEOS-10 equation.
+        coordinates: lat depth lon time
+        data_product_identifier: DENSITY_L2
+        long_name: Seawater Density
+        precision: 3
+        reference_designator: sea_water_density
+        standard_name: sea_water_density
+        units: kg m-3
+      - alternate_parameter_name: dpc_ctd_seawater_conductivity
+        ancillary_variables: dpc_ctd_seawater_conductivity_qartod_results dpc_ctd_seawater_conductivity_qartod_executed
+          conductivity_millisiemens
+        comment: Seawater conductivity refers to the ability of seawater to conduct
+          electricity. The presence of ions in the seawater, such as salt, increases
+          the electrical conducting ability of seawater. As such, conductivity can
+          be used as a proxy for determining the quantity of salt in a sample of seawater.
+        coordinates: lat depth lon time
+        data_product_identifier: CONDWAT_L1
+        long_name: Seawater Conductivity
+        precision: 6
+        reference_designator: sea_water_electrical_conductivity
+        standard_name: sea_water_electrical_conductivity
+        units: S m-1
+      - alternate_parameter_name: practical_salinity
+        ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
+          sea_water_pressure sea_water_electrical_conductivity sea_water_temperature
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: lat depth lon time
+        data_product_identifier: PRACSAL_L2
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        units: '1'
+      - alternate_parameter_name: pressure
+        ancillary_variables: pressure_qartod_results pressure_qartod_executed
+        comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: sea_water_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - alternate_parameter_name: temp
+        ancillary_variables: temp_qartod_results temp_qartod_executed
+        comment: Seawater temperature near the sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: TEMPWAT_L1
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: CE04OSPD-DP01B-01-CTDPFL105-recovered_inst-dpc_ctd_instrument_recovered
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: CE04OSPD-DP01B
+        instrument: CE04OSPD-DP01B-01-CTDPFL105
+        site: CE04OSPD
+        stream: dpc_ctd_instrument_recovered
+        stream_method: recovered_inst
   CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_optode_sample:
     args:
       consolidated: true
@@ -2246,6 +2338,98 @@ sources:
         site: CE04OSPS
         stream: pco2w_a_sami_data_record
         stream_method: streamed
+  RS01SBPD-DP01A-01-CTDPFL104-recovered_inst-dpc_ctd_instrument_recovered:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS01SBPD-DP01A-01-CTDPFL104-recovered_inst-dpc_ctd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.13 for RS01SBPD-DP01A-01-CTDPFL104-recovered_inst-dpc_ctd_instrument_recovered
+    driver: zarr
+    metadata:
+      data_products:
+      - alternate_parameter_name: density
+        ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
+        comment: Seawater Density is defined as mass per unit volume and is calculated
+          from the conductivity, temperature and depth of a seawater sample using
+          the TEOS-10 equation.
+        coordinates: lat depth lon time
+        data_product_identifier: DENSITY_L2
+        long_name: Seawater Density
+        precision: 3
+        reference_designator: sea_water_density
+        standard_name: sea_water_density
+        units: kg m-3
+      - alternate_parameter_name: dpc_ctd_seawater_conductivity
+        ancillary_variables: dpc_ctd_seawater_conductivity_qartod_results dpc_ctd_seawater_conductivity_qartod_executed
+          conductivity_millisiemens
+        comment: Seawater conductivity refers to the ability of seawater to conduct
+          electricity. The presence of ions in the seawater, such as salt, increases
+          the electrical conducting ability of seawater. As such, conductivity can
+          be used as a proxy for determining the quantity of salt in a sample of seawater.
+        coordinates: lat depth lon time
+        data_product_identifier: CONDWAT_L1
+        long_name: Seawater Conductivity
+        precision: 6
+        reference_designator: sea_water_electrical_conductivity
+        standard_name: sea_water_electrical_conductivity
+        units: S m-1
+      - alternate_parameter_name: practical_salinity
+        ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
+          sea_water_pressure sea_water_electrical_conductivity sea_water_temperature
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: lat depth lon time
+        data_product_identifier: PRACSAL_L2
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        units: '1'
+      - alternate_parameter_name: pressure
+        ancillary_variables: pressure_qartod_results pressure_qartod_executed
+        comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: sea_water_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - alternate_parameter_name: temp
+        ancillary_variables: temp_qartod_results temp_qartod_executed
+        comment: Seawater temperature near the sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: TEMPWAT_L1
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS01SBPD-DP01A-01-CTDPFL104-recovered_inst-dpc_ctd_instrument_recovered
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: RS01SBPD-DP01A
+        instrument: RS01SBPD-DP01A-01-CTDPFL104
+        site: RS01SBPD
+        stream: dpc_ctd_instrument_recovered
+        stream_method: recovered_inst
   RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam:
     args:
       consolidated: true
@@ -5134,6 +5318,98 @@ sources:
         site: RS03AXBS
         stream: vel3d_b_sample
         stream_method: streamed
+  RS03AXPD-DP03A-01-CTDPFL304-recovered_inst-dpc_ctd_instrument_recovered:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXPD-DP03A-01-CTDPFL304-recovered_inst-dpc_ctd_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.13 for RS03AXPD-DP03A-01-CTDPFL304-recovered_inst-dpc_ctd_instrument_recovered
+    driver: zarr
+    metadata:
+      data_products:
+      - alternate_parameter_name: density
+        ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
+        comment: Seawater Density is defined as mass per unit volume and is calculated
+          from the conductivity, temperature and depth of a seawater sample using
+          the TEOS-10 equation.
+        coordinates: lat depth lon time
+        data_product_identifier: DENSITY_L2
+        long_name: Seawater Density
+        precision: 3
+        reference_designator: sea_water_density
+        standard_name: sea_water_density
+        units: kg m-3
+      - alternate_parameter_name: dpc_ctd_seawater_conductivity
+        ancillary_variables: dpc_ctd_seawater_conductivity_qartod_results dpc_ctd_seawater_conductivity_qartod_executed
+          conductivity_millisiemens
+        comment: Seawater conductivity refers to the ability of seawater to conduct
+          electricity. The presence of ions in the seawater, such as salt, increases
+          the electrical conducting ability of seawater. As such, conductivity can
+          be used as a proxy for determining the quantity of salt in a sample of seawater.
+        coordinates: lat depth lon time
+        data_product_identifier: CONDWAT_L1
+        long_name: Seawater Conductivity
+        precision: 6
+        reference_designator: sea_water_electrical_conductivity
+        standard_name: sea_water_electrical_conductivity
+        units: S m-1
+      - alternate_parameter_name: practical_salinity
+        ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
+          sea_water_pressure sea_water_electrical_conductivity sea_water_temperature
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: lat depth lon time
+        data_product_identifier: PRACSAL_L2
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        units: '1'
+      - alternate_parameter_name: pressure
+        ancillary_variables: pressure_qartod_results pressure_qartod_executed
+        comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: sea_water_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - alternate_parameter_name: temp
+        ancillary_variables: temp_qartod_results temp_qartod_executed
+        comment: Seawater temperature near the sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: TEMPWAT_L1
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS03AXPD-DP03A-01-CTDPFL304-recovered_inst-dpc_ctd_instrument_recovered
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: RS03AXPD-DP03A
+        instrument: RS03AXPD-DP03A-01-CTDPFL304
+        site: RS03AXPD
+        stream: dpc_ctd_instrument_recovered
+        stream_method: recovered_inst
   RS03AXPS-PC03A-05-ADCPTD302-streamed-adcp_velocity_beam:
     args:
       consolidated: true
