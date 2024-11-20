@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-11-19T11:17:14.477182'
+  last_updated: '2024-11-20T11:16:54.528074'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -1377,6 +1377,96 @@ sources:
         instrument: CE04OSPD-DP01B-04-FLNTUA103
         site: CE04OSPD
         stream: dpc_flnturtd_instrument_recovered
+        stream_method: recovered_inst
+  CE04OSPD-DP01B-06-DOSTAD105-recovered_inst-dpc_optode_instrument_recovered:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/CE04OSPD-DP01B-06-DOSTAD105-recovered_inst-dpc_optode_instrument_recovered
+    description: Data produced by Stream Engine version 1.20.13 for CE04OSPD-DP01B-06-DOSTAD105-recovered_inst-dpc_optode_instrument_recovered
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: dosta_abcdjm_cspp_tc_oxygen sea_water_practical_salinity
+          sea_water_temperature
+        comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
+          Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
+          in seawater. This data product is corrected for salinity, temperature, and
+          depth.
+        coordinates: lat depth lon time
+        data_product_identifier: DOXYGEN_L2
+        long_name: DO from Phase - Corrected
+        precision: 4
+        reference_designator: corrected_dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        units: umol kg-1
+      - ancillary_variables: calibrated_phase optode_temperature
+        comment: Dissolved Oxygen (DO) Concentration from the Stable Response DO Instrument
+          is a measure of the concentration of gaseous oxygen mixed in seawater. This
+          instrument measures dissolved oxygen concentrations on mobile assets, deep
+          profilers, and moorings. This data product is corrected for temperature
+          measured by the DO instrument.
+        coordinates: lat depth lon time
+        data_product_identifier: DOCONCS_L1
+        long_name: Dissolved Oxygen - Temp Corrected
+        reference_designator: dosta_abcdjm_cspp_tc_oxygen
+        standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water
+        units: umol L-1
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - alternate_parameter_name: dpc_ctd_instrument_recovered-practical_salinity
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: lat depth lon time
+        data_product_identifier: PRACSAL_L2
+        instrument: CE04OSPD-DP01B-01-CTDPFL105
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        stream: dpc_ctd_instrument_recovered
+        units: '1'
+      - alternate_parameter_name: dpc_ctd_instrument_recovered-temp
+        comment: Seawater temperature near the sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: TEMPWAT_L1
+        instrument: CE04OSPD-DP01B-01-CTDPFL105
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        stream: dpc_ctd_instrument_recovered
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: CE04OSPD-DP01B-06-DOSTAD105-recovered_inst-dpc_optode_instrument_recovered
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: CE04OSPD-DP01B
+        instrument: CE04OSPD-DP01B-06-DOSTAD105
+        site: CE04OSPD
+        stream: dpc_optode_instrument_recovered
         stream_method: recovered_inst
   CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_optode_sample:
     args:
