@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2024-12-06T11:17:27.211120'
+  last_updated: '2024-12-07T11:16:03.833399'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -3194,7 +3194,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.10 for RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.13 for RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -3316,9 +3316,10 @@ sources:
         standard_name: upward_sea_water_velocity
         units: m s-1
       id: RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS01SBPS-PC01A
         instrument: RS01SBPS-PC01A-06-VADCPA101
@@ -6512,7 +6513,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.10 for RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.13 for RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -6634,9 +6635,10 @@ sources:
         standard_name: upward_sea_water_velocity
         units: m s-1
       id: RS03AXPS-PC03A-06-VADCPA301-streamed-vadcp_velocity_beam
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: RS03AXPS-PC03A
         instrument: RS03AXPS-PC03A-06-VADCPA301
