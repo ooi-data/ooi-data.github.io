@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-01-17T11:16:45.523057'
+  last_updated: '2025-01-18T11:14:07.352728'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -1198,7 +1198,8 @@ sources:
         reference_designator: time
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
-      - ancillary_variables: vel3d_a_hx vel3d_a_hy vel3d_a_va vel3d_a_vc time
+      - ancillary_variables: vel3d_a_eastward_velocity_qartod_results vel3d_a_eastward_velocity_qartod_executed
+          vel3d_a_hx vel3d_a_hy vel3d_a_va vel3d_a_vc time
         comment: Mean Point Seawater Velocity refers to the velocity (speed and direction)
           of a single "point" of water (in this case, a volume of several square meters)
           averaged over time-scales associated with surface gravity waves. This instrument
@@ -1212,7 +1213,8 @@ sources:
         precision: 4
         reference_designator: vel3d_a_eastward_velocity
         units: m s-1
-      - ancillary_variables: vel3d_a_hx vel3d_a_hy vel3d_a_va vel3d_a_vc time
+      - ancillary_variables: vel3d_a_northward_velocity_qartod_results vel3d_a_northward_velocity_qartod_executed
+          vel3d_a_hx vel3d_a_hy vel3d_a_va vel3d_a_vc time
         comment: Mean Point Seawater Velocity refers to the velocity (speed and direction)
           of a single "point" of water (in this case, a volume of several square meters)
           averaged over time-scales associated with surface gravity waves. This instrument
@@ -1226,7 +1228,8 @@ sources:
         precision: 4
         reference_designator: vel3d_a_northward_velocity
         units: m s-1
-      - ancillary_variables: vel3d_a_vd vel3d_a_va vel3d_a_vc
+      - ancillary_variables: vel3d_a_upward_velocity_ascending_qartod_results vel3d_a_upward_velocity_ascending_qartod_executed
+          vel3d_a_vd vel3d_a_va vel3d_a_vc
         comment: Mean Point Seawater Velocity refers to the velocity (speed and direction)
           of a single "point" of water (in this case, a volume of several square meters)
           averaged over time-scales associated with surface gravity waves. This instrument
@@ -1239,7 +1242,8 @@ sources:
         precision: 4
         reference_designator: vel3d_a_upward_velocity_ascending
         units: m s-1
-      - ancillary_variables: vel3d_a_va vel3d_a_vc vel3d_a_vb
+      - ancillary_variables: vel3d_a_upward_velocity_descending_qartod_results vel3d_a_upward_velocity_descending_qartod_executed
+          vel3d_a_va vel3d_a_vc vel3d_a_vb
         comment: Mean Point Seawater Velocity refers to the velocity (speed and direction)
           of a single "point" of water (in this case, a volume of several square meters)
           averaged over time-scales associated with surface gravity waves. This instrument
@@ -1273,7 +1277,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: cdomflo
+      - ancillary_variables: flcdr_x_mmp_cds_fluorometric_cdom_qartod_results flcdr_x_mmp_cds_fluorometric_cdom_qartod_executed
+          cdomflo
         comment: Fluorometric CDOM Concentration is a measure of how much light has
           been re-emitted (fluoresced) from colored organic compounds found in the
           colored dissolved organic matter (CDOM) in seawater. Examples of CDOM include
@@ -1336,7 +1341,8 @@ sources:
         precision: 4
         reference_designator: flntu_x_mmp_cds_bback_total
         units: m-1
-      - ancillary_variables: chlaflo
+      - ancillary_variables: flntu_x_mmp_cds_fluorometric_chlorophyll_a_qartod_results
+          flntu_x_mmp_cds_fluorometric_chlorophyll_a_qartod_executed chlaflo
         comment: Fluorometric Chlorophyll-a Concentration is an estimate of phytoplankton
           biomass using fluorescence. The fluorometer emits light at a specific wavelength
           that is absorbed by chlorophyll and re-emitted as light at a different wavelength.
@@ -1388,8 +1394,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: dosta_abcdjm_cspp_tc_oxygen sea_water_practical_salinity
-          sea_water_temperature
+      - ancillary_variables: corrected_dissolved_oxygen_qartod_results corrected_dissolved_oxygen_qartod_executed
+          dosta_abcdjm_cspp_tc_oxygen sea_water_practical_salinity sea_water_temperature
         comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
           Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
           in seawater. This data product is corrected for salinity, temperature, and
@@ -4875,7 +4881,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: absolute_pressure
+      - ancillary_variables: seafloor_pressure_qartod_results seafloor_pressure_qartod_executed
+          absolute_pressure
         comment: Seafloor Pressure is a measurement of the force on the seafloor exerted
           by the weight of the overlying seawater column plus the weight of the atmosphere
           (hydrostatic plus atmospheric).
@@ -4913,7 +4920,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: turbulent_velocity_east driver_timestamp turbulent_velocity_north
+      - ancillary_variables: eastward_turbulent_velocity_qartod_results eastward_turbulent_velocity_qartod_executed
+          turbulent_velocity_east driver_timestamp turbulent_velocity_north
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
@@ -4928,7 +4936,8 @@ sources:
         reference_designator: eastward_turbulent_velocity
         standard_name: eastward_sea_water_velocity
         units: m s-1
-      - ancillary_variables: turbulent_velocity_east driver_timestamp turbulent_velocity_north
+      - ancillary_variables: northward_turbulent_velocity_qartod_results northward_turbulent_velocity_qartod_executed
+          turbulent_velocity_east driver_timestamp turbulent_velocity_north
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
@@ -4949,7 +4958,8 @@ sources:
         reference_designator: time
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
-      - ancillary_variables: turbulent_velocity_up
+      - ancillary_variables: upward_turbulent_velocity_qartod_results upward_turbulent_velocity_qartod_executed
+          turbulent_velocity_up
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
@@ -4985,7 +4995,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: absolute_pressure
+      - ancillary_variables: seafloor_pressure_qartod_results seafloor_pressure_qartod_executed
+          absolute_pressure
         comment: Seafloor Pressure is a measurement of the force on the seafloor exerted
           by the weight of the overlying seawater column plus the weight of the atmosphere
           (hydrostatic plus atmospheric).
@@ -5023,7 +5034,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: turbulent_velocity_east driver_timestamp turbulent_velocity_north
+      - ancillary_variables: eastward_turbulent_velocity_qartod_results eastward_turbulent_velocity_qartod_executed
+          turbulent_velocity_east driver_timestamp turbulent_velocity_north
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
@@ -5038,7 +5050,8 @@ sources:
         reference_designator: eastward_turbulent_velocity
         standard_name: eastward_sea_water_velocity
         units: m s-1
-      - ancillary_variables: turbulent_velocity_east driver_timestamp turbulent_velocity_north
+      - ancillary_variables: northward_turbulent_velocity_qartod_results northward_turbulent_velocity_qartod_executed
+          turbulent_velocity_east driver_timestamp turbulent_velocity_north
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
@@ -5059,7 +5072,8 @@ sources:
         reference_designator: time
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
-      - ancillary_variables: turbulent_velocity_up
+      - ancillary_variables: upward_turbulent_velocity_qartod_results upward_turbulent_velocity_qartod_executed
+          turbulent_velocity_up
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
@@ -5850,7 +5864,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: absolute_pressure
+      - ancillary_variables: seafloor_pressure_qartod_results seafloor_pressure_qartod_executed
+          absolute_pressure
         comment: Seafloor Pressure is a measurement of the force on the seafloor exerted
           by the weight of the overlying seawater column plus the weight of the atmosphere
           (hydrostatic plus atmospheric).
@@ -5888,7 +5903,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: turbulent_velocity_east driver_timestamp turbulent_velocity_north
+      - ancillary_variables: eastward_turbulent_velocity_qartod_results eastward_turbulent_velocity_qartod_executed
+          turbulent_velocity_east driver_timestamp turbulent_velocity_north
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
@@ -5903,7 +5919,8 @@ sources:
         reference_designator: eastward_turbulent_velocity
         standard_name: eastward_sea_water_velocity
         units: m s-1
-      - ancillary_variables: turbulent_velocity_east driver_timestamp turbulent_velocity_north
+      - ancillary_variables: northward_turbulent_velocity_qartod_results northward_turbulent_velocity_qartod_executed
+          turbulent_velocity_east driver_timestamp turbulent_velocity_north
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
@@ -5924,7 +5941,8 @@ sources:
         reference_designator: time
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
-      - ancillary_variables: turbulent_velocity_up
+      - ancillary_variables: upward_turbulent_velocity_qartod_results upward_turbulent_velocity_qartod_executed
+          turbulent_velocity_up
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
@@ -6070,7 +6088,8 @@ sources:
         reference_designator: time
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
-      - ancillary_variables: vel3d_a_hx vel3d_a_hy vel3d_a_va vel3d_a_vc time
+      - ancillary_variables: vel3d_a_eastward_velocity_qartod_results vel3d_a_eastward_velocity_qartod_executed
+          vel3d_a_hx vel3d_a_hy vel3d_a_va vel3d_a_vc time
         comment: Mean Point Seawater Velocity refers to the velocity (speed and direction)
           of a single "point" of water (in this case, a volume of several square meters)
           averaged over time-scales associated with surface gravity waves. This instrument
@@ -6084,7 +6103,8 @@ sources:
         precision: 4
         reference_designator: vel3d_a_eastward_velocity
         units: m s-1
-      - ancillary_variables: vel3d_a_hx vel3d_a_hy vel3d_a_va vel3d_a_vc time
+      - ancillary_variables: vel3d_a_northward_velocity_qartod_results vel3d_a_northward_velocity_qartod_executed
+          vel3d_a_hx vel3d_a_hy vel3d_a_va vel3d_a_vc time
         comment: Mean Point Seawater Velocity refers to the velocity (speed and direction)
           of a single "point" of water (in this case, a volume of several square meters)
           averaged over time-scales associated with surface gravity waves. This instrument
@@ -6098,7 +6118,8 @@ sources:
         precision: 4
         reference_designator: vel3d_a_northward_velocity
         units: m s-1
-      - ancillary_variables: vel3d_a_vd vel3d_a_va vel3d_a_vc
+      - ancillary_variables: vel3d_a_upward_velocity_ascending_qartod_results vel3d_a_upward_velocity_ascending_qartod_executed
+          vel3d_a_vd vel3d_a_va vel3d_a_vc
         comment: Mean Point Seawater Velocity refers to the velocity (speed and direction)
           of a single "point" of water (in this case, a volume of several square meters)
           averaged over time-scales associated with surface gravity waves. This instrument
@@ -6111,7 +6132,8 @@ sources:
         precision: 4
         reference_designator: vel3d_a_upward_velocity_ascending
         units: m s-1
-      - ancillary_variables: vel3d_a_va vel3d_a_vc vel3d_a_vb
+      - ancillary_variables: vel3d_a_upward_velocity_descending_qartod_results vel3d_a_upward_velocity_descending_qartod_executed
+          vel3d_a_va vel3d_a_vc vel3d_a_vb
         comment: Mean Point Seawater Velocity refers to the velocity (speed and direction)
           of a single "point" of water (in this case, a volume of several square meters)
           averaged over time-scales associated with surface gravity waves. This instrument
@@ -6145,7 +6167,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: cdomflo
+      - ancillary_variables: flcdr_x_mmp_cds_fluorometric_cdom_qartod_results flcdr_x_mmp_cds_fluorometric_cdom_qartod_executed
+          cdomflo
         comment: Fluorometric CDOM Concentration is a measure of how much light has
           been re-emitted (fluoresced) from colored organic compounds found in the
           colored dissolved organic matter (CDOM) in seawater. Examples of CDOM include
@@ -6198,7 +6221,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: flntu_x_mmp_cds_total_volume_scattering_coefficient sea_water_temperature
+      - ancillary_variables: flntu_x_mmp_cds_bback_total_qartod_results flntu_x_mmp_cds_bback_total_qartod_executed
+          flntu_x_mmp_cds_total_volume_scattering_coefficient sea_water_temperature
           sea_water_practical_salinity
         comment: Optical Backscatter (Red Wavelengths) is a measure of the amount
           of red light (630-740 nm wavelengths) scattered in the backward direction
@@ -6210,7 +6234,8 @@ sources:
         precision: 4
         reference_designator: flntu_x_mmp_cds_bback_total
         units: m-1
-      - ancillary_variables: chlaflo
+      - ancillary_variables: flntu_x_mmp_cds_fluorometric_chlorophyll_a_qartod_results
+          flntu_x_mmp_cds_fluorometric_chlorophyll_a_qartod_executed chlaflo
         comment: Fluorometric Chlorophyll-a Concentration is an estimate of phytoplankton
           biomass using fluorescence. The fluorometer emits light at a specific wavelength
           that is absorbed by chlorophyll and re-emitted as light at a different wavelength.
@@ -6300,8 +6325,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: dosta_abcdjm_cspp_tc_oxygen sea_water_practical_salinity
-          sea_water_temperature
+      - ancillary_variables: corrected_dissolved_oxygen_qartod_results corrected_dissolved_oxygen_qartod_executed
+          dosta_abcdjm_cspp_tc_oxygen sea_water_practical_salinity sea_water_temperature
         comment: Dissolved Oxygen Concentration from the Stable Response Dissolved
           Oxygen Instrument is a measure of the concentration of gaseous oxygen mixed
           in seawater. This data product is corrected for salinity, temperature, and
@@ -7849,7 +7874,8 @@ sources:
         standard_name: sea_water_density
         units: kg m-3
       - alternate_parameter_name: seawater_conductivity
-        ancillary_variables: sea_water_pressure sea_water_temperature conductivity
+        ancillary_variables: seawater_conductivity_qartod_results seawater_conductivity_qartod_executed
+          sea_water_pressure sea_water_temperature conductivity
         comment: Seawater conductivity refers to the ability of seawater to conduct
           electricity. The presence of ions in the seawater, such as salt, increases
           the electrical conducting ability of seawater. As such, conductivity can
@@ -7862,8 +7888,8 @@ sources:
         standard_name: sea_water_electrical_conductivity
         units: S m-1
       - alternate_parameter_name: practical_salinity
-        ancillary_variables: sea_water_pressure sea_water_electrical_conductivity
-          sea_water_temperature
+        ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
+          sea_water_pressure sea_water_electrical_conductivity sea_water_temperature
         comment: Salinity is generally defined as the concentration of dissolved salt
           in a parcel of seawater. Practical Salinity is a more specific unitless
           quantity calculated from the conductivity of seawater and adjusted for temperature
@@ -7877,7 +7903,8 @@ sources:
         standard_name: sea_water_practical_salinity
         units: '1'
       - alternate_parameter_name: seawater_pressure
-        ancillary_variables: pressure pressure_temp
+        ancillary_variables: seawater_pressure_qartod_results seawater_pressure_qartod_executed
+          pressure pressure_temp
         comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
           by the weight of the column of seawater above it. It is calculated by subtracting
           one standard atmosphere from the absolute pressure at the sensor to remove
@@ -7891,7 +7918,8 @@ sources:
         standard_name: sea_water_pressure
         units: dbar
       - alternate_parameter_name: seawater_temperature
-        ancillary_variables: temperature
+        ancillary_variables: seawater_temperature_qartod_results seawater_temperature_qartod_executed
+          temperature
         comment: Seawater temperature near the sensor.
         coordinates: time lat lon depth
         data_product_identifier: TEMPWAT_L1
@@ -8045,7 +8073,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - comment: 'Vent Fluid Temperature is measured continuously at the sample inlet
+      - ancillary_variables: temperature1_qartod_results temperature1_qartod_executed
+        comment: 'Vent Fluid Temperature is measured continuously at the sample inlet
           of the Hydrothermal Vent Fluid Interactive Sampler (RASFL) instrument. This
           data product includes temperature measurements made by resistance platinum
           detectors at three locations: two in a low temperature vent and one at a
@@ -8058,7 +8087,8 @@ sources:
         reference_designator: temperature1
         standard_name: sea_water_temperature
         units: degrees_Celsius
-      - comment: 'Vent Fluid Temperature is measured continuously at the sample inlet
+      - ancillary_variables: temperature2_qartod_results temperature2_qartod_executed
+        comment: 'Vent Fluid Temperature is measured continuously at the sample inlet
           of the Hydrothermal Vent Fluid Interactive Sampler (RASFL) instrument. This
           data product includes temperature measurements made by resistance platinum
           detectors at three locations: two in a low temperature vent and one at a
@@ -8071,7 +8101,8 @@ sources:
         reference_designator: temperature2
         standard_name: sea_water_temperature
         units: degrees_Celsius
-      - comment: 'Vent Fluid Temperature is measured continuously at the sample inlet
+      - ancillary_variables: temperature3_qartod_results temperature3_qartod_executed
+        comment: 'Vent Fluid Temperature is measured continuously at the sample inlet
           of the Hydrothermal Vent Fluid Interactive Sampler (RASFL) instrument. This
           data product includes temperature measurements made by resistance platinum
           detectors at three locations: two in a low temperature vent and one at a
@@ -8199,7 +8230,8 @@ sources:
         precision: 0
         reference_designator: trhph_thermistor_temp
         units: degrees_Celsius
-      - ancillary_variables: resistivity_x5 resistivity_x1 resistivity_5 vent_fluid_temperature
+      - ancillary_variables: vent_fluid_chloride_conc_qartod_results vent_fluid_chloride_conc_qartod_executed
+          resistivity_x5 resistivity_x1 resistivity_5 vent_fluid_temperature
         comment: Vent Fluid Chloride Concentration (Cl-) is calculated using resistivity
           and temperature measured by a Hydrothermal Vent Fluid Temperature and Resistivity
           sensor placed in a high-temperature hydrothermal vent.
@@ -8220,7 +8252,8 @@ sources:
         precision: 4
         reference_designator: vent_fluid_orp
         units: mV
-      - ancillary_variables: resistivity_temp_volts ref_temp_volts
+      - ancillary_variables: vent_fluid_temperature_qartod_results vent_fluid_temperature_qartod_executed
+          resistivity_temp_volts ref_temp_volts
         comment: Vent Fluid Absolute Temperature refers to temperature calculated
           from the Temperature-Resistivity Probe Instrument (TRHPH) Thermistor and
           Thermocouple. It is calculated using response curves from Thermocouple and
@@ -8290,7 +8323,8 @@ sources:
         standard_name: sea_water_density
         units: kg m-3
       - alternate_parameter_name: seawater_conductivity
-        ancillary_variables: sea_water_pressure sea_water_temperature conductivity
+        ancillary_variables: seawater_conductivity_qartod_results seawater_conductivity_qartod_executed
+          sea_water_pressure sea_water_temperature conductivity
         comment: Seawater conductivity refers to the ability of seawater to conduct
           electricity. The presence of ions in the seawater, such as salt, increases
           the electrical conducting ability of seawater. As such, conductivity can
@@ -8303,8 +8337,8 @@ sources:
         standard_name: sea_water_electrical_conductivity
         units: S m-1
       - alternate_parameter_name: practical_salinity
-        ancillary_variables: sea_water_pressure sea_water_electrical_conductivity
-          sea_water_temperature
+        ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
+          sea_water_pressure sea_water_electrical_conductivity sea_water_temperature
         comment: Salinity is generally defined as the concentration of dissolved salt
           in a parcel of seawater. Practical Salinity is a more specific unitless
           quantity calculated from the conductivity of seawater and adjusted for temperature
@@ -8318,7 +8352,8 @@ sources:
         standard_name: sea_water_practical_salinity
         units: '1'
       - alternate_parameter_name: seawater_pressure
-        ancillary_variables: pressure pressure_temp
+        ancillary_variables: seawater_pressure_qartod_results seawater_pressure_qartod_executed
+          pressure pressure_temp
         comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
           by the weight of the column of seawater above it. It is calculated by subtracting
           one standard atmosphere from the absolute pressure at the sensor to remove
@@ -8332,7 +8367,8 @@ sources:
         standard_name: sea_water_pressure
         units: dbar
       - alternate_parameter_name: seawater_temperature
-        ancillary_variables: temperature
+        ancillary_variables: seawater_temperature_qartod_results seawater_temperature_qartod_executed
+          temperature
         comment: Seawater temperature near the sensor.
         coordinates: time lat lon depth
         data_product_identifier: TEMPWAT_L1
@@ -8368,7 +8404,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: turbulent_velocity_east driver_timestamp turbulent_velocity_north
+      - ancillary_variables: eastward_turbulent_velocity_qartod_results eastward_turbulent_velocity_qartod_executed
+          turbulent_velocity_east driver_timestamp turbulent_velocity_north
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
@@ -8383,7 +8420,8 @@ sources:
         reference_designator: eastward_turbulent_velocity
         standard_name: eastward_sea_water_velocity
         units: m s-1
-      - ancillary_variables: turbulent_velocity_east driver_timestamp turbulent_velocity_north
+      - ancillary_variables: northward_turbulent_velocity_qartod_results northward_turbulent_velocity_qartod_executed
+          turbulent_velocity_east driver_timestamp turbulent_velocity_north
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
@@ -8404,7 +8442,8 @@ sources:
         reference_designator: time
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
-      - ancillary_variables: turbulent_velocity_up
+      - ancillary_variables: upward_turbulent_velocity_qartod_results upward_turbulent_velocity_qartod_executed
+          turbulent_velocity_up
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
