@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-01-24T11:16:19.650557'
+  last_updated: '2025-01-25T11:15:26.471162'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -817,8 +817,8 @@ sources:
         reference_designator: time
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
-      - ancillary_variables: status_code turbulent_velocity_north turbulent_velocity_east
-          driver_timestamp
+      - ancillary_variables: vel3d_c_eastward_turbulent_velocity_qartod_results vel3d_c_eastward_turbulent_velocity_qartod_executed
+          status_code turbulent_velocity_north turbulent_velocity_east driver_timestamp
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
@@ -833,8 +833,8 @@ sources:
         reference_designator: vel3d_c_eastward_turbulent_velocity
         standard_name: eastward_sea_water_velocity
         units: m s-1
-      - ancillary_variables: status_code turbulent_velocity_north turbulent_velocity_east
-          driver_timestamp
+      - ancillary_variables: vel3d_c_northward_turbulent_velocity_qartod_results vel3d_c_northward_turbulent_velocity_qartod_executed
+          status_code turbulent_velocity_north turbulent_velocity_east driver_timestamp
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
@@ -849,7 +849,8 @@ sources:
         reference_designator: vel3d_c_northward_turbulent_velocity
         standard_name: northward_sea_water_velocity
         units: m s-1
-      - ancillary_variables: status_code turbulent_velocity_vertical
+      - ancillary_variables: vel3d_c_upward_turbulent_velocity_qartod_results vel3d_c_upward_turbulent_velocity_qartod_executed
+          status_code turbulent_velocity_vertical
         comment: Turbulent Point Water Velocity is the measurement of current velocity,
           which can be used to derive turbulence data. Current velocity is measured
           within a 1 cm3 box by transmitting a sound pulse from the center transducer.
