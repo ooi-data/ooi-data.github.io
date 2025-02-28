@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-02-27T11:11:12.592498'
+  last_updated: '2025-02-28T11:11:12.437356'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -4312,7 +4312,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: hpies_pressure
+      - ancillary_variables: hpies_pressure_L1_qartod_results hpies_pressure_L1_qartod_executed
+          hpies_pressure
         comment: Seafloor Pressure is a measurement of the force on the seafloor exerted
           by the weight of the overlying seawater column plus the weight of the atmosphere
           (hydrostatic plus atmospheric).
@@ -4322,7 +4323,8 @@ sources:
         precision: 3
         reference_designator: hpies_pressure_L1
         units: dbar
-      - ancillary_variables: hpies_travel_time1
+      - ancillary_variables: hpies_travel_time1_L1_qartod_results hpies_travel_time1_L1_qartod_executed
+          hpies_travel_time1
         comment: 1st Round-trip acoustic travel time (RATT) in Seconds.
         coordinates: time lat lon
         data_product_identifier: IESRATT_L1
@@ -4330,7 +4332,8 @@ sources:
         precision: 5
         reference_designator: hpies_travel_time1_L1
         units: seconds
-      - ancillary_variables: hpies_travel_time2
+      - ancillary_variables: hpies_travel_time2_L1_qartod_results hpies_travel_time2_L1_qartod_executed
+          hpies_travel_time2
         comment: 2nd Round-trip acoustic travel time (RATT) in Seconds.
         coordinates: time lat lon
         data_product_identifier: IESRATT_L1
@@ -4338,7 +4341,8 @@ sources:
         precision: 5
         reference_designator: hpies_travel_time2_L1
         units: seconds
-      - ancillary_variables: hpies_travel_time3
+      - ancillary_variables: hpies_travel_time3_L1_qartod_results hpies_travel_time3_L1_qartod_executed
+          hpies_travel_time3
         comment: 3rd Round-trip acoustic travel time (RATT) in Seconds.
         coordinates: time lat lon
         data_product_identifier: IESRATT_L1
@@ -4346,7 +4350,8 @@ sources:
         precision: 5
         reference_designator: hpies_travel_time3_L1
         units: seconds
-      - ancillary_variables: hpies_travel_time4
+      - ancillary_variables: hpies_travel_time4_L1_qartod_results hpies_travel_time4_L1_qartod_executed
+          hpies_travel_time4
         comment: 4th Round-trip acoustic travel time (RATT) in Seconds.
         coordinates: time lat lon
         data_product_identifier: IESRATT_L1
@@ -5295,7 +5300,8 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: hpies_pressure
+      - ancillary_variables: hpies_pressure_L1_qartod_results hpies_pressure_L1_qartod_executed
+          hpies_pressure
         comment: Seafloor Pressure is a measurement of the force on the seafloor exerted
           by the weight of the overlying seawater column plus the weight of the atmosphere
           (hydrostatic plus atmospheric).
@@ -5305,7 +5311,8 @@ sources:
         precision: 3
         reference_designator: hpies_pressure_L1
         units: dbar
-      - ancillary_variables: hpies_travel_time1
+      - ancillary_variables: hpies_travel_time1_L1_qartod_results hpies_travel_time1_L1_qartod_executed
+          hpies_travel_time1
         comment: 1st Round-trip acoustic travel time (RATT) in Seconds.
         coordinates: time lat lon
         data_product_identifier: IESRATT_L1
@@ -5313,7 +5320,8 @@ sources:
         precision: 5
         reference_designator: hpies_travel_time1_L1
         units: seconds
-      - ancillary_variables: hpies_travel_time2
+      - ancillary_variables: hpies_travel_time2_L1_qartod_results hpies_travel_time2_L1_qartod_executed
+          hpies_travel_time2
         comment: 2nd Round-trip acoustic travel time (RATT) in Seconds.
         coordinates: time lat lon
         data_product_identifier: IESRATT_L1
@@ -5321,7 +5329,8 @@ sources:
         precision: 5
         reference_designator: hpies_travel_time2_L1
         units: seconds
-      - ancillary_variables: hpies_travel_time3
+      - ancillary_variables: hpies_travel_time3_L1_qartod_results hpies_travel_time3_L1_qartod_executed
+          hpies_travel_time3
         comment: 3rd Round-trip acoustic travel time (RATT) in Seconds.
         coordinates: time lat lon
         data_product_identifier: IESRATT_L1
@@ -5329,7 +5338,8 @@ sources:
         precision: 5
         reference_designator: hpies_travel_time3_L1
         units: seconds
-      - ancillary_variables: hpies_travel_time4
+      - ancillary_variables: hpies_travel_time4_L1_qartod_results hpies_travel_time4_L1_qartod_executed
+          hpies_travel_time4
         comment: 4th Round-trip acoustic travel time (RATT) in Seconds.
         coordinates: time lat lon
         data_product_identifier: IESRATT_L1
