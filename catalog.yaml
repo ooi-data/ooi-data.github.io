@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-03-19T11:11:48.499870'
+  last_updated: '2025-03-20T11:11:41.921371'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -1969,7 +1969,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-2B-PHSENA108-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.13 for CE04OSPS-SF01B-2B-PHSENA108-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.14 for CE04OSPS-SF01B-2B-PHSENA108-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -6247,7 +6247,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-05-ADCPTD302-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.13 for RS03AXPS-PC03A-05-ADCPTD302-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.8 for RS03AXPS-PC03A-05-ADCPTD302-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
