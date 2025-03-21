@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-03-20T11:11:41.921371'
+  last_updated: '2025-03-21T11:12:30.271613'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -1795,7 +1795,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-PC01B-4D-PCO2WA105-streamed-pco2w_a_sami_data_record
-    description: Data produced by Stream Engine version 1.20.10 for CE04OSPS-PC01B-4D-PCO2WA105-streamed-pco2w_a_sami_data_record
+    description: Data produced by Stream Engine version 1.20.14 for CE04OSPS-PC01B-4D-PCO2WA105-streamed-pco2w_a_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -1846,9 +1846,10 @@ sources:
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
       id: CE04OSPS-PC01B-4D-PCO2WA105-streamed-pco2w_a_sami_data_record
-      notes: This netCDF product is a copy of the data on the University of Washington
-        AWS Cloud Infrastructure.
-      owner: University of Washington Cabled Array Value Add Team.
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
       reference_designator:
         infrastructure: CE04OSPS-PC01B
         instrument: CE04OSPS-PC01B-4D-PCO2WA105
