@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-03-27T11:11:15.497871'
+  last_updated: '2025-03-28T11:11:26.465265'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -882,12 +882,13 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.13 for CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.14 for CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: sea_water_practical_salinity internal_temp_raw sea_water_temperature
-          c_signal_counts c_reference_counts
+      - ancillary_variables: beam_attenuation_qartod_results beam_attenuation_qartod_executed
+          sea_water_practical_salinity internal_temp_raw sea_water_temperature c_signal_counts
+          c_reference_counts
         comment: The Optical Beam Attenuation Coefficient is the rate that the intensity
           of a beam of light will decrease in response to the combined effects of
           absorption and scatter as a function of propagation distance. The Attenuation
@@ -900,8 +901,9 @@ sources:
         precision: 6
         reference_designator: beam_attenuation
         units: m-1
-      - ancillary_variables: a_reference_counts sea_water_practical_salinity a_signal_counts
-          internal_temp_raw beam_attenuation sea_water_temperature
+      - ancillary_variables: optical_absorption_qartod_results optical_absorption_qartod_executed
+          a_reference_counts sea_water_practical_salinity a_signal_counts internal_temp_raw
+          beam_attenuation sea_water_temperature
         comment: Optical Absorption Coefficient is the rate that the intensity of
           a beam of light will decrease in response to the absorption (removal) of
           light energy as a function of propagation distance. The Optical Absorption
@@ -2169,12 +2171,13 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.13 for CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.14 for CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: sea_water_practical_salinity internal_temp_raw sea_water_temperature
-          c_signal_counts c_reference_counts
+      - ancillary_variables: beam_attenuation_qartod_results beam_attenuation_qartod_executed
+          sea_water_practical_salinity internal_temp_raw sea_water_temperature c_signal_counts
+          c_reference_counts
         comment: The Optical Beam Attenuation Coefficient is the rate that the intensity
           of a beam of light will decrease in response to the combined effects of
           absorption and scatter as a function of propagation distance. The Attenuation
@@ -2199,8 +2202,9 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - ancillary_variables: a_reference_counts sea_water_practical_salinity a_signal_counts
-          internal_temp_raw beam_attenuation sea_water_temperature
+      - ancillary_variables: optical_absorption_qartod_results optical_absorption_qartod_executed
+          a_reference_counts sea_water_practical_salinity a_signal_counts internal_temp_raw
+          beam_attenuation sea_water_temperature
         comment: Optical Absorption Coefficient is the rate that the intensity of
           a beam of light will decrease in response to the absorption (removal) of
           light energy as a function of propagation distance. The Optical Absorption
@@ -3827,12 +3831,13 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-3B-OPTAAD101-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.13 for RS01SBPS-SF01A-3B-OPTAAD101-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.14 for RS01SBPS-SF01A-3B-OPTAAD101-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: sea_water_practical_salinity internal_temp_raw sea_water_temperature
-          c_signal_counts c_reference_counts
+      - ancillary_variables: beam_attenuation_qartod_results beam_attenuation_qartod_executed
+          sea_water_practical_salinity internal_temp_raw sea_water_temperature c_signal_counts
+          c_reference_counts
         comment: The Optical Beam Attenuation Coefficient is the rate that the intensity
           of a beam of light will decrease in response to the combined effects of
           absorption and scatter as a function of propagation distance. The Attenuation
@@ -3857,8 +3862,9 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - ancillary_variables: a_reference_counts sea_water_practical_salinity a_signal_counts
-          internal_temp_raw beam_attenuation sea_water_temperature
+      - ancillary_variables: optical_absorption_qartod_results optical_absorption_qartod_executed
+          a_reference_counts sea_water_practical_salinity a_signal_counts internal_temp_raw
+          beam_attenuation sea_water_temperature
         comment: Optical Absorption Coefficient is the rate that the intensity of
           a beam of light will decrease in response to the absorption (removal) of
           light energy as a function of propagation distance. The Optical Absorption
@@ -4937,7 +4943,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.13 for RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.14 for RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -5024,9 +5030,10 @@ sources:
         reference_designator: time
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
-      - ancillary_variables: sysconfig_vertical_orientation heading velocity_beam3
-          velocity_beam4 pitch percent_good_beam4 roll percent_good_beam2 velocity_beam1
-          velocity_beam2 percent_good_beam1 percent_good_beam3
+      - ancillary_variables: upward_seawater_velocity_qartod_results upward_seawater_velocity_qartod_executed
+          sysconfig_vertical_orientation heading velocity_beam3 velocity_beam4 pitch
+          percent_good_beam4 roll percent_good_beam2 velocity_beam1 velocity_beam2
+          percent_good_beam1 percent_good_beam3
         comment: Upward sea water velocity component in Earth coordinates.
         coordinates: time lat lon depth
         data_product_identifier: VELPROF-VLU_L1
