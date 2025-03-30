@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-03-29T11:11:34.936359'
+  last_updated: '2025-03-30T11:11:30.491547'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -5381,7 +5381,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-LJ03A-10-ADCPTE303-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.13 for RS03AXBS-LJ03A-10-ADCPTE303-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.14 for RS03AXBS-LJ03A-10-ADCPTE303-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -5480,9 +5480,10 @@ sources:
         reference_designator: time
         standard_name: time
         units: seconds since 1900-01-01 0:0:0
-      - ancillary_variables: sysconfig_vertical_orientation heading velocity_beam3
-          velocity_beam4 pitch percent_good_beam4 roll percent_good_beam2 velocity_beam1
-          velocity_beam2 percent_good_beam1 percent_good_beam3
+      - ancillary_variables: upward_seawater_velocity_qartod_results upward_seawater_velocity_qartod_executed
+          sysconfig_vertical_orientation heading velocity_beam3 velocity_beam4 pitch
+          percent_good_beam4 roll percent_good_beam2 velocity_beam1 velocity_beam2
+          percent_good_beam1 percent_good_beam3
         comment: Upward sea water velocity component in Earth coordinates.
         coordinates: time lat lon depth
         data_product_identifier: VELPROF-VLU_L1
