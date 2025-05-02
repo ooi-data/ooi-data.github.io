@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-05-01T11:12:49.517063'
+  last_updated: '2025-05-02T11:12:48.312369'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -345,12 +345,13 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-08-OPTAAD106-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.13 for CE02SHBP-LJ01D-08-OPTAAD106-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.14 for CE02SHBP-LJ01D-08-OPTAAD106-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
-      - ancillary_variables: sea_water_practical_salinity internal_temp_raw sea_water_temperature
-          c_signal_counts c_reference_counts
+      - ancillary_variables: beam_attenuation_qartod_results beam_attenuation_qartod_executed
+          sea_water_practical_salinity internal_temp_raw sea_water_temperature c_signal_counts
+          c_reference_counts
         comment: The Optical Beam Attenuation Coefficient is the rate that the intensity
           of a beam of light will decrease in response to the combined effects of
           absorption and scatter as a function of propagation distance. The Attenuation
@@ -363,8 +364,9 @@ sources:
         precision: 6
         reference_designator: beam_attenuation
         units: m-1
-      - ancillary_variables: a_reference_counts sea_water_practical_salinity a_signal_counts
-          internal_temp_raw beam_attenuation sea_water_temperature
+      - ancillary_variables: optical_absorption_qartod_results optical_absorption_qartod_executed
+          a_reference_counts sea_water_practical_salinity a_signal_counts internal_temp_raw
+          beam_attenuation sea_water_temperature
         comment: Optical Absorption Coefficient is the rate that the intensity of
           a beam of light will decrease in response to the absorption (removal) of
           light energy as a function of propagation distance. The Optical Absorption
