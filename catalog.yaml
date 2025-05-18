@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-05-17T11:11:55.371453'
+  last_updated: '2025-05-18T11:12:06.528226'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -3128,6 +3128,134 @@ sources:
         site: RS01SBPD
         stream: dpc_optode_instrument_recovered
         stream_method: recovered_inst
+  RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.14 for RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: echo_intensity_beam1
+        comment: Echo intensity is the strength of the returned sound wave pulse transmitted
+          by the ADCP. Echo intensity can be used as an indicator of the amount of
+          sediment or organisms in the water column, as well as of the quality of
+          a velocity measurement.
+        coordinates: lat depth lon time
+        data_product_identifier: ECHOINT-B1_L1
+        long_name: Echo Intensity Beam 1
+        precision: 4
+        reference_designator: corrected_echo_intensity_beam1
+        units: dB
+      - ancillary_variables: echo_intensity_beam2
+        comment: Echo intensity is the strength of the returned sound wave pulse transmitted
+          by the ADCP. Echo intensity can be used as an indicator of the amount of
+          sediment or organisms in the water column, as well as of the quality of
+          a velocity measurement.
+        coordinates: lat depth lon time
+        data_product_identifier: ECHOINT-B2_L1
+        long_name: Echo Intensity Beam 2
+        precision: 4
+        reference_designator: corrected_echo_intensity_beam2
+        units: dB
+      - ancillary_variables: echo_intensity_beam3
+        comment: Echo intensity is the strength of the returned sound wave pulse transmitted
+          by the ADCP. Echo intensity can be used as an indicator of the amount of
+          sediment or organisms in the water column, as well as of the quality of
+          a velocity measurement.
+        coordinates: lat depth lon time
+        data_product_identifier: ECHOINT-B3_L1
+        long_name: Echo Intensity Beam 3
+        precision: 4
+        reference_designator: corrected_echo_intensity_beam3
+        units: dB
+      - ancillary_variables: echo_intensity_beam4
+        comment: Echo intensity is the strength of the returned sound wave pulse transmitted
+          by the ADCP. Echo intensity can be used as an indicator of the amount of
+          sediment or organisms in the water column, as well as of the quality of
+          a velocity measurement.
+        coordinates: lat depth lon time
+        data_product_identifier: ECHOINT-B4_L1
+        long_name: Echo Intensity Beam 4
+        precision: 4
+        reference_designator: corrected_echo_intensity_beam4
+        units: dB
+      - ancillary_variables: sysconfig_vertical_orientation heading velocity_beam3
+          velocity_beam4 pitch percent_good_beam4 roll percent_good_beam2 velocity_beam1
+          velocity_beam2 percent_good_beam1 time percent_good_beam3
+        comment: Eastward sea water velocity component in Earth coordinates with the
+          magnetic variation accounted for.
+        coordinates: lat depth lon time
+        data_product_identifier: VELPROF-VLE_L1
+        long_name: Eastward Sea Water Velocity
+        precision: 4
+        reference_designator: eastward_seawater_velocity
+        standard_name: eastward_sea_water_velocity
+        units: m s-1
+      - ancillary_variables: velocity_beam3 velocity_beam4 percent_good_beam4 percent_good_beam2
+          velocity_beam1 velocity_beam2 percent_good_beam1 percent_good_beam3
+        comment: Error sea water velocity component.
+        coordinates: lat depth lon time
+        data_product_identifier: VELPROF-EVL_L1
+        long_name: Error Velocity
+        precision: 4
+        reference_designator: error_seawater_velocity
+        units: m s-1
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: sysconfig_vertical_orientation heading velocity_beam3
+          velocity_beam4 pitch percent_good_beam4 roll percent_good_beam2 velocity_beam1
+          velocity_beam2 percent_good_beam1 time percent_good_beam3
+        comment: Northward sea water velocity component in Earth coordinates with
+          the magnetic variation accounted for.
+        coordinates: lat depth lon time
+        data_product_identifier: VELPROF-VLN_L1
+        long_name: Northward Sea Water Velocity
+        precision: 4
+        reference_designator: northward_seawater_velocity
+        standard_name: northward_sea_water_velocity
+        units: m s-1
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      - ancillary_variables: upward_seawater_velocity_qartod_results upward_seawater_velocity_qartod_executed
+          sysconfig_vertical_orientation heading velocity_beam3 velocity_beam4 pitch
+          percent_good_beam4 roll percent_good_beam2 velocity_beam1 velocity_beam2
+          percent_good_beam1 percent_good_beam3
+        comment: Upward sea water velocity component in Earth coordinates.
+        coordinates: lat depth lon time
+        data_product_identifier: VELPROF-VLU_L1
+        long_name: Upward Sea Water Velocity
+        precision: 4
+        reference_designator: upward_seawater_velocity
+        standard_name: upward_sea_water_velocity
+        units: m s-1
+      id: RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: RS01SBPS-PC01A
+        instrument: RS01SBPS-PC01A-05-ADCPTD102
+        site: RS01SBPS
+        stream: adcp_velocity_beam
+        stream_method: streamed
   RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam_5:
     args:
       consolidated: true
@@ -5451,6 +5579,134 @@ sources:
         instrument: RS03AXBS-LJ03A-05-HPIESA301
         site: RS03AXBS
         stream: hpies_data_header
+        stream_method: streamed
+  RS03AXBS-LJ03A-10-ADCPTE303-streamed-adcp_velocity_beam:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXBS-LJ03A-10-ADCPTE303-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.14 for RS03AXBS-LJ03A-10-ADCPTE303-streamed-adcp_velocity_beam
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: echo_intensity_beam1
+        comment: Echo intensity is the strength of the returned sound wave pulse transmitted
+          by the ADCP. Echo intensity can be used as an indicator of the amount of
+          sediment or organisms in the water column, as well as of the quality of
+          a velocity measurement.
+        coordinates: time lat lon depth
+        data_product_identifier: ECHOINT-B1_L1
+        long_name: Echo Intensity Beam 1
+        precision: 4
+        reference_designator: corrected_echo_intensity_beam1
+        units: dB
+      - ancillary_variables: echo_intensity_beam2
+        comment: Echo intensity is the strength of the returned sound wave pulse transmitted
+          by the ADCP. Echo intensity can be used as an indicator of the amount of
+          sediment or organisms in the water column, as well as of the quality of
+          a velocity measurement.
+        coordinates: time lat lon depth
+        data_product_identifier: ECHOINT-B2_L1
+        long_name: Echo Intensity Beam 2
+        precision: 4
+        reference_designator: corrected_echo_intensity_beam2
+        units: dB
+      - ancillary_variables: echo_intensity_beam3
+        comment: Echo intensity is the strength of the returned sound wave pulse transmitted
+          by the ADCP. Echo intensity can be used as an indicator of the amount of
+          sediment or organisms in the water column, as well as of the quality of
+          a velocity measurement.
+        coordinates: time lat lon depth
+        data_product_identifier: ECHOINT-B3_L1
+        long_name: Echo Intensity Beam 3
+        precision: 4
+        reference_designator: corrected_echo_intensity_beam3
+        units: dB
+      - ancillary_variables: echo_intensity_beam4
+        comment: Echo intensity is the strength of the returned sound wave pulse transmitted
+          by the ADCP. Echo intensity can be used as an indicator of the amount of
+          sediment or organisms in the water column, as well as of the quality of
+          a velocity measurement.
+        coordinates: time lat lon depth
+        data_product_identifier: ECHOINT-B4_L1
+        long_name: Echo Intensity Beam 4
+        precision: 4
+        reference_designator: corrected_echo_intensity_beam4
+        units: dB
+      - ancillary_variables: sysconfig_vertical_orientation heading velocity_beam3
+          velocity_beam4 pitch percent_good_beam4 roll percent_good_beam2 velocity_beam1
+          velocity_beam2 percent_good_beam1 time percent_good_beam3
+        comment: Eastward sea water velocity component in Earth coordinates with the
+          magnetic variation accounted for.
+        coordinates: time lat lon depth
+        data_product_identifier: VELPROF-VLE_L1
+        long_name: Eastward Sea Water Velocity
+        precision: 4
+        reference_designator: eastward_seawater_velocity
+        standard_name: eastward_sea_water_velocity
+        units: m s-1
+      - ancillary_variables: velocity_beam3 velocity_beam4 percent_good_beam4 percent_good_beam2
+          velocity_beam1 velocity_beam2 percent_good_beam1 percent_good_beam3
+        comment: Error sea water velocity component.
+        coordinates: time lat lon depth
+        data_product_identifier: VELPROF-EVL_L1
+        long_name: Error Velocity
+        precision: 4
+        reference_designator: error_seawater_velocity
+        units: m s-1
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: time lat lon depth
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: sysconfig_vertical_orientation heading velocity_beam3
+          velocity_beam4 pitch percent_good_beam4 roll percent_good_beam2 velocity_beam1
+          velocity_beam2 percent_good_beam1 time percent_good_beam3
+        comment: Northward sea water velocity component in Earth coordinates with
+          the magnetic variation accounted for.
+        coordinates: time lat lon depth
+        data_product_identifier: VELPROF-VLN_L1
+        long_name: Northward Sea Water Velocity
+        precision: 4
+        reference_designator: northward_seawater_velocity
+        standard_name: northward_sea_water_velocity
+        units: m s-1
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      - ancillary_variables: upward_seawater_velocity_qartod_results upward_seawater_velocity_qartod_executed
+          sysconfig_vertical_orientation heading velocity_beam3 velocity_beam4 pitch
+          percent_good_beam4 roll percent_good_beam2 velocity_beam1 velocity_beam2
+          percent_good_beam1 percent_good_beam3
+        comment: Upward sea water velocity component in Earth coordinates.
+        coordinates: time lat lon depth
+        data_product_identifier: VELPROF-VLU_L1
+        long_name: Upward Sea Water Velocity
+        precision: 4
+        reference_designator: upward_seawater_velocity
+        standard_name: upward_sea_water_velocity
+        units: m s-1
+      id: RS03AXBS-LJ03A-10-ADCPTE303-streamed-adcp_velocity_beam
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: RS03AXBS-LJ03A
+        instrument: RS03AXBS-LJ03A-10-ADCPTE303
+        site: RS03AXBS
+        stream: adcp_velocity_beam
         stream_method: streamed
   RS03AXBS-LJ03A-11-OPTAAC303-streamed-optaa_sample:
     args:
