@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-05-19T11:13:33.819359'
+  last_updated: '2025-05-20T11:13:31.637642'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -3255,45 +3255,6 @@ sources:
         instrument: RS01SBPS-PC01A-05-ADCPTD102
         site: RS01SBPS
         stream: adcp_velocity_beam
-        stream_method: streamed
-  RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam_5:
-    args:
-      consolidated: true
-      storage_options:
-        anon: true
-      urlpath: s3://ooi-data/RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam_5
-    description: Data produced by Stream Engine version 1.20.14 for RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam_5
-    driver: zarr
-    metadata:
-      data_products:
-      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
-          by the weight of the column of seawater above it. It is calculated by subtracting
-          one standard atmosphere from the absolute pressure at the sensor to remove
-          the weight of the atmosphere on top of the water column. The pressure at
-          a sensor in situ provides a metric of the depth of that sensor.
-        coordinates: lat depth lon time
-        data_product_identifier: PRESWAT_L1
-        long_name: Seawater Pressure
-        precision: 3
-        reference_designator: int_ctd_pressure
-        standard_name: sea_water_pressure
-        units: dbar
-      - axis: T
-        calendar: gregorian
-        long_name: time
-        reference_designator: time
-        standard_name: time
-        units: seconds since 1900-01-01 0:0:0
-      id: RS01SBPS-PC01A-06-VADCPA101-streamed-vadcp_velocity_beam_5
-      notes: This netCDF product is a copy of the data available through the NSF Ocean
-        Observatories Initiative.
-      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
-        of Washington.
-      reference_designator:
-        infrastructure: RS01SBPS-PC01A
-        instrument: RS01SBPS-PC01A-06-VADCPA101
-        site: RS01SBPS
-        stream: vadcp_velocity_beam_5
         stream_method: streamed
   RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_optode_sample:
     args:
