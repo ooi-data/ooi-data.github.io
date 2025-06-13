@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-06-12T11:13:54.404706'
+  last_updated: '2025-06-13T11:14:06.713034'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -12,7 +12,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-05-ADCPTB104-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.14 for CE02SHBP-LJ01D-05-ADCPTB104-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.16 for CE02SHBP-LJ01D-05-ADCPTB104-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -140,7 +140,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-06-CTDBPN106-streamed-ctdbp_no_sample
-    description: Data produced by Stream Engine version 1.20.14 for CE02SHBP-LJ01D-06-CTDBPN106-streamed-ctdbp_no_sample
+    description: Data produced by Stream Engine version 1.20.16 for CE02SHBP-LJ01D-06-CTDBPN106-streamed-ctdbp_no_sample
     driver: zarr
     metadata:
       data_products:
@@ -271,7 +271,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-07-VEL3DC108-streamed-vel3d_cd_velocity_data
-    description: Data produced by Stream Engine version 1.20.14 for CE02SHBP-LJ01D-07-VEL3DC108-streamed-vel3d_cd_velocity_data
+    description: Data produced by Stream Engine version 1.20.16 for CE02SHBP-LJ01D-07-VEL3DC108-streamed-vel3d_cd_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -346,7 +346,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-08-OPTAAD106-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.14 for CE02SHBP-LJ01D-08-OPTAAD106-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.16 for CE02SHBP-LJ01D-08-OPTAAD106-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
@@ -429,7 +429,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-09-PCO2WB103-streamed-pco2w_b_sami_data_record
-    description: Data produced by Stream Engine version 1.20.14 for CE02SHBP-LJ01D-09-PCO2WB103-streamed-pco2w_b_sami_data_record
+    description: Data produced by Stream Engine version 1.20.16 for CE02SHBP-LJ01D-09-PCO2WB103-streamed-pco2w_b_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -484,7 +484,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-10-PHSEND103-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.14 for CE02SHBP-LJ01D-10-PHSEND103-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.16 for CE02SHBP-LJ01D-10-PHSEND103-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -552,7 +552,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-05-ADCPSI103-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.14 for CE04OSBP-LJ01C-05-ADCPSI103-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.16 for CE04OSBP-LJ01C-05-ADCPSI103-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -680,7 +680,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-06-CTDBPO108-streamed-ctdbp_no_sample
-    description: Data produced by Stream Engine version 1.20.14 for CE04OSBP-LJ01C-06-CTDBPO108-streamed-ctdbp_no_sample
+    description: Data produced by Stream Engine version 1.20.16 for CE04OSBP-LJ01C-06-CTDBPO108-streamed-ctdbp_no_sample
     driver: zarr
     metadata:
       data_products:
@@ -811,7 +811,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
-    description: Data produced by Stream Engine version 1.20.14 for CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
+    description: Data produced by Stream Engine version 1.20.16 for CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -886,7 +886,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.14 for CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.16 for CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
@@ -969,7 +969,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-09-PCO2WB104-streamed-pco2w_b_sami_data_record
-    description: Data produced by Stream Engine version 1.20.14 for CE04OSBP-LJ01C-09-PCO2WB104-streamed-pco2w_b_sami_data_record
+    description: Data produced by Stream Engine version 1.20.16 for CE04OSBP-LJ01C-09-PCO2WB104-streamed-pco2w_b_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -1024,7 +1024,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-10-PHSEND107-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.14 for CE04OSBP-LJ01C-10-PHSEND107-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.16 for CE04OSBP-LJ01C-10-PHSEND107-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -2359,6 +2359,58 @@ sources:
         instrument: CE04OSPS-SF01B-3C-PARADA102
         site: CE04OSPS
         stream: parad_sa_sample
+        stream_method: streamed
+  CE04OSPS-SF01B-3D-SPKIRA102-streamed-spkir_data_record:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/CE04OSPS-SF01B-3D-SPKIRA102-streamed-spkir_data_record
+    description: Data produced by Stream Engine version 1.20.14 for CE04OSPS-SF01B-3D-SPKIRA102-streamed-spkir_data_record
+    driver: zarr
+    metadata:
+      data_products:
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: spkir_downwelling_vector_qartod_results spkir_downwelling_vector_qartod_executed
+          spkir_samples
+        comment: 'Downwelling Spectral Irradiance is the measure of electromagnetic
+          radiation per unit area received (i.e. incident) by a sensor within the
+          seawater column. Downwelling spectral irradiance is calculated from measurements
+          made across 7 specific- pre-defined wavebands as follows: 1 = 412nm, 2 =
+          443nm, 3 = 490nm, 4 = 510nm, 5 = 555nm, 6 = 620nm, 7 = 683nm.'
+        coordinates: lat depth lon time
+        data_product_identifier: SPECTIR_L1
+        long_name: Downwelling Spectral Irradiance
+        precision: 4
+        reference_designator: spkir_downwelling_vector
+        units: uW cm-2 nm-1
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: CE04OSPS-SF01B-3D-SPKIRA102-streamed-spkir_data_record
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: CE04OSPS-SF01B
+        instrument: CE04OSPS-SF01B-3D-SPKIRA102
+        site: CE04OSPS
+        stream: spkir_data_record
         stream_method: streamed
   CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_dark_sample:
     args:
@@ -4264,6 +4316,58 @@ sources:
         instrument: RS01SBPS-SF01A-3C-PARADA101
         site: RS01SBPS
         stream: parad_sa_sample
+        stream_method: streamed
+  RS01SBPS-SF01A-3D-SPKIRA101-streamed-spkir_data_record:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS01SBPS-SF01A-3D-SPKIRA101-streamed-spkir_data_record
+    description: Data produced by Stream Engine version 1.20.14 for RS01SBPS-SF01A-3D-SPKIRA101-streamed-spkir_data_record
+    driver: zarr
+    metadata:
+      data_products:
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: spkir_downwelling_vector_qartod_results spkir_downwelling_vector_qartod_executed
+          spkir_samples
+        comment: 'Downwelling Spectral Irradiance is the measure of electromagnetic
+          radiation per unit area received (i.e. incident) by a sensor within the
+          seawater column. Downwelling spectral irradiance is calculated from measurements
+          made across 7 specific- pre-defined wavebands as follows: 1 = 412nm, 2 =
+          443nm, 3 = 490nm, 4 = 510nm, 5 = 555nm, 6 = 620nm, 7 = 683nm.'
+        coordinates: lat depth lon time
+        data_product_identifier: SPECTIR_L1
+        long_name: Downwelling Spectral Irradiance
+        precision: 4
+        reference_designator: spkir_downwelling_vector
+        units: uW cm-2 nm-1
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS01SBPS-SF01A-3D-SPKIRA101-streamed-spkir_data_record
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: RS01SBPS-SF01A
+        instrument: RS01SBPS-SF01A-3D-SPKIRA101
+        site: RS01SBPS
+        stream: spkir_data_record
         stream_method: streamed
   RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_dark_sample:
     args:
@@ -7677,6 +7781,58 @@ sources:
         instrument: RS03AXPS-SF03A-3C-PARADA301
         site: RS03AXPS
         stream: parad_sa_sample
+        stream_method: streamed
+  RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record
+    description: Data produced by Stream Engine version 1.20.14 for RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record
+    driver: zarr
+    metadata:
+      data_products:
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - ancillary_variables: spkir_downwelling_vector_qartod_results spkir_downwelling_vector_qartod_executed
+          spkir_samples
+        comment: 'Downwelling Spectral Irradiance is the measure of electromagnetic
+          radiation per unit area received (i.e. incident) by a sensor within the
+          seawater column. Downwelling spectral irradiance is calculated from measurements
+          made across 7 specific- pre-defined wavebands as follows: 1 = 412nm, 2 =
+          443nm, 3 = 490nm, 4 = 510nm, 5 = 555nm, 6 = 620nm, 7 = 683nm.'
+        coordinates: lat depth lon time
+        data_product_identifier: SPECTIR_L1
+        long_name: Downwelling Spectral Irradiance
+        precision: 4
+        reference_designator: spkir_downwelling_vector
+        units: uW cm-2 nm-1
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: RS03AXPS-SF03A
+        instrument: RS03AXPS-SF03A-3D-SPKIRA301
+        site: RS03AXPS
+        stream: spkir_data_record
         stream_method: streamed
   RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample:
     args:
