@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-06-17T11:14:09.777843'
+  last_updated: '2025-06-18T11:14:22.131953'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -5481,7 +5481,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample_15sec
-    description: Data produced by Stream Engine version 1.20.14 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample_15sec
+    description: Data produced by Stream Engine version 1.20.16 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample_15sec
     driver: zarr
     metadata:
       data_products:
@@ -8118,7 +8118,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_nano_sample_15sec
-    description: Data produced by Stream Engine version 1.20.14 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_nano_sample_15sec
+    description: Data produced by Stream Engine version 1.20.16 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_nano_sample_15sec
     driver: zarr
     metadata:
       data_products:
@@ -8317,7 +8317,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_nano_sample_15sec
-    description: Data produced by Stream Engine version 1.20.14 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_nano_sample_15sec
+    description: Data produced by Stream Engine version 1.20.16 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_nano_sample_15sec
     driver: zarr
     metadata:
       data_products:
@@ -8729,7 +8729,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_nano_sample_15sec
-    description: Data produced by Stream Engine version 1.20.14 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_nano_sample_15sec
+    description: Data produced by Stream Engine version 1.20.16 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_nano_sample_15sec
     driver: zarr
     metadata:
       data_products:
