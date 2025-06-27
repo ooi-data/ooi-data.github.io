@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-06-26T11:14:16.441491'
+  last_updated: '2025-06-27T11:14:01.025147'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -1943,6 +1943,8 @@ sources:
         standard_name: sea_water_density
         units: kg m-3
       - alternate_parameter_name: seawater_conductivity
+        ancillary_variables: seawater_conductivity_qartod_results seawater_conductivity_qartod_executed
+          sea_water_pressure sea_water_temperature conductivity
         comment: Seawater conductivity refers to the ability of seawater to conduct
           electricity. The presence of ions in the seawater, such as salt, increases
           the electrical conducting ability of seawater. As such, conductivity can
@@ -1955,6 +1957,8 @@ sources:
         standard_name: sea_water_electrical_conductivity
         units: S m-1
       - alternate_parameter_name: practical_salinity
+        ancillary_variables: practical_salinity_qartod_results practical_salinity_qartod_executed
+          sea_water_pressure sea_water_electrical_conductivity sea_water_temperature
         comment: Salinity is generally defined as the concentration of dissolved salt
           in a parcel of seawater. Practical Salinity is a more specific unitless
           quantity calculated from the conductivity of seawater and adjusted for temperature
@@ -1968,6 +1972,8 @@ sources:
         standard_name: sea_water_practical_salinity
         units: '1'
       - alternate_parameter_name: seawater_pressure
+        ancillary_variables: seawater_pressure_qartod_results seawater_pressure_qartod_executed
+          pressure pressure_temp
         comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
           by the weight of the column of seawater above it. It is calculated by subtracting
           one standard atmosphere from the absolute pressure at the sensor to remove
@@ -1981,6 +1987,8 @@ sources:
         standard_name: sea_water_pressure
         units: dbar
       - alternate_parameter_name: seawater_temperature
+        ancillary_variables: seawater_temperature_qartod_results seawater_temperature_qartod_executed
+          temperature
         comment: Seawater temperature near the sensor.
         coordinates: lat depth lon time
         data_product_identifier: TEMPWAT_L1
