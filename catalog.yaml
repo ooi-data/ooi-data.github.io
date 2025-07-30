@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-07-29T11:14:31.151800'
+  last_updated: '2025-07-30T11:15:02.584992'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -7697,6 +7697,52 @@ sources:
         instrument: RS03AXPS-SF03A-3D-SPKIRA301
         site: RS03AXPS
         stream: spkir_data_record
+        stream_method: streamed
+  RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample
+    description: Data produced by Stream Engine version 1.20.16 for RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample
+    driver: zarr
+    metadata:
+      data_products:
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - comment: Dissolved Nitrate Concentration, uncorrected for temperature and
+          salinity effects.
+        coordinates: lat depth lon time
+        data_product_identifier: NITRDIS_L1
+        long_name: Dissolved Nitrate Concentration
+        reference_designator: nitrate_concentration
+        units: umol L-1
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: RS03AXPS-SF03A
+        instrument: RS03AXPS-SF03A-4A-NUTNRA301
+        site: RS03AXPS
+        stream: nutnr_a_dark_sample
         stream_method: streamed
   RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_sample:
     args:
