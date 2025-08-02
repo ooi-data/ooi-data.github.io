@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-08-01T11:14:51.371899'
+  last_updated: '2025-08-02T11:14:01.636833'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -3370,6 +3370,62 @@ sources:
         instrument: RS01SBPS-PC01A-06-VADCPB101
         site: RS01SBPS
         stream: vadcp_b_velocity_beam
+        stream_method: streamed
+  RS01SBPS-PC01A-06-VADCPB101-streamed-vadcp_b_velocity_beam5:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS01SBPS-PC01A-06-VADCPB101-streamed-vadcp_b_velocity_beam5
+    description: Data produced by Stream Engine version 1.20.16 for RS01SBPS-PC01A-06-VADCPB101-streamed-vadcp_b_velocity_beam5
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: adcp_pressure
+        comment: Depth (m) calculated from pressure (dbar) and latitude.
+        coordinates: lat depth lon time
+        data_product_identifier: DPTHPRS_L1
+        long_name: Depth calculated from pressure
+        precision: 3
+        reference_designator: depth_from_dbar
+        standard_name: depth
+        units: m
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      - ancillary_variables: depth_from_dbar cell_position
+        comment: Bin Depths
+        coordinates: lat depth lon time
+        data_product_identifier: BINDPTH_L1
+        long_name: Bin Depths
+        precision: 3
+        reference_designator: vadcp_b_bin_depths
+        units: m
+      id: RS01SBPS-PC01A-06-VADCPB101-streamed-vadcp_b_velocity_beam5
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: RS01SBPS-PC01A
+        instrument: RS01SBPS-PC01A-06-VADCPB101
+        site: RS01SBPS
+        stream: vadcp_b_velocity_beam5
         stream_method: streamed
   RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_optode_sample:
     args:
@@ -6853,6 +6909,62 @@ sources:
         instrument: RS03AXPS-PC03A-06-VADCPB301
         site: RS03AXPS
         stream: vadcp_b_velocity_beam
+        stream_method: streamed
+  RS03AXPS-PC03A-06-VADCPB301-streamed-vadcp_b_velocity_beam5:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/RS03AXPS-PC03A-06-VADCPB301-streamed-vadcp_b_velocity_beam5
+    description: Data produced by Stream Engine version 1.20.16 for RS03AXPS-PC03A-06-VADCPB301-streamed-vadcp_b_velocity_beam5
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: adcp_pressure
+        comment: Depth (m) calculated from pressure (dbar) and latitude.
+        coordinates: lat depth lon time
+        data_product_identifier: DPTHPRS_L1
+        long_name: Depth calculated from pressure
+        precision: 3
+        reference_designator: depth_from_dbar
+        standard_name: depth
+        units: m
+      - comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat depth lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: int_ctd_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      - ancillary_variables: depth_from_dbar cell_position
+        comment: Bin Depths
+        coordinates: lat depth lon time
+        data_product_identifier: BINDPTH_L1
+        long_name: Bin Depths
+        precision: 3
+        reference_designator: vadcp_b_bin_depths
+        units: m
+      id: RS03AXPS-PC03A-06-VADCPB301-streamed-vadcp_b_velocity_beam5
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: RS03AXPS-PC03A
+        instrument: RS03AXPS-PC03A-06-VADCPB301
+        site: RS03AXPS
+        stream: vadcp_b_velocity_beam5
         stream_method: streamed
   RS03AXPS-PC03A-4A-CTDPFA303-streamed-ctdpf_optode_sample:
     args:
