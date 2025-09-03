@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2025-09-02T11:12:45.035198'
+  last_updated: '2025-09-03T11:12:32.996501'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -545,6 +545,33 @@ sources:
         instrument: CE02SHBP-LJ01D-10-PHSEND103
         site: CE02SHBP
         stream: phsen_data_record
+        stream_method: streamed
+  CE02SHBP-LJ01D-10-PHSENH110-streamed-phsen_h_format0:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/CE02SHBP-LJ01D-10-PHSENH110-streamed-phsen_h_format0
+    description: Data produced by Stream Engine version 1.20.17 for CE02SHBP-LJ01D-10-PHSENH110-streamed-phsen_h_format0
+    driver: zarr
+    metadata:
+      data_products:
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: CE02SHBP-LJ01D-10-PHSENH110-streamed-phsen_h_format0
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: CE02SHBP-LJ01D
+        instrument: CE02SHBP-LJ01D-10-PHSENH110
+        site: CE02SHBP
+        stream: phsen_h_format0
         stream_method: streamed
   CE04OSBP-LJ01C-05-ADCPSI103-streamed-adcp_velocity_beam:
     args:
