@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2026-01-18T11:13:25.640775'
+  last_updated: '2026-02-12T11:42:59.339229'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -12,7 +12,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-05-ADCPTB104-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.19 for CE02SHBP-LJ01D-05-ADCPTB104-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.20 for CE02SHBP-LJ01D-05-ADCPTB104-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -271,7 +271,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-07-VEL3DC108-streamed-vel3d_cd_velocity_data
-    description: Data produced by Stream Engine version 1.20.19 for CE02SHBP-LJ01D-07-VEL3DC108-streamed-vel3d_cd_velocity_data
+    description: Data produced by Stream Engine version 1.20.20 for CE02SHBP-LJ01D-07-VEL3DC108-streamed-vel3d_cd_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -429,7 +429,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-09-PCO2WB103-streamed-pco2w_b_sami_data_record
-    description: Data produced by Stream Engine version 1.20.19 for CE02SHBP-LJ01D-09-PCO2WB103-streamed-pco2w_b_sami_data_record
+    description: Data produced by Stream Engine version 1.20.20 for CE02SHBP-LJ01D-09-PCO2WB103-streamed-pco2w_b_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -552,10 +552,106 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-10-PHSENH110-streamed-phsen_h_format0
-    description: Data produced by Stream Engine version 1.20.19 for CE02SHBP-LJ01D-10-PHSENH110-streamed-phsen_h_format0
+    description: Data produced by Stream Engine version 1.20.20 for CE02SHBP-LJ01D-10-PHSENH110-streamed-phsen_h_format0
     driver: zarr
     metadata:
       data_products:
+      - ancillary_variables: sea_water_pressure
+        comment: Depth (m) calculated from pressure (dbar) and latitude.
+        coordinates: time lat lon
+        data_product_identifier: DPTHPRS_L1
+        long_name: Depth calculated from pressure
+        precision: 3
+        reference_designator: depth_from_pressure
+        standard_name: depth
+        units: m
+      - ancillary_variables: oxygen_phase_delay sea_water_practical_salinity oxygen_thermistor_voltage
+          sea_water_pressure
+        comment: Dissolved Oxygen (DO) Concentration is a measure of the concentration
+          of gaseous oxygen mixed in seawater.
+        coordinates: time lat lon
+        data_product_identifier: DOCONCF_L2
+        long_name: Dissolved Oxygen
+        precision: 4
+        reference_designator: dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        units: umol kg-1
+      - alternate_parameter_name: ph
+        ancillary_variables: sea_water_temperature ph_external_reference_voltage sea_water_pressure
+          sea_water_practical_salinity
+        comment: pH is a measurement of the concentration of hydrogen ions in a solution.
+          pH ranges from acidic to basic on a scale from 0 to 14 with 7 being neutral.
+        coordinates: time lat lon
+        data_product_identifier: PHWATER_L2
+        long_name: pH
+        precision: 4
+        reference_designator: ph_total
+        standard_name: sea_water_ph_reported_on_total_scale
+        units: '1'
+      - alternate_parameter_name: density
+        ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
+        comment: Seawater Density is defined as mass per unit volume and is calculated
+          from the conductivity, temperature and depth of a seawater sample using
+          the TEOS-10 equation.
+        coordinates: time lat lon
+        data_product_identifier: DENSITY_L2
+        long_name: Seawater Density
+        precision: 3
+        reference_designator: sea_water_density
+        standard_name: sea_water_density
+        units: kg m-3
+      - alternate_parameter_name: conductivity
+        ancillary_variables: conductivity_frequency sea_water_temperature sea_water_pressure
+        comment: Seawater conductivity refers to the ability of seawater to conduct
+          electricity. The presence of ions in the seawater, such as salt, increases
+          the electrical conducting ability of seawater. As such, conductivity can
+          be used as a proxy for determining the quantity of salt in a sample of seawater.
+        coordinates: time lat lon
+        data_product_identifier: CONDWAT_L1
+        long_name: Seawater Conductivity
+        precision: 6
+        reference_designator: sea_water_electrical_conductivity
+        standard_name: sea_water_electrical_conductivity
+        units: S m-1
+      - alternate_parameter_name: salinity
+        ancillary_variables: sea_water_pressure sea_water_electrical_conductivity
+          sea_water_temperature
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: time lat lon
+        data_product_identifier: PRACSAL_L2
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        units: '1'
+      - alternate_parameter_name: pressure
+        ancillary_variables: pressure_temperature_counts pressure_counts
+        comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: time lat lon
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: sea_water_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - alternate_parameter_name: temperature
+        ancillary_variables: temperature_counts
+        comment: Seawater temperature near the sensor.
+        coordinates: time lat lon
+        data_product_identifier: TEMPWAT_L1
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
       - axis: T
         calendar: gregorian
         long_name: time
@@ -579,7 +675,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-05-ADCPSI103-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSBP-LJ01C-05-ADCPSI103-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSBP-LJ01C-05-ADCPSI103-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -707,7 +803,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-06-CTDBPO108-streamed-ctdbp_no_sample
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSBP-LJ01C-06-CTDBPO108-streamed-ctdbp_no_sample
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSBP-LJ01C-06-CTDBPO108-streamed-ctdbp_no_sample
     driver: zarr
     metadata:
       data_products:
@@ -838,7 +934,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSBP-LJ01C-07-VEL3DC107-streamed-vel3d_cd_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -913,7 +1009,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSBP-LJ01C-08-OPTAAC104-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
@@ -996,7 +1092,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-09-PCO2WB104-streamed-pco2w_b_sami_data_record
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSBP-LJ01C-09-PCO2WB104-streamed-pco2w_b_sami_data_record
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSBP-LJ01C-09-PCO2WB104-streamed-pco2w_b_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -1051,7 +1147,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSBP-LJ01C-10-PHSEND107-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSBP-LJ01C-10-PHSEND107-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSBP-LJ01C-10-PHSEND107-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -1558,7 +1654,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -1866,13 +1962,136 @@ sources:
         site: CE04OSPS
         stream: phsen_data_record
         stream_method: streamed
+  CE04OSPS-PC01B-4C-PHSENH109-streamed-phsen_h_format0:
+    args:
+      consolidated: true
+      storage_options:
+        anon: true
+      urlpath: s3://ooi-data/CE04OSPS-PC01B-4C-PHSENH109-streamed-phsen_h_format0
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-PC01B-4C-PHSENH109-streamed-phsen_h_format0
+    driver: zarr
+    metadata:
+      data_products:
+      - ancillary_variables: sea_water_pressure
+        comment: Depth (m) calculated from pressure (dbar) and latitude.
+        coordinates: lat lon time
+        data_product_identifier: DPTHPRS_L1
+        long_name: Depth calculated from pressure
+        precision: 3
+        reference_designator: depth_from_pressure
+        standard_name: depth
+        units: m
+      - ancillary_variables: oxygen_phase_delay sea_water_practical_salinity oxygen_thermistor_voltage
+          sea_water_pressure
+        comment: Dissolved Oxygen (DO) Concentration is a measure of the concentration
+          of gaseous oxygen mixed in seawater.
+        coordinates: lat lon time
+        data_product_identifier: DOCONCF_L2
+        long_name: Dissolved Oxygen
+        precision: 4
+        reference_designator: dissolved_oxygen
+        standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+        units: umol kg-1
+      - alternate_parameter_name: ph
+        ancillary_variables: sea_water_temperature ph_external_reference_voltage sea_water_pressure
+          sea_water_practical_salinity
+        comment: pH is a measurement of the concentration of hydrogen ions in a solution.
+          pH ranges from acidic to basic on a scale from 0 to 14 with 7 being neutral.
+        coordinates: lat lon time
+        data_product_identifier: PHWATER_L2
+        long_name: pH
+        precision: 4
+        reference_designator: ph_total
+        standard_name: sea_water_ph_reported_on_total_scale
+        units: '1'
+      - alternate_parameter_name: density
+        ancillary_variables: sea_water_pressure sea_water_practical_salinity sea_water_temperature
+        comment: Seawater Density is defined as mass per unit volume and is calculated
+          from the conductivity, temperature and depth of a seawater sample using
+          the TEOS-10 equation.
+        coordinates: lat lon time
+        data_product_identifier: DENSITY_L2
+        long_name: Seawater Density
+        precision: 3
+        reference_designator: sea_water_density
+        standard_name: sea_water_density
+        units: kg m-3
+      - alternate_parameter_name: conductivity
+        ancillary_variables: conductivity_frequency sea_water_temperature sea_water_pressure
+        comment: Seawater conductivity refers to the ability of seawater to conduct
+          electricity. The presence of ions in the seawater, such as salt, increases
+          the electrical conducting ability of seawater. As such, conductivity can
+          be used as a proxy for determining the quantity of salt in a sample of seawater.
+        coordinates: lat lon time
+        data_product_identifier: CONDWAT_L1
+        long_name: Seawater Conductivity
+        precision: 6
+        reference_designator: sea_water_electrical_conductivity
+        standard_name: sea_water_electrical_conductivity
+        units: S m-1
+      - alternate_parameter_name: salinity
+        ancillary_variables: sea_water_pressure sea_water_electrical_conductivity
+          sea_water_temperature
+        comment: Salinity is generally defined as the concentration of dissolved salt
+          in a parcel of seawater. Practical Salinity is a more specific unitless
+          quantity calculated from the conductivity of seawater and adjusted for temperature
+          and pressure. It is approximately equivalent to Absolute Salinity (the mass
+          fraction of dissolved salt in seawater) but they are not interchangeable.
+        coordinates: lat lon time
+        data_product_identifier: PRACSAL_L2
+        long_name: Practical Salinity
+        precision: 4
+        reference_designator: sea_water_practical_salinity
+        standard_name: sea_water_practical_salinity
+        units: '1'
+      - alternate_parameter_name: pressure
+        ancillary_variables: pressure_temperature_counts pressure_counts
+        comment: Seawater Pressure refers to the pressure exerted on a sensor in situ
+          by the weight of the column of seawater above it. It is calculated by subtracting
+          one standard atmosphere from the absolute pressure at the sensor to remove
+          the weight of the atmosphere on top of the water column. The pressure at
+          a sensor in situ provides a metric of the depth of that sensor.
+        coordinates: lat lon time
+        data_product_identifier: PRESWAT_L1
+        long_name: Seawater Pressure
+        precision: 3
+        reference_designator: sea_water_pressure
+        standard_name: sea_water_pressure
+        units: dbar
+      - alternate_parameter_name: temperature
+        ancillary_variables: temperature_counts
+        comment: Seawater temperature near the sensor.
+        coordinates: lat lon time
+        data_product_identifier: TEMPWAT_L1
+        long_name: Seawater Temperature
+        precision: 4
+        reference_designator: sea_water_temperature
+        standard_name: sea_water_temperature
+        units: degrees_Celsius
+      - axis: T
+        calendar: gregorian
+        long_name: time
+        reference_designator: time
+        standard_name: time
+        units: seconds since 1900-01-01 0:0:0
+      id: CE04OSPS-PC01B-4C-PHSENH109-streamed-phsen_h_format0
+      notes: This netCDF product is a copy of the data available through the NSF Ocean
+        Observatories Initiative.
+      owner: NSF, Ocean Observatories Initiative, Regional Cabled Array, University
+        of Washington.
+      reference_designator:
+        infrastructure: CE04OSPS-PC01B
+        instrument: CE04OSPS-PC01B-4C-PHSENH109
+        site: CE04OSPS
+        stream: phsen_h_format0
+        stream_method: streamed
   CE04OSPS-PC01B-4D-PCO2WA105-streamed-pco2w_a_sami_data_record:
     args:
       consolidated: true
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-PC01B-4D-PCO2WA105-streamed-pco2w_a_sami_data_record
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSPS-PC01B-4D-PCO2WA105-streamed-pco2w_a_sami_data_record
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-PC01B-4D-PCO2WA105-streamed-pco2w_a_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -1939,7 +2158,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-2A-CTDPFA107-streamed-ctdpf_sbe43_sample
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSPS-SF01B-2A-CTDPFA107-streamed-ctdpf_sbe43_sample
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-SF01B-2A-CTDPFA107-streamed-ctdpf_sbe43_sample
     driver: zarr
     metadata:
       data_products:
@@ -2047,7 +2266,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-2B-PHSENA108-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSPS-SF01B-2B-PHSENA108-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-SF01B-2B-PHSENA108-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -2127,7 +2346,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-3A-FLORTD104-streamed-flort_d_data_record
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSPS-SF01B-3A-FLORTD104-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-SF01B-3A-FLORTD104-streamed-flort_d_data_record
     driver: zarr
     metadata:
       data_products:
@@ -2246,7 +2465,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-SF01B-3B-OPTAAD105-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
@@ -2341,7 +2560,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-3C-PARADA102-streamed-parad_sa_sample
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSPS-SF01B-3C-PARADA102-streamed-parad_sa_sample
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-SF01B-3C-PARADA102-streamed-parad_sa_sample
     driver: zarr
     metadata:
       data_products:
@@ -2401,7 +2620,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-3D-SPKIRA102-streamed-spkir_data_record
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSPS-SF01B-3D-SPKIRA102-streamed-spkir_data_record
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-SF01B-3D-SPKIRA102-streamed-spkir_data_record
     driver: zarr
     metadata:
       data_products:
@@ -2453,7 +2672,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_dark_sample
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_dark_sample
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_dark_sample
     driver: zarr
     metadata:
       data_products:
@@ -2499,7 +2718,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_sample
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_sample
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_sample
     driver: zarr
     metadata:
       data_products:
@@ -2581,7 +2800,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-4B-VELPTD106-streamed-velpt_velocity_data
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSPS-SF01B-4B-VELPTD106-streamed-velpt_velocity_data
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-SF01B-4B-VELPTD106-streamed-velpt_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -2664,7 +2883,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-4F-PCO2WA102-streamed-pco2w_a_sami_data_record
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSPS-SF01B-4F-PCO2WA102-streamed-pco2w_a_sami_data_record
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-SF01B-4F-PCO2WA102-streamed-pco2w_a_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -3170,7 +3389,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-PC01A-05-ADCPTD102-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -3298,7 +3517,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-06-VADCPB101-streamed-vadcp_b_velocity_beam
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-PC01A-06-VADCPB101-streamed-vadcp_b_velocity_beam
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-PC01A-06-VADCPB101-streamed-vadcp_b_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -3404,7 +3623,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-06-VADCPB101-streamed-vadcp_b_velocity_beam5
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-PC01A-06-VADCPB101-streamed-vadcp_b_velocity_beam5
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-PC01A-06-VADCPB101-streamed-vadcp_b_velocity_beam5
     driver: zarr
     metadata:
       data_products:
@@ -3460,7 +3679,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -3681,7 +3900,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-4B-PHSENA102-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-PC01A-4B-PHSENA102-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-PC01A-4B-PHSENA102-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -3761,7 +3980,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-4C-FLORDD103-streamed-flort_d_data_record
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-PC01A-4C-FLORDD103-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-PC01A-4C-FLORDD103-streamed-flort_d_data_record
     driver: zarr
     metadata:
       data_products:
@@ -3880,7 +4099,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-2A-CTDPFA102-streamed-ctdpf_sbe43_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-SF01A-2A-CTDPFA102-streamed-ctdpf_sbe43_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-SF01A-2A-CTDPFA102-streamed-ctdpf_sbe43_sample
     driver: zarr
     metadata:
       data_products:
@@ -3988,7 +4207,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-2D-PHSENA101-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-SF01A-2D-PHSENA101-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-SF01A-2D-PHSENA101-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -4068,7 +4287,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-SF01A-3A-FLORTD101-streamed-flort_d_data_record
     driver: zarr
     metadata:
       data_products:
@@ -4187,7 +4406,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-3B-OPTAAD101-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-SF01A-3B-OPTAAD101-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-SF01A-3B-OPTAAD101-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
@@ -4282,7 +4501,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-SF01A-3C-PARADA101-streamed-parad_sa_sample
     driver: zarr
     metadata:
       data_products:
@@ -4342,7 +4561,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-3D-SPKIRA101-streamed-spkir_data_record
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-SF01A-3D-SPKIRA101-streamed-spkir_data_record
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-SF01A-3D-SPKIRA101-streamed-spkir_data_record
     driver: zarr
     metadata:
       data_products:
@@ -4394,7 +4613,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_dark_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_dark_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_dark_sample
     driver: zarr
     metadata:
       data_products:
@@ -4440,7 +4659,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-SF01A-4A-NUTNRA101-streamed-nutnr_a_sample
     driver: zarr
     metadata:
       data_products:
@@ -4522,7 +4741,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-4B-VELPTD102-streamed-velpt_velocity_data
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-SF01A-4B-VELPTD102-streamed-velpt_velocity_data
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-SF01A-4B-VELPTD102-streamed-velpt_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -4605,7 +4824,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-SF01A-4F-PCO2WA101-streamed-pco2w_a_sami_data_record
-    description: Data produced by Stream Engine version 1.20.19 for RS01SBPS-SF01A-4F-PCO2WA101-streamed-pco2w_a_sami_data_record
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-SF01A-4F-PCO2WA101-streamed-pco2w_a_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -4746,7 +4965,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-LJ01A-05-HPIESA101-streamed-horizontal_electric_field
-    description: Data produced by Stream Engine version 1.20.19 for RS01SLBS-LJ01A-05-HPIESA101-streamed-horizontal_electric_field
+    description: Data produced by Stream Engine version 1.20.20 for RS01SLBS-LJ01A-05-HPIESA101-streamed-horizontal_electric_field
     driver: zarr
     metadata:
       data_products:
@@ -4773,7 +4992,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-LJ01A-05-HPIESA101-streamed-hpies_data_header
-    description: Data produced by Stream Engine version 1.20.19 for RS01SLBS-LJ01A-05-HPIESA101-streamed-hpies_data_header
+    description: Data produced by Stream Engine version 1.20.20 for RS01SLBS-LJ01A-05-HPIESA101-streamed-hpies_data_header
     driver: zarr
     metadata:
       data_products:
@@ -4928,7 +5147,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-LJ01A-11-OPTAAC103-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS01SLBS-LJ01A-11-OPTAAC103-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS01SLBS-LJ01A-11-OPTAAC103-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
@@ -5011,7 +5230,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-LJ01A-12-CTDPFB101-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS01SLBS-LJ01A-12-CTDPFB101-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS01SLBS-LJ01A-12-CTDPFB101-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -5129,7 +5348,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
-    description: Data produced by Stream Engine version 1.20.19 for RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
+    description: Data produced by Stream Engine version 1.20.20 for RS01SLBS-MJ01A-06-PRESTA101-streamed-prest_real_time
     driver: zarr
     metadata:
       data_products:
@@ -5168,7 +5387,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SLBS-MJ01A-12-VEL3DB101-streamed-vel3d_b_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS01SLBS-MJ01A-12-VEL3DB101-streamed-vel3d_b_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS01SLBS-MJ01A-12-VEL3DB101-streamed-vel3d_b_sample
     driver: zarr
     metadata:
       data_products:
@@ -5243,7 +5462,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SUM1-LJ01B-09-PRESTB102-streamed-prest_real_time
-    description: Data produced by Stream Engine version 1.20.19 for RS01SUM1-LJ01B-09-PRESTB102-streamed-prest_real_time
+    description: Data produced by Stream Engine version 1.20.20 for RS01SUM1-LJ01B-09-PRESTB102-streamed-prest_real_time
     driver: zarr
     metadata:
       data_products:
@@ -5282,7 +5501,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SUM1-LJ01B-12-VEL3DB104-streamed-vel3d_b_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS01SUM1-LJ01B-12-VEL3DB104-streamed-vel3d_b_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS01SUM1-LJ01B-12-VEL3DB104-streamed-vel3d_b_sample
     driver: zarr
     metadata:
       data_products:
@@ -5357,7 +5576,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.19 for RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.20 for RS01SUM2-MJ01B-12-ADCPSK101-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -5473,7 +5692,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample
     driver: zarr
     metadata:
       data_products:
@@ -5500,7 +5719,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample_15sec
-    description: Data produced by Stream Engine version 1.20.19 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample_15sec
+    description: Data produced by Stream Engine version 1.20.20 for RS03ASHS-MJ03B-09-BOTPTA304-streamed-botpt_nano_sample_15sec
     driver: zarr
     metadata:
       data_products:
@@ -5581,7 +5800,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ASHS-MJ03B-10-CTDPFB304-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03ASHS-MJ03B-10-CTDPFB304-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03ASHS-MJ03B-10-CTDPFB304-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -5827,7 +6046,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-LJ03A-10-ADCPTE303-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXBS-LJ03A-10-ADCPTE303-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXBS-LJ03A-10-ADCPTE303-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -5955,7 +6174,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-LJ03A-11-OPTAAC303-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXBS-LJ03A-11-OPTAAC303-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXBS-LJ03A-11-OPTAAC303-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
@@ -6038,7 +6257,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-LJ03A-12-CTDPFB301-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXBS-LJ03A-12-CTDPFB301-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXBS-LJ03A-12-CTDPFB301-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -6156,7 +6375,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXBS-MJ03A-06-PRESTA301-streamed-prest_real_time
     driver: zarr
     metadata:
       data_products:
@@ -6195,7 +6414,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXBS-MJ03A-12-VEL3DB301-streamed-vel3d_b_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXBS-MJ03A-12-VEL3DB301-streamed-vel3d_b_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXBS-MJ03A-12-VEL3DB301-streamed-vel3d_b_sample
     driver: zarr
     metadata:
       data_products:
@@ -6709,7 +6928,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-05-ADCPTD302-streamed-adcp_velocity_beam
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-PC03A-05-ADCPTD302-streamed-adcp_velocity_beam
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-PC03A-05-ADCPTD302-streamed-adcp_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -6837,7 +7056,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-06-VADCPB301-streamed-vadcp_b_velocity_beam
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-PC03A-06-VADCPB301-streamed-vadcp_b_velocity_beam
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-PC03A-06-VADCPB301-streamed-vadcp_b_velocity_beam
     driver: zarr
     metadata:
       data_products:
@@ -6943,7 +7162,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-06-VADCPB301-streamed-vadcp_b_velocity_beam5
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-PC03A-06-VADCPB301-streamed-vadcp_b_velocity_beam5
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-PC03A-06-VADCPB301-streamed-vadcp_b_velocity_beam5
     driver: zarr
     metadata:
       data_products:
@@ -6999,7 +7218,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-4A-CTDPFA303-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-PC03A-4A-CTDPFA303-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-PC03A-4A-CTDPFA303-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -7130,7 +7349,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-4B-PHSENA302-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-PC03A-4B-PHSENA302-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-PC03A-4B-PHSENA302-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -7210,7 +7429,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-PC03A-4C-FLORDD303-streamed-flort_d_data_record
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-PC03A-4C-FLORDD303-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-PC03A-4C-FLORDD303-streamed-flort_d_data_record
     driver: zarr
     metadata:
       data_products:
@@ -7329,7 +7548,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-2A-CTDPFA302-streamed-ctdpf_sbe43_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-SF03A-2A-CTDPFA302-streamed-ctdpf_sbe43_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-SF03A-2A-CTDPFA302-streamed-ctdpf_sbe43_sample
     driver: zarr
     metadata:
       data_products:
@@ -7437,7 +7656,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-2D-PHSENA301-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-SF03A-2D-PHSENA301-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-SF03A-2D-PHSENA301-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -7517,7 +7736,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-SF03A-3A-FLORTD301-streamed-flort_d_data_record
     driver: zarr
     metadata:
       data_products:
@@ -7636,7 +7855,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-3B-OPTAAD301-streamed-optaa_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-SF03A-3B-OPTAAD301-streamed-optaa_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-SF03A-3B-OPTAAD301-streamed-optaa_sample
     driver: zarr
     metadata:
       data_products:
@@ -7731,7 +7950,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-SF03A-3C-PARADA301-streamed-parad_sa_sample
     driver: zarr
     metadata:
       data_products:
@@ -7791,7 +8010,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-SF03A-3D-SPKIRA301-streamed-spkir_data_record
     driver: zarr
     metadata:
       data_products:
@@ -7843,7 +8062,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_dark_sample
     driver: zarr
     metadata:
       data_products:
@@ -7889,7 +8108,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-SF03A-4A-NUTNRA301-streamed-nutnr_a_sample
     driver: zarr
     metadata:
       data_products:
@@ -7971,7 +8190,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-4B-VELPTD302-streamed-velpt_velocity_data
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-SF03A-4B-VELPTD302-streamed-velpt_velocity_data
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-SF03A-4B-VELPTD302-streamed-velpt_velocity_data
     driver: zarr
     metadata:
       data_products:
@@ -8054,7 +8273,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03AXPS-SF03A-4F-PCO2WA301-streamed-pco2w_a_sami_data_record
-    description: Data produced by Stream Engine version 1.20.19 for RS03AXPS-SF03A-4F-PCO2WA301-streamed-pco2w_a_sami_data_record
+    description: Data produced by Stream Engine version 1.20.20 for RS03AXPS-SF03A-4F-PCO2WA301-streamed-pco2w_a_sami_data_record
     driver: zarr
     metadata:
       data_products:
@@ -8121,7 +8340,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_nano_sample_15sec
-    description: Data produced by Stream Engine version 1.20.19 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_nano_sample_15sec
+    description: Data produced by Stream Engine version 1.20.20 for RS03CCAL-MJ03F-05-BOTPTA301-streamed-botpt_nano_sample_15sec
     driver: zarr
     metadata:
       data_products:
@@ -8202,7 +8421,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03CCAL-MJ03F-12-CTDPFB305-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03CCAL-MJ03F-12-CTDPFB305-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03CCAL-MJ03F-12-CTDPFB305-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -8320,7 +8539,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_nano_sample_15sec
-    description: Data produced by Stream Engine version 1.20.19 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_nano_sample_15sec
+    description: Data produced by Stream Engine version 1.20.20 for RS03ECAL-MJ03E-06-BOTPTA302-streamed-botpt_nano_sample_15sec
     driver: zarr
     metadata:
       data_products:
@@ -8401,7 +8620,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03ECAL-MJ03E-12-CTDPFB306-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03ECAL-MJ03E-12-CTDPFB306-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03ECAL-MJ03E-12-CTDPFB306-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -8519,7 +8738,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03INT1-MJ03C-07-D1000A301-streamed-d1000_sample
     driver: zarr
     metadata:
       data_products:
@@ -8588,7 +8807,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT1-MJ03C-09-TRHPHA302-streamed-trhph_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03INT1-MJ03C-09-TRHPHA302-streamed-trhph_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03INT1-MJ03C-09-TRHPHA302-streamed-trhph_sample
     driver: zarr
     metadata:
       data_products:
@@ -8659,7 +8878,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03INT1-MJ03C-10-TRHPHA301-streamed-trhph_sample
     driver: zarr
     metadata:
       data_products:
@@ -8732,7 +8951,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_nano_sample_15sec
-    description: Data produced by Stream Engine version 1.20.19 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_nano_sample_15sec
+    description: Data produced by Stream Engine version 1.20.20 for RS03INT2-MJ03D-06-BOTPTA303-streamed-botpt_nano_sample_15sec
     driver: zarr
     metadata:
       data_products:
@@ -8813,7 +9032,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT2-MJ03D-11-CTDPFB307-streamed-ctdpf_optode_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03INT2-MJ03D-11-CTDPFB307-streamed-ctdpf_optode_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03INT2-MJ03D-11-CTDPFB307-streamed-ctdpf_optode_sample
     driver: zarr
     metadata:
       data_products:
@@ -8931,7 +9150,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS03INT2-MJ03D-12-VEL3DB304-streamed-vel3d_b_sample
-    description: Data produced by Stream Engine version 1.20.19 for RS03INT2-MJ03D-12-VEL3DB304-streamed-vel3d_b_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS03INT2-MJ03D-12-VEL3DB304-streamed-vel3d_b_sample
     driver: zarr
     metadata:
       data_products:
