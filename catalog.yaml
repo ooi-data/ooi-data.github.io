@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2026-05-15T12:56:53.786528'
+  last_updated: '2026-05-16T11:54:43.429671'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -4039,6 +4039,7 @@ sources:
         long_name: Optical Backscatter
         precision: 4
         reference_designator: optical_backscatter
+        standard_name: volume_backwards_scattering_coefficient_of_radiative_flux_in_sea_water
         units: m-1
       - alternate_parameter_name: ctdpf_optode_sample-practical_salinity
         comment: Salinity is generally defined as the concentration of dissolved salt
