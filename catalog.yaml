@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2026-05-21T14:16:38.496941'
+  last_updated: '2026-05-22T13:34:19.245314'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -140,7 +140,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE02SHBP-LJ01D-06-CTDBPN106-streamed-ctdbp_no_sample
-    description: Data produced by Stream Engine version 1.20.19 for CE02SHBP-LJ01D-06-CTDBPN106-streamed-ctdbp_no_sample
+    description: Data produced by Stream Engine version 1.20.20 for CE02SHBP-LJ01D-06-CTDBPN106-streamed-ctdbp_no_sample
     driver: zarr
     metadata:
       data_products:
@@ -1785,7 +1785,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_sbe43_sample
-    description: Data produced by Stream Engine version 1.20.14 for CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_sbe43_sample
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-PC01B-4A-CTDPFA109-streamed-ctdpf_sbe43_sample
     driver: zarr
     metadata:
       data_products:
@@ -1888,7 +1888,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-PC01B-4B-PHSENA106-streamed-phsen_data_record
-    description: Data produced by Stream Engine version 1.20.19 for CE04OSPS-PC01B-4B-PHSENA106-streamed-phsen_data_record
+    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-PC01B-4B-PHSENA106-streamed-phsen_data_record
     driver: zarr
     metadata:
       data_products:
@@ -2405,6 +2405,7 @@ sources:
         long_name: Optical Backscatter
         precision: 4
         reference_designator: optical_backscatter
+        standard_name: volume_backwards_scattering_coefficient_of_radiative_flux_in_sea_water
         units: m-1
       - alternate_parameter_name: ctdpf_sbe43_sample-practical_salinity
         comment: Salinity is generally defined as the concentration of dissolved salt
@@ -3797,7 +3798,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_sbe43_sample
-    description: Data produced by Stream Engine version 1.20.14 for RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_sbe43_sample
+    description: Data produced by Stream Engine version 1.20.20 for RS01SBPS-PC01A-4A-CTDPFA103-streamed-ctdpf_sbe43_sample
     driver: zarr
     metadata:
       data_products:
@@ -4347,6 +4348,7 @@ sources:
         long_name: Optical Backscatter
         precision: 4
         reference_designator: optical_backscatter
+        standard_name: volume_backwards_scattering_coefficient_of_radiative_flux_in_sea_water
         units: m-1
       - alternate_parameter_name: ctdpf_sbe43_sample-practical_salinity
         comment: Salinity is generally defined as the concentration of dissolved salt
