@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2026-07-20T13:09:29.573410'
+  last_updated: '2026-07-21T12:26:01.453408'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -2577,7 +2577,8 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - ancillary_variables: par
+      - ancillary_variables: par_counts_output_qartod_results par_counts_output_qartod_executed
+          par
         comment: Photosynthetically Active Radiation (PAR) is the measure of the density
           of photons per unit area that are in the spectral range of light (400-700
           nanometers) that primary producers use for photosynthesis.
