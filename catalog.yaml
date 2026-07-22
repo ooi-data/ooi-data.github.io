@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2026-07-21T12:26:01.453408'
+  last_updated: '2026-07-22T12:27:10.218820'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -4414,7 +4414,10 @@ sources:
     driver: zarr
     metadata:
       data_products:
-      - comment: The Optical Beam Attenuation Coefficient is the rate that the intensity
+      - ancillary_variables: beam_attenuation_qartod_results beam_attenuation_qartod_executed
+          sea_water_practical_salinity internal_temp_raw sea_water_temperature c_signal_counts
+          c_reference_counts
+        comment: The Optical Beam Attenuation Coefficient is the rate that the intensity
           of a beam of light will decrease in response to the combined effects of
           absorption and scatter as a function of propagation distance. The Attenuation
           Coefficient results from the spectral beam attenuation of the combination
@@ -4438,7 +4441,10 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - comment: Optical Absorption Coefficient is the rate that the intensity of
+      - ancillary_variables: optical_absorption_qartod_results optical_absorption_qartod_executed
+          a_reference_counts sea_water_practical_salinity a_signal_counts internal_temp_raw
+          beam_attenuation sea_water_temperature
+        comment: Optical Absorption Coefficient is the rate that the intensity of
           a beam of light will decrease in response to the absorption (removal) of
           light energy as a function of propagation distance. The Optical Absorption
           Coefficient reflects the absorption coefficient for the combination of all
@@ -4515,7 +4521,8 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - ancillary_variables: par
+      - ancillary_variables: par_counts_output_qartod_results par_counts_output_qartod_executed
+          par
         comment: Photosynthetically Active Radiation (PAR) is the measure of the density
           of photons per unit area that are in the spectral range of light (400-700
           nanometers) that primary producers use for photosynthesis.
@@ -7966,7 +7973,8 @@ sources:
         reference_designator: int_ctd_pressure
         standard_name: sea_water_pressure
         units: dbar
-      - ancillary_variables: par
+      - ancillary_variables: par_counts_output_qartod_results par_counts_output_qartod_executed
+          par
         comment: Photosynthetically Active Radiation (PAR) is the measure of the density
           of photons per unit area that are in the spectral range of light (400-700
           nanometers) that primary producers use for photosynthesis.
