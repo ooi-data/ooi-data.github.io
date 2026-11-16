@@ -1,7 +1,7 @@
 description: OOI Data Intake Catalog. This effort is part of the University of Washington,
   Regional Cabled Array Value Add Project.
 metadata:
-  last_updated: '2026-11-15T17:35:53.883564'
+  last_updated: '2026-11-16T20:50:03.998963'
   owner: University of Washington, Regional Cabled Array
   version: 0.1.0
 name: OOI Data Streams Catalog
@@ -2720,7 +2720,7 @@ sources:
       storage_options:
         anon: true
       urlpath: s3://ooi-data/CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_sample
-    description: Data produced by Stream Engine version 1.20.20 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_sample
+    description: Data produced by Stream Engine version 1.20.22 for CE04OSPS-SF01B-4A-NUTNRA102-streamed-nutnr_a_sample
     driver: zarr
     metadata:
       data_products:
@@ -2729,7 +2729,7 @@ sources:
           one standard atmosphere from the absolute pressure at the sensor to remove
           the weight of the atmosphere on top of the water column. The pressure at
           a sensor in situ provides a metric of the depth of that sensor.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: PRESWAT_L1
         long_name: Seawater Pressure
         precision: 3
@@ -2739,7 +2739,7 @@ sources:
       - ancillary_variables: nitrate_concentration_qartod_results nitrate_concentration_qartod_executed
         comment: Dissolved Nitrate Concentration, uncorrected for temperature and
           salinity effects.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: NITRDIS_L1
         long_name: Dissolved Nitrate Concentration
         reference_designator: nitrate_concentration
@@ -2748,18 +2748,20 @@ sources:
           sea_water_temperature frame_type spectral_channels sea_water_practical_salinity
           nutnr_dark_value_used_for_fit
         comment: Temperature and salinity corrected dissolved nitrate concentration.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: NITRTSC_L2
         long_name: Nitrate Concentration - Temp and Sal Corrected
         reference_designator: salinity_corrected_nitrate
         units: umol L-1
       - alternate_parameter_name: ctdpf_sbe43_sample-practical_salinity
+        ancillary_variables: ctdpf_sbe43_sample-practical_salinity_qartod_results
+          ctdpf_sbe43_sample-practical_salinity_qartod_executed
         comment: Salinity is generally defined as the concentration of dissolved salt
           in a parcel of seawater. Practical Salinity is a more specific unitless
           quantity calculated from the conductivity of seawater and adjusted for temperature
           and pressure. It is approximately equivalent to Absolute Salinity (the mass
           fraction of dissolved salt in seawater) but they are not interchangeable.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: PRACSAL_L2
         instrument: CE04OSPS-SF01B-2A-CTDPFA107
         long_name: Practical Salinity
@@ -2769,8 +2771,10 @@ sources:
         stream: ctdpf_sbe43_sample
         units: '1'
       - alternate_parameter_name: ctdpf_sbe43_sample-seawater_temperature
+        ancillary_variables: ctdpf_sbe43_sample-seawater_temperature_qartod_results
+          ctdpf_sbe43_sample-seawater_temperature_qartod_executed
         comment: Seawater temperature near the sensor.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: TEMPWAT_L1
         instrument: CE04OSPS-SF01B-2A-CTDPFA107
         long_name: Seawater Temperature
@@ -8125,7 +8129,7 @@ sources:
           one standard atmosphere from the absolute pressure at the sensor to remove
           the weight of the atmosphere on top of the water column. The pressure at
           a sensor in situ provides a metric of the depth of that sensor.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: PRESWAT_L1
         long_name: Seawater Pressure
         precision: 3
@@ -8135,7 +8139,7 @@ sources:
       - ancillary_variables: nitrate_concentration_qartod_results nitrate_concentration_qartod_executed
         comment: Dissolved Nitrate Concentration, uncorrected for temperature and
           salinity effects.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: NITRDIS_L1
         long_name: Dissolved Nitrate Concentration
         reference_designator: nitrate_concentration
@@ -8144,18 +8148,20 @@ sources:
           sea_water_temperature frame_type spectral_channels sea_water_practical_salinity
           nutnr_dark_value_used_for_fit
         comment: Temperature and salinity corrected dissolved nitrate concentration.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: NITRTSC_L2
         long_name: Nitrate Concentration - Temp and Sal Corrected
         reference_designator: salinity_corrected_nitrate
         units: umol L-1
       - alternate_parameter_name: ctdpf_sbe43_sample-practical_salinity
+        ancillary_variables: ctdpf_sbe43_sample-practical_salinity_qartod_results
+          ctdpf_sbe43_sample-practical_salinity_qartod_executed
         comment: Salinity is generally defined as the concentration of dissolved salt
           in a parcel of seawater. Practical Salinity is a more specific unitless
           quantity calculated from the conductivity of seawater and adjusted for temperature
           and pressure. It is approximately equivalent to Absolute Salinity (the mass
           fraction of dissolved salt in seawater) but they are not interchangeable.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: PRACSAL_L2
         instrument: RS03AXPS-SF03A-2A-CTDPFA302
         long_name: Practical Salinity
@@ -8165,8 +8171,10 @@ sources:
         stream: ctdpf_sbe43_sample
         units: '1'
       - alternate_parameter_name: ctdpf_sbe43_sample-seawater_temperature
+        ancillary_variables: ctdpf_sbe43_sample-seawater_temperature_qartod_results
+          ctdpf_sbe43_sample-seawater_temperature_qartod_executed
         comment: Seawater temperature near the sensor.
-        coordinates: lat depth lon time
+        coordinates: time lat lon depth
         data_product_identifier: TEMPWAT_L1
         instrument: RS03AXPS-SF03A-2A-CTDPFA302
         long_name: Seawater Temperature
